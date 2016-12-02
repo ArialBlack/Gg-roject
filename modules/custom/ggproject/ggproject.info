@@ -1,0 +1,6 @@
+name = ggproject
+description = code for Gg-project website
+version = 7.x-1.0
+core = 7.x
+dependencies[] = block
+package = Gg project

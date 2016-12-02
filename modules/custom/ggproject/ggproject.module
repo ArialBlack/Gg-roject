@@ -1,0 +1,96 @@
+<?php 
+
+/**
+* Implements hook_block_info().
+*/
+function ggproject_block_info() {
+  $blocks = array();
+  $blocks['ggproject_admin_blocks'] = array(
+    'info' => t('GG-project admin blocks'),
+  );
+
+  return $blocks;
+}
+
+/**
+* Implements hook_block_view().
+*/
+function ggproject_block_view($delta = '') {
+  $block = array();
+
+  switch ($delta) {
+    case 'ggproject_admin_blocks':
+      $block['subject'] = '';
+      $block['content'] = _ggproject_admin_block();
+      break;
+  }
+
+  return $block;
+
+}
+
+function _ggproject_admin_block() {
+    global $language ;
+    $lang = $language->language;
+
+    if ($lang == 'en') {
+        $lp = '/eng';
+    } else $lp = '';
+
+    $current_path = drupal_get_path_alias();
+
+    $output = '';
+
+  if ($current_path == 'video') {
+    $output = '<h2>Действия для администратора / редактора:<h2>';
+    $output = $output . '<nav><ul><li><a class="btn bnt-success" href="' . $lp . '/node/add/video?destination=' . $lp . '/video"><i class="glyphicon glyphicon-plus"></i> Добавить видео</a></li>';
+    $output = $output . '<li><a class="btn bnt-info" href="' . $lp . '/admin/video/sort?destination=' . $lp . '/video"><i class="glyphicon glyphicon-sort"></i> Сортировать видео</a></li></ul></nav>';
+  }
+
+  if ($current_path == 'news') {
+      $output = '<h2>Действия для администратора / редактора:<h2>';
+      $output = $output . '<nav><ul><li><a class="btn bnt-success" href="' . $lp . '/node/add/article?destination=' . $lp . '/news"><i class="glyphicon glyphicon-plus"></i> Добавить новость</a></li></ul></nav>';
+  }
+
+  if ($current_path == 'testimonials') {
+      $output = '<h2>Действия для администратора / редактора:<h2>';
+      $output = $output . '<nav><ul><li><a class="btn bnt-success" href="' . $lp . '/node/add/feedback?destination=' . $lp . '/testimonials"><i class="glyphicon glyphicon-plus"></i> Добавить отзыв</a></li></ul></nav>';
+  }
+
+    if ($current_path == 'services/booking') {
+        $output = '<h2>Действия для администратора / редактора:<h2>';
+        $output = $output . '<nav><ul><li><a class="btn bnt-success" href="' . $lp . '/node/add/artist?destination=' . $lp . '/services/booking"><i class="glyphicon glyphicon-plus"></i> Добавить артиста/ведущего</a></li>';
+        $output = $output . '<li><a class="btn bnt-info" href="' . $lp . '/admin/artist/sort?destination=' . $lp . '/services/booking"><i class="glyphicon glyphicon-sort"></i> Сортировать артистов</a></li>';
+        $output = $output . '<li><a class="btn bnt-info" href="' . $lp . '/admin/speaker/sort?destination=' . $lp . '/services/booking"><i class="glyphicon glyphicon-sort"></i> Сортировать ведущих</a></li></ul></nav>';
+    }
+
+  return $output;
+}
+
+function ggproject_form_alter(&$form, &$form_state, $form_id) {
+    if (isset($form['#node_edit_form']) &&  $form['#node_edit_form'] == TRUE && $form['nid']['#value'] == NULL) {
+        $actionstring = $form['#action'];
+        $pos = strpos($actionstring, 'translation=');
+        $len = strlen ($actionstring);
+        $tnid = intval(substr($actionstring, $pos+12, $len-$pos-12));
+
+        $source_node = node_load($tnid);
+
+
+        if ($source_node) {
+            $path = drupal_get_path_alias('node/' . $source_node->nid, $source_node->language);
+            dsm($path);
+
+            drupal_add_js(array('ggproject' => array('translatedPath' => $path)), array('type' => 'setting'));
+            drupal_add_js(drupal_get_path('module', 'ggproject') .'/script.js');
+
+            $form['#after_build'][] = 'ggproject_after_build';
+        }
+    }
+}
+
+function ggproject_after_build($form, &$form_state) {
+    $form['path']['pathauto'] = FALSE;
+    return ($form);
+
+}
