@@ -9139,6 +9139,23 @@ h1.page-header {
   font-size: 52.5px;
   font-size: 5.25rem;
 }
+/* line 122, ..\themes\ggproject_ui\less\_base.less */
+.pager.pager-load-more a {
+  background-color: #231f20;
+  border: none;
+  border-radius: 0;
+  color: white;
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'cormorantmedium';
+  font-size: 11.666666666666668px;
+  font-size: 1.1666666666666667rem;
+  padding: 10px 35px;
+}
+/* line 131, ..\themes\ggproject_ui\less\_base.less */
+.pager.pager-load-more a:hover {
+  background-color: #17a6b9;
+}
 /*
 *   CSS file with Bootstrap grid classes for screens bigger than 1600px. Just add this file after the Bootstrap CSS file and you will be able to juse col-xl, col-xl-push, hidden-xl, etc.
 *
@@ -9420,51 +9437,51 @@ h1.page-header {
     display: none !important;
   }
 }
-/* line 12, ../themes/ggproject_ui/less/style.less */
+/* line 1, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar {
   background: none;
   border: none;
 }
-/* line 4, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 5, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar .menu {
   float: right;
 }
-/* line 8, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 9, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar .menu li a {
   font-size: 7.5px;
   font-size: 0.75rem;
   text-transform: uppercase;
   text-decoration: none;
 }
-/* line 13, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 14, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar .menu li a:hover,
 #navbar .menu li a:focus {
   background: none;
   color: #17a6b9;
 }
-/* line 21, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 22, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar .menu li.active a {
   background: none;
   color: #17a6b9;
 }
-/* line 29, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 30, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar .region-navigation {
   float: right;
   margin-top: 7px;
 }
-/* line 35, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 36, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar #block-locale-language .block-title {
   display: none;
 }
-/* line 40, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 41, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar #block-locale-language .language-switcher-locale-url li {
   list-style: none;
 }
-/* line 43, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 44, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar #block-locale-language .language-switcher-locale-url li.active {
   display: none;
 }
-/* line 47, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 48, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar #block-locale-language .language-switcher-locale-url li a {
   font-size: 7.5px;
   font-size: 0.75rem;
@@ -9473,23 +9490,23 @@ h1.page-header {
   padding-top: 15px;
   padding-bottom: 15px;
 }
-/* line 3, ..\themes\ggproject_ui\less\parts\portfolio.less */
-.page-services .page-banner {
+/* line 4, ..\themes\ggproject_ui\less\parts\portfolio.less */
+.node-type-photogallery .page-banner {
   background: url('../images/portfolio-bg.jpg') no-repeat center center;
   background-size: cover;
 }
-/* line 7, ..\themes\ggproject_ui\less\parts\portfolio.less */
-.page-services .page-banner h2 {
+/* line 8, ..\themes\ggproject_ui\less\parts\portfolio.less */
+.node-type-photogallery .page-banner h2 {
   display: inline-block;
   vertical-align: middle;
 }
-/* line 13, ..\themes\ggproject_ui\less\parts\portfolio.less */
-.page-services h1 {
+/* line 14, ..\themes\ggproject_ui\less\parts\portfolio.less */
+.node-type-photogallery h1 {
   float: left;
   padding-left: 10px;
 }
-/* line 18, ..\themes\ggproject_ui\less\parts\portfolio.less */
-.page-services .back2portfolio {
+/* line 19, ..\themes\ggproject_ui\less\parts\portfolio.less */
+.node-type-photogallery .back2portfolio {
   float: right;
   color: #9d9d9d;
   font-size: 10px;
@@ -9500,65 +9517,70 @@ h1.page-header {
   margin-top: 15px;
   padding-right: 10px;
 }
-/* line 27, ..\themes\ggproject_ui\less\parts\portfolio.less */
-.page-services .region-content {
+/* line 28, ..\themes\ggproject_ui\less\parts\portfolio.less */
+.node-type-photogallery .region-content {
   clear: both;
 }
-/* line 31, ..\themes\ggproject_ui\less\parts\portfolio.less */
-.page-services .field-name-field-intro {
+/* line 32, ..\themes\ggproject_ui\less\parts\portfolio.less */
+.node-type-photogallery .field-name-field-intro {
   margin-top: 60px;
   margin-bottom: 90px;
   padding-left: 10px;
   padding-right: 10px;
 }
-/* line 37, ..\themes\ggproject_ui\less\parts\portfolio.less */
-.page-services .field-name-field-intro p {
+/* line 38, ..\themes\ggproject_ui\less\parts\portfolio.less */
+.node-type-photogallery .field-name-field-intro p {
   line-height: 200%;
 }
-/* line 42, ..\themes\ggproject_ui\less\parts\portfolio.less */
-.page-services .field-name-field-photos {
+/* line 43, ..\themes\ggproject_ui\less\parts\portfolio.less */
+.node-type-photogallery .field-name-field-photos {
   margin-top: 20px;
 }
-/* line 45, ..\themes\ggproject_ui\less\parts\portfolio.less */
-.page-services .field-name-field-photos .field-item {
+/* line 46, ..\themes\ggproject_ui\less\parts\portfolio.less */
+.node-type-photogallery .field-name-field-photos .field-item {
   width: 100%;
 }
 @media (min-width: 992px) {
-  /* line 48, ..\themes\ggproject_ui\less\parts\portfolio.less */
-  .page-services .field-name-field-photos .field-item {
+  /* line 49, ..\themes\ggproject_ui\less\parts\portfolio.less */
+  .node-type-photogallery .field-name-field-photos .field-item {
     width: 50%;
   }
 }
 @media (min-width: 1200px) {
-  /* line 52, ..\themes\ggproject_ui\less\parts\portfolio.less */
-  .page-services .field-name-field-photos .field-item {
+  /* line 53, ..\themes\ggproject_ui\less\parts\portfolio.less */
+  .node-type-photogallery .field-name-field-photos .field-item {
     width: 33.333%;
   }
 }
-/* line 56, ..\themes\ggproject_ui\less\parts\portfolio.less */
-.page-services .field-name-field-photos .field-item img {
+/* line 57, ..\themes\ggproject_ui\less\parts\portfolio.less */
+.node-type-photogallery .field-name-field-photos .field-item img {
   width: 100%;
   padding: 10px;
 }
 /* line 2, ..\themes\ggproject_ui\less\parts\portfolio-main-page.less */
+.page-services .page-banner {
+  background: url('../images/portfolio-bg.jpg') no-repeat center center;
+  background-size: cover;
+}
+/* line 6, ..\themes\ggproject_ui\less\parts\portfolio-main-page.less */
 .page-services .page-banner h1 {
   display: inline-block;
   vertical-align: middle;
   float: none;
 }
-/* line 9, ..\themes\ggproject_ui\less\parts\portfolio-main-page.less */
+/* line 13, ..\themes\ggproject_ui\less\parts\portfolio-main-page.less */
 .page-services .services-menu {
   float: right;
   margin-bottom: 60px;
   margin-right: 20px;
 }
-/* line 14, ..\themes\ggproject_ui\less\parts\portfolio-main-page.less */
+/* line 18, ..\themes\ggproject_ui\less\parts\portfolio-main-page.less */
 .page-services .services-menu li {
   list-style: none;
   display: inline-block;
   margin-left: 20px;
 }
-/* line 19, ..\themes\ggproject_ui\less\parts\portfolio-main-page.less */
+/* line 23, ..\themes\ggproject_ui\less\parts\portfolio-main-page.less */
 .page-services .services-menu li a {
   padding: 10px 40px;
   font-size: 11.666666666666668px;
@@ -9566,7 +9588,7 @@ h1.page-header {
   color: #231f20;
   border: #231f20 2px solid;
 }
-/* line 25, ..\themes\ggproject_ui\less\parts\portfolio-main-page.less */
+/* line 29, ..\themes\ggproject_ui\less\parts\portfolio-main-page.less */
 .page-services .services-menu li a:hover,
 .page-services .services-menu li a.active {
   background-color: #17a6b9;
@@ -9574,24 +9596,24 @@ h1.page-header {
   color: white;
   text-decoration: none;
 }
-/* line 36, ..\themes\ggproject_ui\less\parts\portfolio-main-page.less */
+/* line 40, ..\themes\ggproject_ui\less\parts\portfolio-main-page.less */
 .page-services .view-content {
   clear: both;
 }
-/* line 39, ..\themes\ggproject_ui\less\parts\portfolio-main-page.less */
+/* line 43, ..\themes\ggproject_ui\less\parts\portfolio-main-page.less */
 .page-services .view-content img {
   width: 100%;
 }
-/* line 43, ..\themes\ggproject_ui\less\parts\portfolio-main-page.less */
+/* line 47, ..\themes\ggproject_ui\less\parts\portfolio-main-page.less */
 .page-services .view-content .col {
   position: relative;
   margin-bottom: 30px;
 }
-/* line 47, ..\themes\ggproject_ui\less\parts\portfolio-main-page.less */
+/* line 51, ..\themes\ggproject_ui\less\parts\portfolio-main-page.less */
 .page-services .view-content .col:hover .views-field-title {
   background: #ffffff;
 }
-/* line 52, ..\themes\ggproject_ui\less\parts\portfolio-main-page.less */
+/* line 56, ..\themes\ggproject_ui\less\parts\portfolio-main-page.less */
 .page-services .view-content .views-field-title {
   position: absolute;
   width: 100%;
@@ -9599,7 +9621,7 @@ h1.page-header {
   bottom: 0;
   transition: 0.3s all linear;
 }
-/* line 59, ..\themes\ggproject_ui\less\parts\portfolio-main-page.less */
+/* line 63, ..\themes\ggproject_ui\less\parts\portfolio-main-page.less */
 .page-services .view-content .views-field-title a {
   color: #231f20;
   font-weight: normal;
@@ -9611,26 +9633,27 @@ h1.page-header {
   display: block;
   padding: 15px 30px;
 }
-/* line 1, ..\themes\ggproject_ui\less\parts\news.less */
+/* line 3, ..\themes\ggproject_ui\less\parts\news.less */
+.node-type-article .page-banner,
 .page-news .page-banner {
   background: url('../images/news-bg.jpg') no-repeat center center;
   background-size: cover;
 }
-/* line 6, ..\themes\ggproject_ui\less\parts\news.less */
+/* line 10, ..\themes\ggproject_ui\less\parts\news.less */
 .page-news .col {
   margin-bottom: 90px;
 }
-/* line 10, ..\themes\ggproject_ui\less\parts\news.less */
+/* line 14, ..\themes\ggproject_ui\less\parts\news.less */
 .page-news .views-field-title {
   padding: 30px 0;
 }
-/* line 13, ..\themes\ggproject_ui\less\parts\news.less */
+/* line 17, ..\themes\ggproject_ui\less\parts\news.less */
 .page-news .views-field-title a {
   color: #231f20;
   font-size: 13.333333333333332px;
   font-size: 1.3333333333333333rem;
 }
-/* line 19, ..\themes\ggproject_ui\less\parts\news.less */
+/* line 23, ..\themes\ggproject_ui\less\parts\news.less */
 .page-news .views-field-body {
   color: #666666;
   font-size: 7.5px;
@@ -9640,14 +9663,14 @@ h1.page-header {
   margin-bottom: 30px;
   min-height: 80px;
 }
-/* line 30, ..\themes\ggproject_ui\less\parts\news.less */
+/* line 34, ..\themes\ggproject_ui\less\parts\news.less */
 .page-news .views-field-created {
   color: #9d9d9d;
   font-size: 10px;
   font-size: 1rem;
   float: left;
 }
-/* line 35, ..\themes\ggproject_ui\less\parts\news.less */
+/* line 39, ..\themes\ggproject_ui\less\parts\news.less */
 .page-news .views-field-created:before {
   content: '';
   display: block;
@@ -9656,19 +9679,19 @@ h1.page-header {
   background: #231f20;
   margin-bottom: 20px;
 }
-/* line 45, ..\themes\ggproject_ui\less\parts\news.less */
+/* line 49, ..\themes\ggproject_ui\less\parts\news.less */
 .page-news .views-field-view-node {
   float: left;
   margin-top: 23px;
   padding-left: 75px;
 }
-/* line 50, ..\themes\ggproject_ui\less\parts\news.less */
+/* line 54, ..\themes\ggproject_ui\less\parts\news.less */
 .page-news .views-field-view-node a {
   color: #9d9d9d;
   font-size: 10px;
   font-size: 1rem;
 }
-/* line 29, ../themes/ggproject_ui/less/style.less */
+/* line 1, ..\themes\ggproject_ui\less\parts\footer.less */
 .footer {
   background: #231f20;
   color: white;

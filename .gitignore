@@ -227,3 +227,5 @@ node_modules/
 themes/bootstrap/
 
 build-front/bower_components/
+
+themes/ggproject_ui/css/style.css
