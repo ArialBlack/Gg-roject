@@ -225,3 +225,5 @@ modules/*
 node_modules/
 /.idea
 themes/bootstrap/
+
+build-front/bower_components/
