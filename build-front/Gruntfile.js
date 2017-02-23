@@ -25,7 +25,8 @@ module.exports = function(grunt) {
 
                 files: {
                     // files go here, like so:
-                    "../themes/ggproject_ui/templates/page--type-photogallery.tpl.php": "../themes/ggproject_ui/_templates-src/page--type-photogallery.tpl.php"
+                    "../themes/ggproject_ui/templates/page--type-photogallery.tpl.php": "../themes/ggproject_ui/_templates-src/page--type-photogallery.tpl.php",
+                    "../themes/ggproject_ui/templates/page.tpl.php": "../themes/ggproject_ui/_templates-src/page.tpl.php"
                 }
             }
         },

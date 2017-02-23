@@ -1,10 +1,61 @@
+@img-padding: 10px;
+
+.page-banner {
+  background: url('../images/portfolio-bg.jpg') no-repeat center center;
+  background-size: cover;
+
+  h2 {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+h1 {
+  float: left;
+  padding-left: @img-padding;
+}
+
 .back2portfolio {
   float: right;
   color: @gg-gray;
   .font-size(24);
   .f('r');
+  margin-top: 15px;
+  padding-right: @img-padding;
+}
+
+.region-content {
+  clear: both;
 }
 
 .field-name-field-intro {
   margin-top: 60px;
+  margin-bottom: 90px;
+  padding-left: @img-padding;
+  padding-right: @img-padding;
+
+  p {
+    line-height: 200%;
+  }
+}
+
+.field-name-field-photos {
+  margin-top: 20px;
+
+  .field-item {
+    width: 100%;
+
+    @media (min-width: @screen-md-min) {
+      width: 50%;
+    }
+
+    @media (min-width: @screen-lg-min) {
+      width: 33.333%;
+    }
+
+    img {
+      width: 100%;
+      padding: @img-padding;
+    }
+  }
 }

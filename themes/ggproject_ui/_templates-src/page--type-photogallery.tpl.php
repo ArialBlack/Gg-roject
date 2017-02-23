@@ -81,19 +81,15 @@ if ($lang == 'eng') {
 ?>
 
 <!--(bake parts/header.php)-->
+ 
+<div class="page-banner">
+  <div class="inner container">
+    <h2><?php print t('Portfolio'); ?></h2>
+  </div>
+</div>
 
 <div class="main-container <?php print $container_class; ?>">
-
-  <header role="banner" id="page-header">
-    <?php if (!empty($site_slogan)): ?>
-      <p class="lead"><?php print $site_slogan; ?></p>
-    <?php endif; ?>
-
-    <?php print render($page['header']); ?>
-  </header> <!-- /#page-header -->
-
   <div class="row">
-
     <?php if (!empty($page['sidebar_first'])): ?>
       <aside class="col-sm-4" role="complementary">
         <?php print render($page['sidebar_first']); ?>

@@ -8,6 +8,9 @@ function ggproject_block_info() {
   $blocks['ggproject_admin_blocks'] = array(
     'info' => t('GG-project admin blocks'),
   );
+   $blocks['ggproject_serviceviews_blocks'] = array(
+    'info' => t('GG-project serviceviews blocks'),
+   );
 
   return $blocks;
 }
@@ -23,6 +26,11 @@ function ggproject_block_view($delta = '') {
       $block['subject'] = '';
       $block['content'] = _ggproject_admin_block();
       break;
+
+      case 'ggproject_serviceviews_blocks':
+          $block['subject'] = '';
+          $block['content'] = _ggproject_serviceviews_block();
+          break;
   }
 
   return $block;
@@ -92,5 +100,38 @@ function ggproject_form_alter(&$form, &$form_state, $form_id) {
 function ggproject_after_build($form, &$form_state) {
     $form['path']['pathauto'] = FALSE;
     return ($form);
+}
 
+function _ggproject_serviceviews_block() {
+    global $language ;
+    $lang = $language->language;
+
+    if ($lang == 'en') {
+        $lp = '/eng';
+    } else $lp = '';
+
+    $current_path = drupal_get_path_alias();
+
+    if ($current_path == 'services/weddings') {
+        $output = '<ul class="services-menu">';
+        $output = $output . '<li><a class="active" href="/services/weddings">' . t('Weddings') . '</a></li>';
+        $output = $output . '<li><a href="/services/love-story-105-105-105">' . t('Love story') . '</a></li>';
+        $output = $output . '<li><a href="/services/korporativy">' . t('Events') . '</a></li></ul>';
+    }
+
+    if ($current_path == 'services/love-story-105-105-105') {
+        $output = '<ul class="services-menu">';
+        $output = $output . '<li><a href="/services/weddings">' . t('Weddings') . '</a></li>';
+        $output = $output . '<li><a class="active" href="/services/love-story-105-105-105">' . t('Love story') . '</a></li>';
+        $output = $output . '<li><a href="/services/korporativy">' . t('Events') . '</a></li></ul>';
+    }
+
+    if ($current_path == 'services/korporativy') {
+        $output = '<ul class="services-menu">';
+        $output = $output . '<li><a href="/services/weddings">' . t('Weddings') . '</a></li>';
+        $output = $output . '<li><a href="/services/love-story-105-105-105">' . t('Love story') . '</a></li>';
+        $output = $output . '<li><a class="active" href="/services/korporativy">' . t('Events') . '</a></li></ul>';
+    }
+
+    return $output;
 }

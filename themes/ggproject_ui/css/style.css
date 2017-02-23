@@ -9079,8 +9079,9 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 html {
   height: 100%;
   font-size: 24px;
+  color: #231f20;
 }
-/* line 72, ..\themes\ggproject_ui\less\_base.less */
+/* line 73, ..\themes\ggproject_ui\less\_base.less */
 body {
   font-family: 'cormorantregular';
   font-size: 10px;
@@ -9088,7 +9089,7 @@ body {
   line-height: 13.333333333333332px;
   line-height: 1.3333333333333333rem;
 }
-/* line 78, ..\themes\ggproject_ui\less\_base.less */
+/* line 79, ..\themes\ggproject_ui\less\_base.less */
 h1,
 h2,
 h3,
@@ -9100,23 +9101,43 @@ h6 {
   font-size: 20px;
   font-size: 2rem;
 }
-/* line 84, ..\themes\ggproject_ui\less\_base.less */
+/* line 85, ..\themes\ggproject_ui\less\_base.less */
+a {
+  color: #17a6b9;
+  transition: 0.3s all linear;
+}
+/* line 90, ..\themes\ggproject_ui\less\_base.less */
 p {
   margin-bottom: 40px;
 }
-/* line 88, ..\themes\ggproject_ui\less\_base.less */
+/* line 94, ..\themes\ggproject_ui\less\_base.less */
 img {
   max-width: 100%;
   height: auto;
 }
-/* line 93, ..\themes\ggproject_ui\less\_base.less */
+/* line 99, ..\themes\ggproject_ui\less\_base.less */
 .translation_en,
 .translation_uk {
   display: none !important;
 }
-/* line 98, ..\themes\ggproject_ui\less\_base.less */
+/* line 104, ..\themes\ggproject_ui\less\_base.less */
 h1.page-header {
   border: none;
+}
+/* line 108, ..\themes\ggproject_ui\less\_base.less */
+.page-banner {
+  margin-bottom: 60px;
+  min-height: 480px;
+}
+/* line 112, ..\themes\ggproject_ui\less\_base.less */
+.page-banner h1,
+.page-banner h2 {
+  color: white;
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'cormorantbold';
+  font-size: 52.5px;
+  font-size: 5.25rem;
 }
 /*
 *   CSS file with Bootstrap grid classes for screens bigger than 1600px. Just add this file after the Bootstrap CSS file and you will be able to juse col-xl, col-xl-push, hidden-xl, etc.
@@ -9140,13 +9161,13 @@ h1.page-header {
   display: none !important;
 }
 @media (min-width: 1400px) {
-  /* line 41, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 39, ..\themes\ggproject_ui\less\_grid.less */
   .container {
     width: 1370px;
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 47, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 45, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-1,
   .col-xl-2,
   .col-xl-3,
@@ -9161,246 +9182,314 @@ h1.page-header {
   .col-xl-12 {
     float: left;
   }
-  /* line 51, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 49, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-12 {
     width: 100%;
   }
-  /* line 55, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 53, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-11 {
     width: 91.66666667%;
   }
-  /* line 59, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 57, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-10 {
     width: 83.33333333%;
   }
-  /* line 63, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 61, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-9 {
     width: 75%;
   }
-  /* line 67, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 65, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-8 {
     width: 66.66666667%;
   }
-  /* line 71, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 69, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-7 {
     width: 58.33333333%;
   }
-  /* line 75, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 73, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-6 {
     width: 50%;
   }
-  /* line 79, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 77, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-5 {
     width: 41.66666667%;
   }
-  /* line 83, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 81, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-4 {
     width: 33.33333333%;
   }
-  /* line 87, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 85, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-3 {
     width: 25%;
   }
-  /* line 91, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 89, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-2 {
     width: 16.66666667%;
   }
-  /* line 95, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 93, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-1 {
     width: 8.33333333%;
   }
-  /* line 99, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 97, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-pull-12 {
     right: 100%;
   }
-  /* line 103, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 101, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-pull-11 {
     right: 91.66666667%;
   }
-  /* line 107, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 105, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-pull-10 {
     right: 83.33333333%;
   }
-  /* line 111, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 109, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-pull-9 {
     right: 75%;
   }
-  /* line 115, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 113, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-pull-8 {
     right: 66.66666667%;
   }
-  /* line 119, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 117, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-pull-7 {
     right: 58.33333333%;
   }
-  /* line 123, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 121, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-pull-6 {
     right: 50%;
   }
-  /* line 127, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 125, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-pull-5 {
     right: 41.66666667%;
   }
-  /* line 131, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 129, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-pull-4 {
     right: 33.33333333%;
   }
-  /* line 135, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 133, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-pull-3 {
     right: 25%;
   }
-  /* line 139, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 137, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-pull-2 {
     right: 16.66666667%;
   }
-  /* line 143, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 141, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-pull-1 {
     right: 8.33333333%;
   }
-  /* line 147, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 145, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-pull-0 {
     right: auto;
   }
-  /* line 151, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 149, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-push-12 {
     left: 100%;
   }
-  /* line 155, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 153, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-push-11 {
     left: 91.66666667%;
   }
-  /* line 159, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 157, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-push-10 {
     left: 83.33333333%;
   }
-  /* line 163, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 161, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-push-9 {
     left: 75%;
   }
-  /* line 167, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 165, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-push-8 {
     left: 66.66666667%;
   }
-  /* line 171, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 169, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-push-7 {
     left: 58.33333333%;
   }
-  /* line 175, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 173, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-push-6 {
     left: 50%;
   }
-  /* line 179, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 177, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-push-5 {
     left: 41.66666667%;
   }
-  /* line 183, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 181, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-push-4 {
     left: 33.33333333%;
   }
-  /* line 187, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 185, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-push-3 {
     left: 25%;
   }
-  /* line 191, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 189, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-push-2 {
     left: 16.66666667%;
   }
-  /* line 195, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 193, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-push-1 {
     left: 8.33333333%;
   }
-  /* line 199, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 197, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-push-0 {
     left: auto;
   }
-  /* line 203, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 201, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-offset-12 {
     margin-left: 100%;
   }
-  /* line 207, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 205, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-offset-11 {
     margin-left: 91.66666667%;
   }
-  /* line 211, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 209, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-offset-10 {
     margin-left: 83.33333333%;
   }
-  /* line 215, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 213, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-offset-9 {
     margin-left: 75%;
   }
-  /* line 219, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 217, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-offset-8 {
     margin-left: 66.66666667%;
   }
-  /* line 223, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 221, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-offset-7 {
     margin-left: 58.33333333%;
   }
-  /* line 227, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 225, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-offset-6 {
     margin-left: 50%;
   }
-  /* line 231, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 229, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-offset-5 {
     margin-left: 41.66666667%;
   }
-  /* line 235, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 233, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-offset-4 {
     margin-left: 33.33333333%;
   }
-  /* line 239, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 237, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-offset-3 {
     margin-left: 25%;
   }
-  /* line 243, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 241, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-offset-2 {
     margin-left: 16.66666667%;
   }
-  /* line 247, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 245, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-offset-1 {
     margin-left: 8.33333333%;
   }
-  /* line 251, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 249, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-offset-0 {
     margin-left: 0;
   }
-  /* line 255, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 253, ..\themes\ggproject_ui\less\_grid.less */
   .visible-xl {
     display: block !important;
   }
-  /* line 259, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 257, ..\themes\ggproject_ui\less\_grid.less */
   table.visible-xl {
     display: table;
   }
-  /* line 263, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 261, ..\themes\ggproject_ui\less\_grid.less */
   tr.visible-xl {
     display: table-row !important;
   }
-  /* line 267, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 265, ..\themes\ggproject_ui\less\_grid.less */
   th.visible-xl,
   td.visible-xl {
     display: table-cell !important;
   }
-  /* line 271, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 269, ..\themes\ggproject_ui\less\_grid.less */
   .visible-xl-block {
     display: block !important;
   }
-  /* line 275, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 273, ..\themes\ggproject_ui\less\_grid.less */
   .visible-xl-inline {
     display: inline !important;
   }
-  /* line 279, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 277, ..\themes\ggproject_ui\less\_grid.less */
   .visible-xl-inline-block {
     display: inline-block !important;
   }
-  /* line 283, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 281, ..\themes\ggproject_ui\less\_grid.less */
   .hidden-xl {
     display: none !important;
   }
 }
-/* line 1, ..\themes\ggproject_ui\less\parts\portfolio.less */
-.node-type-photogallery .back2portfolio {
+/* line 12, ../themes/ggproject_ui/less/style.less */
+#navbar {
+  background: none;
+  border: none;
+}
+/* line 4, ..\themes\ggproject_ui\less\parts\navbar.less */
+#navbar .menu {
+  float: right;
+}
+/* line 8, ..\themes\ggproject_ui\less\parts\navbar.less */
+#navbar .menu li a {
+  font-size: 7.5px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+/* line 13, ..\themes\ggproject_ui\less\parts\navbar.less */
+#navbar .menu li a:hover,
+#navbar .menu li a:focus {
+  background: none;
+  color: #17a6b9;
+}
+/* line 21, ..\themes\ggproject_ui\less\parts\navbar.less */
+#navbar .menu li.active a {
+  background: none;
+  color: #17a6b9;
+}
+/* line 29, ..\themes\ggproject_ui\less\parts\navbar.less */
+#navbar .region-navigation {
+  float: right;
+  margin-top: 7px;
+}
+/* line 35, ..\themes\ggproject_ui\less\parts\navbar.less */
+#navbar #block-locale-language .block-title {
+  display: none;
+}
+/* line 40, ..\themes\ggproject_ui\less\parts\navbar.less */
+#navbar #block-locale-language .language-switcher-locale-url li {
+  list-style: none;
+}
+/* line 43, ..\themes\ggproject_ui\less\parts\navbar.less */
+#navbar #block-locale-language .language-switcher-locale-url li.active {
+  display: none;
+}
+/* line 47, ..\themes\ggproject_ui\less\parts\navbar.less */
+#navbar #block-locale-language .language-switcher-locale-url li a {
+  font-size: 7.5px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+/* line 3, ..\themes\ggproject_ui\less\parts\portfolio.less */
+.page-services .page-banner {
+  background: url('../images/portfolio-bg.jpg') no-repeat center center;
+  background-size: cover;
+}
+/* line 7, ..\themes\ggproject_ui\less\parts\portfolio.less */
+.page-services .page-banner h2 {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 13, ..\themes\ggproject_ui\less\parts\portfolio.less */
+.page-services h1 {
+  float: left;
+  padding-left: 10px;
+}
+/* line 18, ..\themes\ggproject_ui\less\parts\portfolio.less */
+.page-services .back2portfolio {
   float: right;
   color: #9d9d9d;
   font-size: 10px;
@@ -9408,8 +9497,179 @@ h1.page-header {
   font-weight: normal;
   font-style: normal;
   font-family: 'cormorantregular';
+  margin-top: 15px;
+  padding-right: 10px;
 }
-/* line 8, ..\themes\ggproject_ui\less\parts\portfolio.less */
-.node-type-photogallery .field-name-field-intro {
+/* line 27, ..\themes\ggproject_ui\less\parts\portfolio.less */
+.page-services .region-content {
+  clear: both;
+}
+/* line 31, ..\themes\ggproject_ui\less\parts\portfolio.less */
+.page-services .field-name-field-intro {
   margin-top: 60px;
+  margin-bottom: 90px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* line 37, ..\themes\ggproject_ui\less\parts\portfolio.less */
+.page-services .field-name-field-intro p {
+  line-height: 200%;
+}
+/* line 42, ..\themes\ggproject_ui\less\parts\portfolio.less */
+.page-services .field-name-field-photos {
+  margin-top: 20px;
+}
+/* line 45, ..\themes\ggproject_ui\less\parts\portfolio.less */
+.page-services .field-name-field-photos .field-item {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  /* line 48, ..\themes\ggproject_ui\less\parts\portfolio.less */
+  .page-services .field-name-field-photos .field-item {
+    width: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 52, ..\themes\ggproject_ui\less\parts\portfolio.less */
+  .page-services .field-name-field-photos .field-item {
+    width: 33.333%;
+  }
+}
+/* line 56, ..\themes\ggproject_ui\less\parts\portfolio.less */
+.page-services .field-name-field-photos .field-item img {
+  width: 100%;
+  padding: 10px;
+}
+/* line 2, ..\themes\ggproject_ui\less\parts\portfolio-main-page.less */
+.page-services .page-banner h1 {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+/* line 9, ..\themes\ggproject_ui\less\parts\portfolio-main-page.less */
+.page-services .services-menu {
+  float: right;
+  margin-bottom: 60px;
+  margin-right: 20px;
+}
+/* line 14, ..\themes\ggproject_ui\less\parts\portfolio-main-page.less */
+.page-services .services-menu li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 20px;
+}
+/* line 19, ..\themes\ggproject_ui\less\parts\portfolio-main-page.less */
+.page-services .services-menu li a {
+  padding: 10px 40px;
+  font-size: 11.666666666666668px;
+  font-size: 1.1666666666666667rem;
+  color: #231f20;
+  border: #231f20 2px solid;
+}
+/* line 25, ..\themes\ggproject_ui\less\parts\portfolio-main-page.less */
+.page-services .services-menu li a:hover,
+.page-services .services-menu li a.active {
+  background-color: #17a6b9;
+  border-color: #17a6b9;
+  color: white;
+  text-decoration: none;
+}
+/* line 36, ..\themes\ggproject_ui\less\parts\portfolio-main-page.less */
+.page-services .view-content {
+  clear: both;
+}
+/* line 39, ..\themes\ggproject_ui\less\parts\portfolio-main-page.less */
+.page-services .view-content img {
+  width: 100%;
+}
+/* line 43, ..\themes\ggproject_ui\less\parts\portfolio-main-page.less */
+.page-services .view-content .col {
+  position: relative;
+  margin-bottom: 30px;
+}
+/* line 47, ..\themes\ggproject_ui\less\parts\portfolio-main-page.less */
+.page-services .view-content .col:hover .views-field-title {
+  background: #ffffff;
+}
+/* line 52, ..\themes\ggproject_ui\less\parts\portfolio-main-page.less */
+.page-services .view-content .views-field-title {
+  position: absolute;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  bottom: 0;
+  transition: 0.3s all linear;
+}
+/* line 59, ..\themes\ggproject_ui\less\parts\portfolio-main-page.less */
+.page-services .view-content .views-field-title a {
+  color: #231f20;
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'cormorantbold';
+  font-size: 10px;
+  font-size: 1rem;
+  text-decoration: none;
+  display: block;
+  padding: 15px 30px;
+}
+/* line 1, ..\themes\ggproject_ui\less\parts\news.less */
+.page-news .page-banner {
+  background: url('../images/news-bg.jpg') no-repeat center center;
+  background-size: cover;
+}
+/* line 6, ..\themes\ggproject_ui\less\parts\news.less */
+.page-news .col {
+  margin-bottom: 90px;
+}
+/* line 10, ..\themes\ggproject_ui\less\parts\news.less */
+.page-news .views-field-title {
+  padding: 30px 0;
+}
+/* line 13, ..\themes\ggproject_ui\less\parts\news.less */
+.page-news .views-field-title a {
+  color: #231f20;
+  font-size: 13.333333333333332px;
+  font-size: 1.3333333333333333rem;
+}
+/* line 19, ..\themes\ggproject_ui\less\parts\news.less */
+.page-news .views-field-body {
+  color: #666666;
+  font-size: 7.5px;
+  font-size: 0.75rem;
+  line-height: 10px;
+  line-height: 1rem;
+  margin-bottom: 30px;
+  min-height: 80px;
+}
+/* line 30, ..\themes\ggproject_ui\less\parts\news.less */
+.page-news .views-field-created {
+  color: #9d9d9d;
+  font-size: 10px;
+  font-size: 1rem;
+  float: left;
+}
+/* line 35, ..\themes\ggproject_ui\less\parts\news.less */
+.page-news .views-field-created:before {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 30px;
+  background: #231f20;
+  margin-bottom: 20px;
+}
+/* line 45, ..\themes\ggproject_ui\less\parts\news.less */
+.page-news .views-field-view-node {
+  float: left;
+  margin-top: 23px;
+  padding-left: 75px;
+}
+/* line 50, ..\themes\ggproject_ui\less\parts\news.less */
+.page-news .views-field-view-node a {
+  color: #9d9d9d;
+  font-size: 10px;
+  font-size: 1rem;
+}
+/* line 29, ../themes/ggproject_ui/less/style.less */
+.footer {
+  background: #231f20;
+  color: white;
 }

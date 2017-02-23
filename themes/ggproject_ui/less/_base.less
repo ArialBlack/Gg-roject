@@ -67,6 +67,7 @@
 html {
     height: 100%;
     font-size: @basefontsize * 1px;
+    color: @gg-text;
 }
 
 body {
@@ -79,6 +80,11 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'cormorantsemibold';
     font-weight: normal;
     .font-size(48);
+}
+
+a {
+    color: @gg-link;
+    transition: 0.3s all linear;
 }
 
 p {
@@ -97,4 +103,16 @@ img {
 
 h1.page-header {
     border: none;
+}
+
+.page-banner {
+    margin-bottom: 60px;
+    min-height: 480px; //todo: responsive
+
+    h1,
+    h2 {
+        color: @on-dark;
+        .f('b');
+        .font-size(126); //todo: responsive, todo: vertical align
+    }
 }
