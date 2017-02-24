@@ -1,62 +1,72 @@
-.node-type-photogallery {
-  @img-padding: 10px;
-
+.page-services {
   .page-banner {
     background: url('../images/portfolio-bg.jpg') no-repeat center center;
     background-size: cover;
 
-    h2 {
+    h1 {
       display: inline-block;
       vertical-align: middle;
+      float: none;
     }
   }
 
-  h1 {
-    float: left;
-    padding-left: @img-padding;
-  }
-
-  .back2portfolio {
+  .services-menu {
     float: right;
-    color: @gg-gray;
-    .font-size(24);
-    .f('r');
-    margin-top: 15px;
-    padding-right: @img-padding;
-  }
+    margin-bottom: 60px;
+    margin-right: 20px;
 
-  .region-content {
-    clear: both;
-  }
+    li {
+      list-style: none;
+      display:  inline-block;
+      margin-left: 20px;
 
-  .field-name-field-intro {
-    margin-top: 60px;
-    margin-bottom: 90px;
-    padding-left: @img-padding;
-    padding-right: @img-padding;
+      a {
+        padding: 10px 40px;
+        .font-size(28);
+        color: @gg-text;
+        border: @gg-text 2px solid;
 
-    p {
-      line-height: 200%;
+        &:hover,
+        &.active {
+          background-color: @gg-blue;
+          border: @gg-blue 2px solid;
+          color: @on-dark;
+          text-decoration: none;
+        }
+      }
     }
   }
 
-  .field-name-field-photos {
-    margin-top: 20px;
+  .view-content {
+    clear: both;
 
-    .field-item {
+    img {
       width: 100%;
+    }
 
-      @media (min-width: @screen-md-min) {
-        width: 50%;
+    .col {
+      position: relative;
+      margin-bottom: 30px;
+
+      &:hover .views-field-title {
+        background: rgba(255,255,255, 1);
       }
+    }
 
-      @media (min-width: @screen-lg-min) {
-        width: 33.333%;
-      }
+    .views-field-title {
+      position: absolute;
+      width: 100%;
+      background: rgba(255,255,255, 0.7);
+      bottom: 0;
+      transition: 0.3s all linear;
 
-      img {
-        width: 100%;
-        padding: @img-padding;
+      a {
+        color: @gg-text;
+        .f('b');
+        .font-size(24);
+        text-decoration: none;
+        display: block;
+        padding: 15px 30px;
       }
     }
   }

@@ -28,21 +28,13 @@
     min-height: 80px; //todo equal height
   }
 
-  @mt: 20px;
-  @lh: 3px;
-
   .views-field-created {
     color: @gg-gray;
     .font-size(24);
     float: left;
 
     &:before {
-      content: '';
-      display: block;
-      height: @lh;
-      width: 30px;
-      background: @gg-text;
-      margin-bottom: @mt;
+      .line();
     }
   }
 
@@ -54,7 +46,10 @@
     a {
       color: @gg-gray;
       .font-size(24);
-      //todo: arrow
+
+      &:after {
+        content: '  ›';
+      }
     }
   }
 }

@@ -1,0 +1,61 @@
+.page-testimonials {
+  .page-banner {
+    background: url('../images/news-bg.jpg') no-repeat center center;
+    background-size: cover;
+  }
+
+  .media-left {
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+
+    @media (min-width: @screen-sm-min) {
+      //width: 70%;
+    }
+    @media (min-width: @screen-md-min) {
+      display: table-cell;
+      width: 30%;
+      padding-right: 40px;
+      margin-bottom: 0;
+    }
+    @media (min-width: @screen-lg-min) {
+      width: 40%;
+    }
+  }
+
+  .views-field-title {
+    color: @gg-text;
+    .f('sb');
+    .font-size(48);
+    margin-bottom: 20px;
+  }
+
+  .views-field-created {
+    color: @gg-gray;
+    .font-size(24);
+    margin-bottom: 60px;
+    display: block;
+  }
+
+  .media-body {
+    p {
+      color: @gg-dark-gray;
+      .font-size(22);
+    }
+
+    h4 {
+      color: @gg-blue;
+      .f('r');
+      .font-size(32);
+      .line-height(40);
+    }
+  }
+
+
+  .views-row {
+    margin-bottom: 60px;
+    padding-bottom: 90px;
+    border-bottom: @gg-line 1px solid;
+  }
+
+}

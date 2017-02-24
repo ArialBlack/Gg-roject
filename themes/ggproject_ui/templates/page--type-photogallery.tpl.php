@@ -144,7 +144,7 @@ if ($lang == 'eng') {
       <?php endif; ?>
       <?php print render($title_suffix); ?>
 
-      <a class="back2portfolio" href="<?php print $lang;?>/services/weddings"><?php print t('Back to portfolio'); ?></a> <!--todo icon -->
+      <a class="back2portfolio" href="<?php print $lang;?>/services/weddings"><?php print t('Back to portfolio'); ?>  ›</a>
 
       <?php print $messages; ?>
       <?php if (!empty($tabs)): ?>
