@@ -88,6 +88,10 @@ if ($lang == 'eng') {
   </div>
 </div>
 
+<?php if (!empty($page['precontent'])): ?>
+  <div class="precontent"><?php print render($page['precontent']); ?></div>
+<?php endif; ?>
+
 <div class="main-container <?php print $container_class; ?>">
   <div class="row">
     <?php if (!empty($page['sidebar_first'])): ?>
@@ -131,6 +135,8 @@ if ($lang == 'eng') {
 
   </div>
 </div>
+
+<!--(bake parts/instagram-block.php)-->
 
 <!--(bake parts/footer.php)-->
 

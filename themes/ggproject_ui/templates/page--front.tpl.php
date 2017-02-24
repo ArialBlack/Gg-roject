@@ -118,12 +118,6 @@ if ($lang == 'eng') {
     </div>
 </header>
 
-<div class="page-banner">
-  <div class="inner container">
-    <h2><?php print t('News'); ?></h2>
-  </div>
-</div>
-
 <?php if (!empty($page['precontent'])): ?>
   <div class="precontent"><?php print render($page['precontent']); ?></div>
 <?php endif; ?>
@@ -142,13 +136,8 @@ if ($lang == 'eng') {
       <?php endif; ?>
       <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
       <a id="main-content"></a>
-      <?php print render($title_prefix); ?>
-      <?php if (!empty($title)): ?>
-        <h1 class="page-header"><?php print $title; ?></h1>
-      <?php endif; ?>
-      <?php print render($title_suffix); ?>
 
-      <a class="back2portfolio" href="<?php print $lang;?>/services/weddings"><?php print t('Back to news'); ?>   ›</a>
+      <h1><?php print $title; ?></h1>
 
       <?php print $messages; ?>
       <?php if (!empty($tabs)): ?>
@@ -171,6 +160,10 @@ if ($lang == 'eng') {
 
   </div>
 </div>
+
+<?php if (!empty($page['content_bottom'])): ?>
+  <div class="content-bottom"><?php print render($page['content_bottom']); ?></div>
+<?php endif; ?>
 
 <div class="instagram">
     <p>instagram block here</p>

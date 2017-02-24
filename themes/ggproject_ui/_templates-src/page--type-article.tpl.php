@@ -82,12 +82,15 @@ if ($lang == 'eng') {
 
 <!--(bake parts/header.php)-->
 
-
 <div class="page-banner">
   <div class="inner container">
     <h2><?php print t('News'); ?></h2>
   </div>
 </div>
+
+<?php if (!empty($page['precontent'])): ?>
+  <div class="precontent"><?php print render($page['precontent']); ?></div>
+<?php endif; ?>
 
 <div class="main-container <?php print $container_class; ?>">
   <div class="row">
@@ -132,6 +135,8 @@ if ($lang == 'eng') {
 
   </div>
 </div>
+
+<!--(bake parts/instagram-block.php)-->
 
 <!--(bake parts/footer.php)-->
 

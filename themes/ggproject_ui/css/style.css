@@ -5,6 +5,7 @@
  * these variables directly from ../bootstrap/less/variables.less to this file.
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css';
 /* line 9, ..\build-front\bower_components\bootstrap\less\normalize.less */
 html {
   font-family: sans-serif;
@@ -9184,6 +9185,43 @@ article .field-name-body {
 article .field-name-body p {
   margin-bottom: 20px;
 }
+/* line 165, ..\themes\ggproject_ui\less\_base.less */
+.carousel-fade .carousel-inner .item {
+  transition-property: opacity;
+}
+/* line 169, ..\themes\ggproject_ui\less\_base.less */
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+/* line 175, ..\themes\ggproject_ui\less\_base.less */
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+/* line 181, ..\themes\ggproject_ui\less\_base.less */
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+/* line 190, ..\themes\ggproject_ui\less\_base.less */
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+/* line 195, ..\themes\ggproject_ui\less\_base.less */
+html,
+body,
+.carousel,
+.carousel-inner,
+.carousel-inner .item {
+  height: 100%;
+}
 /*
 *   CSS file with Bootstrap grid classes for screens bigger than 1600px. Just add this file after the Bootstrap CSS file and you will be able to juse col-xl, col-xl-push, hidden-xl, etc.
 *
@@ -9522,6 +9560,46 @@ article .field-name-body p {
 .footer {
   background: #231f20;
   color: white;
+}
+/* line 5, ..\themes\ggproject_ui\less\parts\footer.less */
+.footer .block {
+  width: 100%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  float: left;
+}
+@media (min-width: 768px) {
+  /* line 13, ..\themes\ggproject_ui\less\parts\footer.less */
+  .footer .block {
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  /* line 16, ..\themes\ggproject_ui\less\parts\footer.less */
+  .footer .block {
+    width: 25%;
+  }
+}
+/* line 22, ..\themes\ggproject_ui\less\parts\footer.less */
+.footer .clogos_slab {
+  width: 60px;
+  background: url(../images/slab-logo.png) no-repeat;
+  height: 49px;
+  margin-right: 20px;
+  display: block;
+  text-indent: -9999px;
+}
+/* line 30, ..\themes\ggproject_ui\less\parts\footer.less */
+.footer .clogos_slab:hover {
+  background: url(../images/slab-logo-ani.gif) no-repeat;
+}
+/* line 35, ..\themes\ggproject_ui\less\parts\footer.less */
+.footer .ctext {
+  font-size: 4.166666666666667px;
+  font-size: 0.4166666666666667rem;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 /* line 2, ..\themes\ggproject_ui\less\parts\event.less */
 .node-type-photogallery .page-banner {
@@ -9959,4 +10037,123 @@ article .field-name-body p {
   margin-bottom: 60px;
   padding-bottom: 90px;
   border-bottom: #d5d6d8 1px solid;
+}
+/* line 3, ..\themes\ggproject_ui\less\parts\contacts.less */
+.page-node-265 .page-banner,
+.page-node-266 .page-banner {
+  background: url('../images/contacts-bg.jpg') no-repeat center center;
+  background-size: cover;
+  margin-bottom: 40px;
+}
+/* line 9, ..\themes\ggproject_ui\less\parts\contacts.less */
+.page-node-265 iframe,
+.page-node-266 iframe {
+  margin-top: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: none;
+}
+/* line 2, ..\themes\ggproject_ui\less\parts\front.less */
+.front #carousel {
+  height: 700px;
+}
+/* line 5, ..\themes\ggproject_ui\less\parts\front.less */
+.front #carousel .item:nth-child(1) {
+  background: url('../images/slider-1.jpg') no-repeat center center;
+  background-size: cover;
+}
+/* line 10, ..\themes\ggproject_ui\less\parts\front.less */
+.front #carousel .item:nth-child(2) {
+  background: url('../images/slider-2.jpg') no-repeat center center;
+  background-size: cover;
+}
+/* line 15, ..\themes\ggproject_ui\less\parts\front.less */
+.front #carousel .item:nth-child(3) {
+  background: url('../images/slider-3.jpg') no-repeat center center;
+  background-size: cover;
+}
+/* line 20, ..\themes\ggproject_ui\less\parts\front.less */
+.front #carousel .item:nth-child(4) {
+  background: url('../images/slider-4.jpg') no-repeat center center;
+  background-size: cover;
+}
+/* line 25, ..\themes\ggproject_ui\less\parts\front.less */
+.front #carousel .carousel-indicators {
+  bottom: -60px;
+}
+/* line 28, ..\themes\ggproject_ui\less\parts\front.less */
+.front #carousel .carousel-indicators li {
+  border: black 1px solid;
+  border-radius: 0;
+  margin-left: 1px;
+  margin-right: 1px;
+}
+/* line 34, ..\themes\ggproject_ui\less\parts\front.less */
+.front #carousel .carousel-indicators li.active {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border: black 1px solid;
+}
+/* line 45, ..\themes\ggproject_ui\less\parts\front.less */
+.front .block-on-banner .container {
+  text-align: center;
+}
+/* line 49, ..\themes\ggproject_ui\less\parts\front.less */
+.front .block-on-banner .inner {
+  position: absolute;
+  bottom: 20%;
+  display: inline-block;
+}
+/* line 56, ..\themes\ggproject_ui\less\parts\front.less */
+.front .main-container {
+  margin-top: 60px;
+}
+/* line 60, ..\themes\ggproject_ui\less\parts\front.less */
+.front .content-bottom {
+  background: url('../images/slider-5.jpg') no-repeat center center;
+  background-size: cover;
+  height: 700px;
+}
+/* line 65, ..\themes\ggproject_ui\less\parts\front.less */
+.front .content-bottom .region-content-bottom {
+  position: relative;
+  height: 100%;
+}
+/* line 70, ..\themes\ggproject_ui\less\parts\front.less */
+.front .content-bottom #block-block-4 {
+  display: inline-block;
+  padding: 100px 150px;
+  background: rgba(255, 255, 255, 0.8);
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'cormorantmedium';
+  font-size: 13.333333333333332px;
+  font-size: 1.3333333333333333rem;
+  line-height: 17.5px;
+  line-height: 1.75rem;
+  width: 90%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+@media (min-width: 768px) {
+  /* line 83, ..\themes\ggproject_ui\less\parts\front.less */
+  .front .content-bottom #block-block-4 {
+    width: 80%;
+  }
+}
+@media (min-width: 992px) {
+  /* line 86, ..\themes\ggproject_ui\less\parts\front.less */
+  .front .content-bottom #block-block-4 {
+    width: 70%;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 89, ..\themes\ggproject_ui\less\parts\front.less */
+  .front .content-bottom #block-block-4 {
+    width: 60%;
+  }
 }

@@ -124,6 +124,10 @@ if ($lang == 'eng') {
   </div>
 </div>
 
+<?php if (!empty($page['precontent'])): ?>
+  <div class="precontent"><?php print render($page['precontent']); ?></div>
+<?php endif; ?>
+
 <div class="main-container <?php print $container_class; ?>">
   <div class="row">
     <?php if (!empty($page['sidebar_first'])): ?>
@@ -166,6 +170,11 @@ if ($lang == 'eng') {
     <?php endif; ?>
 
   </div>
+</div>
+
+<div class="instagram">
+    <p>instagram block here</p>
+    <div id="instafeed"></div>
 </div>
 
 <?php if (!empty($page['footer'])): ?>

@@ -51,6 +51,7 @@ scripts[] = 'js/tooltip.js'
 scripts[] = 'js/popover.js'
 ;scripts[] = 'js/jquery.waypoints.min.js'
 scripts[] = 'js/masonry.pkgd.min.js'
+scripts[] = 'js/instafeed.min.js'
 scripts[] = 'js/main.js'
 
 

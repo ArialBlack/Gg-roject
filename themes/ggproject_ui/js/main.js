@@ -8,10 +8,19 @@
                 columnWidth: '.field-item'
             });
         }
-        
+
 
         $( document ).ready(function() {
             console.log('---------------run!');
+            $('.carousel').carousel();
+
+            var userFeed = new Instafeed({
+                get: 'user',
+                userId: '',
+                accessToken: ''
+            });
+            userFeed.run();
+
         });
 
         $(window).load(function() {
