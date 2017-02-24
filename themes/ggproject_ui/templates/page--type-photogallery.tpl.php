@@ -106,33 +106,30 @@ if ($lang == 'eng') {
         <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
             <div class="navbar-collapse collapse">
                 <nav role="navigation">
-                    <?php if (!empty($primary_nav)): ?>
-                        <?php print render($primary_nav); ?>
-                    <?php endif; ?>
-                    <?php if (!empty($secondary_nav)): ?>
-                        <?php print render($secondary_nav); ?>
-                    <?php endif; ?>
                     <?php if (!empty($page['navigation'])): ?>
                         <?php print render($page['navigation']); ?>
+                    <?php endif; ?>
+                    <?php if (!empty($primary_nav)): ?>
+                        <?php print render($primary_nav); ?>
                     <?php endif; ?>
                 </nav>
             </div>
         <?php endif; ?>
     </div>
 </header>
+ 
+<div class="page-banner">
+  <div class="inner container">
+    <h2><?php print t('Portfolio'); ?></h2>
+  </div>
+</div>
+
+<?php if (!empty($page['precontent'])): ?>
+  <div class="precontent"><?php print render($page['precontent']); ?></div>
+<?php endif; ?>
 
 <div class="main-container <?php print $container_class; ?>">
-
-  <header role="banner" id="page-header">
-    <?php if (!empty($site_slogan)): ?>
-      <p class="lead"><?php print $site_slogan; ?></p>
-    <?php endif; ?>
-
-    <?php print render($page['header']); ?>
-  </header> <!-- /#page-header -->
-
   <div class="row">
-
     <?php if (!empty($page['sidebar_first'])): ?>
       <aside class="col-sm-4" role="complementary">
         <?php print render($page['sidebar_first']); ?>
@@ -151,7 +148,7 @@ if ($lang == 'eng') {
       <?php endif; ?>
       <?php print render($title_suffix); ?>
 
-      <a class="back2portfolio" href="<?php print $lang;?>/services/weddings"><?php print t('Back to portfolio'); ?></a> <!--todo icon -->
+      <a class="back2portfolio" href="<?php print $lang;?>/services/weddings"><?php print t('Back to portfolio'); ?>  ›</a>
 
       <?php print $messages; ?>
       <?php if (!empty($tabs)): ?>
@@ -175,9 +172,16 @@ if ($lang == 'eng') {
   </div>
 </div>
 
+<div class="instagram">
+    <p>instagram block here</p>
+    <div id="instafeed"></div>
+</div>
+
 <?php if (!empty($page['footer'])): ?>
-    <footer class="footer <?php print $container_class; ?>">
-        <?php print render($page['footer']); ?>
+    <footer class="footer">
+        <div class="container">
+            <?php print render($page['footer']); ?>
+        </div>
     </footer>
 <?php endif; ?>
 

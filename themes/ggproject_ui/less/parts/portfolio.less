@@ -1,10 +1,74 @@
-.back2portfolio {
-  float: right;
-  color: @gg-gray;
-  .font-size(24);
-  .f('r');
+.page-services {
+  .page-banner {
+    background: url('../images/portfolio-bg.jpg') no-repeat center center;
+    background-size: cover;
+
+    h1 {
+      display: inline-block;
+      vertical-align: middle;
+      float: none;
+    }
+  }
+
+  .services-menu {
+    float: right;
+    margin-bottom: 60px;
+    margin-right: 20px;
+
+    li {
+      list-style: none;
+      display:  inline-block;
+      margin-left: 20px;
+
+      a {
+        padding: 10px 40px;
+        .font-size(28);
+        color: @gg-text;
+        border: @gg-text 2px solid;
+
+        &:hover,
+        &.active {
+          background-color: @gg-blue;
+          border: @gg-blue 2px solid;
+          color: @on-dark;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .view-content {
+    clear: both;
+
+    img {
+      width: 100%;
+    }
+
+    .col {
+      position: relative;
+      margin-bottom: 30px;
+
+      &:hover .views-field-title {
+        background: rgba(255,255,255, 1);
+      }
+    }
+
+    .views-field-title {
+      position: absolute;
+      width: 100%;
+      background: rgba(255,255,255, 0.7);
+      bottom: 0;
+      transition: 0.3s all linear;
+
+      a {
+        color: @gg-text;
+        .f('b');
+        .font-size(24);
+        text-decoration: none;
+        display: block;
+        padding: 15px 30px;
+      }
+    }
+  }
 }
 
-.field-name-field-intro {
-  margin-top: 60px;
-}

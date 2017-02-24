@@ -5,6 +5,7 @@
  * these variables directly from ../bootstrap/less/variables.less to this file.
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css';
 /* line 9, ..\build-front\bower_components\bootstrap\less\normalize.less */
 html {
   font-family: sans-serif;
@@ -9079,8 +9080,9 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 html {
   height: 100%;
   font-size: 24px;
+  color: #231f20;
 }
-/* line 72, ..\themes\ggproject_ui\less\_base.less */
+/* line 73, ..\themes\ggproject_ui\less\_base.less */
 body {
   font-family: 'cormorantregular';
   font-size: 10px;
@@ -9088,7 +9090,7 @@ body {
   line-height: 13.333333333333332px;
   line-height: 1.3333333333333333rem;
 }
-/* line 78, ..\themes\ggproject_ui\less\_base.less */
+/* line 79, ..\themes\ggproject_ui\less\_base.less */
 h1,
 h2,
 h3,
@@ -9100,23 +9102,125 @@ h6 {
   font-size: 20px;
   font-size: 2rem;
 }
-/* line 84, ..\themes\ggproject_ui\less\_base.less */
+/* line 85, ..\themes\ggproject_ui\less\_base.less */
+a {
+  color: #17a6b9;
+  transition: 0.3s all linear;
+}
+/* line 90, ..\themes\ggproject_ui\less\_base.less */
 p {
   margin-bottom: 40px;
 }
-/* line 88, ..\themes\ggproject_ui\less\_base.less */
+/* line 94, ..\themes\ggproject_ui\less\_base.less */
 img {
   max-width: 100%;
   height: auto;
 }
-/* line 93, ..\themes\ggproject_ui\less\_base.less */
+/* line 99, ..\themes\ggproject_ui\less\_base.less */
 .translation_en,
 .translation_uk {
   display: none !important;
 }
-/* line 98, ..\themes\ggproject_ui\less\_base.less */
+/* line 104, ..\themes\ggproject_ui\less\_base.less */
 h1.page-header {
   border: none;
+}
+/* line 108, ..\themes\ggproject_ui\less\_base.less */
+.page-banner {
+  margin-bottom: 60px;
+  min-height: 480px;
+}
+/* line 112, ..\themes\ggproject_ui\less\_base.less */
+.page-banner h1,
+.page-banner h2 {
+  color: white;
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'cormorantbold';
+  font-size: 52.5px;
+  font-size: 5.25rem;
+}
+/* line 122, ..\themes\ggproject_ui\less\_base.less */
+.pager.pager-load-more a {
+  background-color: #231f20;
+  border: none;
+  border-radius: 0;
+  color: white;
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'cormorantmedium';
+  font-size: 11.666666666666668px;
+  font-size: 1.1666666666666667rem;
+  padding: 10px 35px;
+}
+/* line 131, ..\themes\ggproject_ui\less\_base.less */
+.pager.pager-load-more a:hover {
+  background-color: #17a6b9;
+}
+/* line 138, ..\themes\ggproject_ui\less\_base.less */
+.region-content ul.flippy {
+  margin-top: 60px;
+}
+/* line 142, ..\themes\ggproject_ui\less\_base.less */
+.back2portfolio {
+  float: right;
+  color: #9d9d9d;
+  font-size: 10px;
+  font-size: 1rem;
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'cormorantregular';
+  margin-top: 15px;
+  padding-right: 10px;
+}
+/* line 152, ..\themes\ggproject_ui\less\_base.less */
+article .field-name-body {
+  color: #666666;
+  font-size: 9.166666666666666px;
+  font-size: 0.9166666666666666rem;
+  line-height: 13.333333333333332px;
+  line-height: 1.3333333333333333rem;
+}
+/* line 157, ..\themes\ggproject_ui\less\_base.less */
+article .field-name-body p {
+  margin-bottom: 20px;
+}
+/* line 165, ..\themes\ggproject_ui\less\_base.less */
+.carousel-fade .carousel-inner .item {
+  transition-property: opacity;
+}
+/* line 169, ..\themes\ggproject_ui\less\_base.less */
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+/* line 175, ..\themes\ggproject_ui\less\_base.less */
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+/* line 181, ..\themes\ggproject_ui\less\_base.less */
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+/* line 190, ..\themes\ggproject_ui\less\_base.less */
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+/* line 195, ..\themes\ggproject_ui\less\_base.less */
+html,
+body,
+.carousel,
+.carousel-inner,
+.carousel-inner .item {
+  height: 100%;
 }
 /*
 *   CSS file with Bootstrap grid classes for screens bigger than 1600px. Just add this file after the Bootstrap CSS file and you will be able to juse col-xl, col-xl-push, hidden-xl, etc.
@@ -9140,13 +9244,13 @@ h1.page-header {
   display: none !important;
 }
 @media (min-width: 1400px) {
-  /* line 41, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 39, ..\themes\ggproject_ui\less\_grid.less */
   .container {
     width: 1370px;
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 47, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 45, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-1,
   .col-xl-2,
   .col-xl-3,
@@ -9161,255 +9265,895 @@ h1.page-header {
   .col-xl-12 {
     float: left;
   }
-  /* line 51, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 49, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-12 {
     width: 100%;
   }
-  /* line 55, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 53, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-11 {
     width: 91.66666667%;
   }
-  /* line 59, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 57, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-10 {
     width: 83.33333333%;
   }
-  /* line 63, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 61, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-9 {
     width: 75%;
   }
-  /* line 67, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 65, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-8 {
     width: 66.66666667%;
   }
-  /* line 71, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 69, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-7 {
     width: 58.33333333%;
   }
-  /* line 75, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 73, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-6 {
     width: 50%;
   }
-  /* line 79, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 77, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-5 {
     width: 41.66666667%;
   }
-  /* line 83, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 81, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-4 {
     width: 33.33333333%;
   }
-  /* line 87, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 85, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-3 {
     width: 25%;
   }
-  /* line 91, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 89, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-2 {
     width: 16.66666667%;
   }
-  /* line 95, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 93, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-1 {
     width: 8.33333333%;
   }
-  /* line 99, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 97, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-pull-12 {
     right: 100%;
   }
-  /* line 103, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 101, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-pull-11 {
     right: 91.66666667%;
   }
-  /* line 107, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 105, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-pull-10 {
     right: 83.33333333%;
   }
-  /* line 111, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 109, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-pull-9 {
     right: 75%;
   }
-  /* line 115, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 113, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-pull-8 {
     right: 66.66666667%;
   }
-  /* line 119, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 117, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-pull-7 {
     right: 58.33333333%;
   }
-  /* line 123, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 121, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-pull-6 {
     right: 50%;
   }
-  /* line 127, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 125, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-pull-5 {
     right: 41.66666667%;
   }
-  /* line 131, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 129, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-pull-4 {
     right: 33.33333333%;
   }
-  /* line 135, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 133, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-pull-3 {
     right: 25%;
   }
-  /* line 139, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 137, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-pull-2 {
     right: 16.66666667%;
   }
-  /* line 143, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 141, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-pull-1 {
     right: 8.33333333%;
   }
-  /* line 147, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 145, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-pull-0 {
     right: auto;
   }
-  /* line 151, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 149, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-push-12 {
     left: 100%;
   }
-  /* line 155, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 153, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-push-11 {
     left: 91.66666667%;
   }
-  /* line 159, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 157, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-push-10 {
     left: 83.33333333%;
   }
-  /* line 163, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 161, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-push-9 {
     left: 75%;
   }
-  /* line 167, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 165, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-push-8 {
     left: 66.66666667%;
   }
-  /* line 171, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 169, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-push-7 {
     left: 58.33333333%;
   }
-  /* line 175, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 173, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-push-6 {
     left: 50%;
   }
-  /* line 179, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 177, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-push-5 {
     left: 41.66666667%;
   }
-  /* line 183, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 181, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-push-4 {
     left: 33.33333333%;
   }
-  /* line 187, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 185, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-push-3 {
     left: 25%;
   }
-  /* line 191, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 189, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-push-2 {
     left: 16.66666667%;
   }
-  /* line 195, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 193, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-push-1 {
     left: 8.33333333%;
   }
-  /* line 199, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 197, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-push-0 {
     left: auto;
   }
-  /* line 203, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 201, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-offset-12 {
     margin-left: 100%;
   }
-  /* line 207, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 205, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-offset-11 {
     margin-left: 91.66666667%;
   }
-  /* line 211, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 209, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-offset-10 {
     margin-left: 83.33333333%;
   }
-  /* line 215, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 213, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-offset-9 {
     margin-left: 75%;
   }
-  /* line 219, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 217, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-offset-8 {
     margin-left: 66.66666667%;
   }
-  /* line 223, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 221, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-offset-7 {
     margin-left: 58.33333333%;
   }
-  /* line 227, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 225, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-offset-6 {
     margin-left: 50%;
   }
-  /* line 231, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 229, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-offset-5 {
     margin-left: 41.66666667%;
   }
-  /* line 235, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 233, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-offset-4 {
     margin-left: 33.33333333%;
   }
-  /* line 239, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 237, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-offset-3 {
     margin-left: 25%;
   }
-  /* line 243, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 241, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-offset-2 {
     margin-left: 16.66666667%;
   }
-  /* line 247, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 245, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-offset-1 {
     margin-left: 8.33333333%;
   }
-  /* line 251, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 249, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-offset-0 {
     margin-left: 0;
   }
-  /* line 255, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 253, ..\themes\ggproject_ui\less\_grid.less */
   .visible-xl {
     display: block !important;
   }
-  /* line 259, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 257, ..\themes\ggproject_ui\less\_grid.less */
   table.visible-xl {
     display: table;
   }
-  /* line 263, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 261, ..\themes\ggproject_ui\less\_grid.less */
   tr.visible-xl {
     display: table-row !important;
   }
-  /* line 267, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 265, ..\themes\ggproject_ui\less\_grid.less */
   th.visible-xl,
   td.visible-xl {
     display: table-cell !important;
   }
-  /* line 271, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 269, ..\themes\ggproject_ui\less\_grid.less */
   .visible-xl-block {
     display: block !important;
   }
-  /* line 275, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 273, ..\themes\ggproject_ui\less\_grid.less */
   .visible-xl-inline {
     display: inline !important;
   }
-  /* line 279, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 277, ..\themes\ggproject_ui\less\_grid.less */
   .visible-xl-inline-block {
     display: inline-block !important;
   }
-  /* line 283, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 281, ..\themes\ggproject_ui\less\_grid.less */
   .hidden-xl {
     display: none !important;
   }
 }
-/* line 1, ..\themes\ggproject_ui\less\parts\portfolio.less */
-.node-type-photogallery .back2portfolio {
+/* line 1, ..\themes\ggproject_ui\less\parts\navbar.less */
+#navbar {
+  background: none;
+  border: none;
+}
+/* line 5, ..\themes\ggproject_ui\less\parts\navbar.less */
+#navbar .menu {
   float: right;
+}
+/* line 9, ..\themes\ggproject_ui\less\parts\navbar.less */
+#navbar .menu li a {
+  font-size: 7.5px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+/* line 14, ..\themes\ggproject_ui\less\parts\navbar.less */
+#navbar .menu li a:hover,
+#navbar .menu li a:focus {
+  background: none;
+  color: #17a6b9;
+}
+/* line 22, ..\themes\ggproject_ui\less\parts\navbar.less */
+#navbar .menu li.active a {
+  background: none;
+  color: #17a6b9;
+}
+/* line 30, ..\themes\ggproject_ui\less\parts\navbar.less */
+#navbar .region-navigation {
+  float: right;
+  margin-top: 7px;
+}
+/* line 36, ..\themes\ggproject_ui\less\parts\navbar.less */
+#navbar #block-locale-language .block-title {
+  display: none;
+}
+/* line 41, ..\themes\ggproject_ui\less\parts\navbar.less */
+#navbar #block-locale-language .language-switcher-locale-url li {
+  list-style: none;
+}
+/* line 44, ..\themes\ggproject_ui\less\parts\navbar.less */
+#navbar #block-locale-language .language-switcher-locale-url li.active {
+  display: none;
+}
+/* line 48, ..\themes\ggproject_ui\less\parts\navbar.less */
+#navbar #block-locale-language .language-switcher-locale-url li a {
+  font-size: 7.5px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+/* line 1, ..\themes\ggproject_ui\less\parts\footer.less */
+.footer {
+  background: #231f20;
+  color: white;
+}
+/* line 5, ..\themes\ggproject_ui\less\parts\footer.less */
+.footer .block {
+  width: 100%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  float: left;
+}
+@media (min-width: 768px) {
+  /* line 13, ..\themes\ggproject_ui\less\parts\footer.less */
+  .footer .block {
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  /* line 16, ..\themes\ggproject_ui\less\parts\footer.less */
+  .footer .block {
+    width: 25%;
+  }
+}
+/* line 22, ..\themes\ggproject_ui\less\parts\footer.less */
+.footer .clogos_slab {
+  width: 60px;
+  background: url(../images/slab-logo.png) no-repeat;
+  height: 49px;
+  margin-right: 20px;
+  display: block;
+  text-indent: -9999px;
+}
+/* line 30, ..\themes\ggproject_ui\less\parts\footer.less */
+.footer .clogos_slab:hover {
+  background: url(../images/slab-logo-ani.gif) no-repeat;
+}
+/* line 35, ..\themes\ggproject_ui\less\parts\footer.less */
+.footer .ctext {
+  font-size: 4.166666666666667px;
+  font-size: 0.4166666666666667rem;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/* line 2, ..\themes\ggproject_ui\less\parts\event.less */
+.node-type-photogallery .page-banner {
+  background: url('../images/portfolio-bg.jpg') no-repeat center center;
+  background-size: cover;
+}
+/* line 6, ..\themes\ggproject_ui\less\parts\event.less */
+.node-type-photogallery .page-banner h2 {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 12, ..\themes\ggproject_ui\less\parts\event.less */
+.node-type-photogallery h1 {
+  float: left;
+  padding-left: 10px;
+}
+/* line 17, ..\themes\ggproject_ui\less\parts\event.less */
+.node-type-photogallery .region-content {
+  clear: both;
+}
+/* line 22, ..\themes\ggproject_ui\less\parts\event.less */
+.field-name-field-intro {
+  margin-top: 60px;
+  margin-bottom: 90px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* line 28, ..\themes\ggproject_ui\less\parts\event.less */
+.field-name-field-intro p {
+  line-height: 200%;
+}
+/* line 33, ..\themes\ggproject_ui\less\parts\event.less */
+.field-name-field-photos {
+  margin-top: 20px;
+}
+/* line 36, ..\themes\ggproject_ui\less\parts\event.less */
+.field-name-field-photos .field-item {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  /* line 39, ..\themes\ggproject_ui\less\parts\event.less */
+  .field-name-field-photos .field-item {
+    width: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 43, ..\themes\ggproject_ui\less\parts\event.less */
+  .field-name-field-photos .field-item {
+    width: 33.333%;
+  }
+}
+/* line 47, ..\themes\ggproject_ui\less\parts\event.less */
+.field-name-field-photos .field-item img {
+  width: 100%;
+  padding: 10px;
+}
+/* line 2, ..\themes\ggproject_ui\less\parts\portfolio.less */
+.page-services .page-banner {
+  background: url('../images/portfolio-bg.jpg') no-repeat center center;
+  background-size: cover;
+}
+/* line 6, ..\themes\ggproject_ui\less\parts\portfolio.less */
+.page-services .page-banner h1 {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+/* line 13, ..\themes\ggproject_ui\less\parts\portfolio.less */
+.page-services .services-menu {
+  float: right;
+  margin-bottom: 60px;
+  margin-right: 20px;
+}
+/* line 18, ..\themes\ggproject_ui\less\parts\portfolio.less */
+.page-services .services-menu li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 20px;
+}
+/* line 23, ..\themes\ggproject_ui\less\parts\portfolio.less */
+.page-services .services-menu li a {
+  padding: 10px 40px;
+  font-size: 11.666666666666668px;
+  font-size: 1.1666666666666667rem;
+  color: #231f20;
+  border: #231f20 2px solid;
+}
+/* line 29, ..\themes\ggproject_ui\less\parts\portfolio.less */
+.page-services .services-menu li a:hover,
+.page-services .services-menu li a.active {
+  background-color: #17a6b9;
+  border: #17a6b9 2px solid;
+  color: white;
+  text-decoration: none;
+}
+/* line 40, ..\themes\ggproject_ui\less\parts\portfolio.less */
+.page-services .view-content {
+  clear: both;
+}
+/* line 43, ..\themes\ggproject_ui\less\parts\portfolio.less */
+.page-services .view-content img {
+  width: 100%;
+}
+/* line 47, ..\themes\ggproject_ui\less\parts\portfolio.less */
+.page-services .view-content .col {
+  position: relative;
+  margin-bottom: 30px;
+}
+/* line 51, ..\themes\ggproject_ui\less\parts\portfolio.less */
+.page-services .view-content .col:hover .views-field-title {
+  background: #ffffff;
+}
+/* line 56, ..\themes\ggproject_ui\less\parts\portfolio.less */
+.page-services .view-content .views-field-title {
+  position: absolute;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  bottom: 0;
+  transition: 0.3s all linear;
+}
+/* line 63, ..\themes\ggproject_ui\less\parts\portfolio.less */
+.page-services .view-content .views-field-title a {
+  color: #231f20;
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'cormorantbold';
+  font-size: 10px;
+  font-size: 1rem;
+  text-decoration: none;
+  display: block;
+  padding: 15px 30px;
+}
+/* line 3, ..\themes\ggproject_ui\less\parts\news.less */
+.node-type-article .page-banner,
+.page-news .page-banner {
+  background: url('../images/news-bg.jpg') no-repeat center center;
+  background-size: cover;
+}
+/* line 10, ..\themes\ggproject_ui\less\parts\news.less */
+.page-news .col {
+  margin-bottom: 90px;
+}
+/* line 14, ..\themes\ggproject_ui\less\parts\news.less */
+.page-news .views-field-title {
+  padding: 30px 0;
+}
+/* line 17, ..\themes\ggproject_ui\less\parts\news.less */
+.page-news .views-field-title a {
+  color: #231f20;
+  font-size: 13.333333333333332px;
+  font-size: 1.3333333333333333rem;
+}
+/* line 23, ..\themes\ggproject_ui\less\parts\news.less */
+.page-news .views-field-body {
+  color: #666666;
+  font-size: 7.5px;
+  font-size: 0.75rem;
+  line-height: 10px;
+  line-height: 1rem;
+  margin-bottom: 30px;
+  min-height: 80px;
+}
+/* line 31, ..\themes\ggproject_ui\less\parts\news.less */
+.page-news .views-field-created {
   color: #9d9d9d;
   font-size: 10px;
   font-size: 1rem;
+  float: left;
+}
+/* line 36, ..\themes\ggproject_ui\less\parts\news.less */
+.page-news .views-field-created:before {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 30px;
+  background: #231f20;
+  margin-bottom: 20px;
+}
+/* line 41, ..\themes\ggproject_ui\less\parts\news.less */
+.page-news .views-field-view-node {
+  float: left;
+  margin-top: 23px;
+  padding-left: 75px;
+}
+/* line 46, ..\themes\ggproject_ui\less\parts\news.less */
+.page-news .views-field-view-node a {
+  color: #9d9d9d;
+  font-size: 10px;
+  font-size: 1rem;
+}
+/* line 50, ..\themes\ggproject_ui\less\parts\news.less */
+.page-news .views-field-view-node a:after {
+  content: '  ›';
+}
+/* line 2, ..\themes\ggproject_ui\less\parts\news-article.less */
+.node-type-article h1 {
+  float: left;
+}
+/* line 6, ..\themes\ggproject_ui\less\parts\news-article.less */
+.node-type-article .back2portfolio {
+  padding-right: 0;
+}
+/* line 10, ..\themes\ggproject_ui\less\parts\news-article.less */
+.node-type-article .region-content {
+  clear: both;
+}
+/* line 14, ..\themes\ggproject_ui\less\parts\news-article.less */
+.node-type-article .submitted-by {
+  color: #9d9d9d;
+  font-size: 10px;
+  font-size: 1rem;
+  margin-bottom: 60px;
+  display: block;
+}
+/* line 21, ..\themes\ggproject_ui\less\parts\news-article.less */
+.node-type-article .field-name-field-image {
+  float: left;
+  padding-right: 40px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+/* line 29, ..\themes\ggproject_ui\less\parts\news-article.less */
+.node-type-article .field-name-field-existing-gallery h2 {
+  display: none;
+}
+/* line 33, ..\themes\ggproject_ui\less\parts\news-article.less */
+.node-type-article .field-name-field-existing-gallery .field-name-field-intro {
+  margin-bottom: 0;
+}
+/* line 36, ..\themes\ggproject_ui\less\parts\news-article.less */
+.node-type-article .field-name-field-existing-gallery .field-name-field-intro:before {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 30px;
+  background: #231f20;
+  margin-bottom: 20px;
+}
+/* line 42, ..\themes\ggproject_ui\less\parts\news-article.less */
+.node-type-article blockquote {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-left: 40px;
+}
+/* line 47, ..\themes\ggproject_ui\less\parts\news-article.less */
+.node-type-article blockquote p {
+  background-color: #9d9d9d;
+  color: white;
+  margin-bottom: 0;
+  display: inline-block;
+  padding: 20px 40px;
+  font-size: 9.166666666666666px;
+  font-size: 0.9166666666666666rem;
+  line-height: 13.333333333333332px;
+  line-height: 1.3333333333333333rem;
+  width: 80%;
+}
+@media (min-width: 768px) {
+  /* line 58, ..\themes\ggproject_ui\less\parts\news-article.less */
+  .node-type-article blockquote p {
+    width: 70%;
+  }
+}
+@media (min-width: 992px) {
+  /* line 61, ..\themes\ggproject_ui\less\parts\news-article.less */
+  .node-type-article blockquote p {
+    width: 60%;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 64, ..\themes\ggproject_ui\less\parts\news-article.less */
+  .node-type-article blockquote p {
+    width: 50%;
+  }
+}
+/* line 3, ..\themes\ggproject_ui\less\parts\booking.less */
+.page-node-200 .page-banner,
+.page-node-201 .page-banner {
+  background: url('../images/booking-bg.jpg') no-repeat center center;
+  background-size: cover;
+}
+/* line 8, ..\themes\ggproject_ui\less\parts\booking.less */
+.page-node-200 .views-field-title,
+.page-node-201 .views-field-title {
+  padding: 30px 0;
+  color: #231f20;
+  font-size: 13.333333333333332px;
+  font-size: 1.3333333333333333rem;
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'cormorantbold';
+}
+/* line 15, ..\themes\ggproject_ui\less\parts\booking.less */
+.page-node-200 .col,
+.page-node-201 .col {
+  margin-bottom: 60px;
+}
+/* line 18, ..\themes\ggproject_ui\less\parts\booking.less */
+.page-node-200 .col img,
+.page-node-201 .col img {
+  width: 100%;
+}
+/* line 23, ..\themes\ggproject_ui\less\parts\booking.less */
+.page-node-200 .nav-tabs,
+.page-node-201 .nav-tabs {
+  border: none;
+  text-align: right;
+  margin-bottom: 60px;
+}
+/* line 28, ..\themes\ggproject_ui\less\parts\booking.less */
+.page-node-200 .nav-tabs li,
+.page-node-201 .nav-tabs li {
+  float: none;
+  display: inline;
+  margin-left: 20px;
+}
+/* line 33, ..\themes\ggproject_ui\less\parts\booking.less */
+.page-node-200 .nav-tabs li a,
+.page-node-201 .nav-tabs li a {
+  display: inline;
+  padding: 10px 40px;
+  font-size: 11.666666666666668px;
+  font-size: 1.1666666666666667rem;
+  color: #231f20;
+  border: #231f20 2px solid;
+}
+/* line 40, ..\themes\ggproject_ui\less\parts\booking.less */
+.page-node-200 .nav-tabs li a:hover,
+.page-node-201 .nav-tabs li a:hover {
+  background-color: #17a6b9;
+  border: #17a6b9 2px solid;
+  color: white;
+  text-decoration: none;
+}
+/* line 49, ..\themes\ggproject_ui\less\parts\booking.less */
+.page-node-200 .nav-tabs li.active a,
+.page-node-201 .nav-tabs li.active a {
+  background-color: #17a6b9;
+  border: #17a6b9 2px solid;
+  color: white;
+  text-decoration: none;
+}
+/* line 2, ..\themes\ggproject_ui\less\parts\video.less */
+.page-video .page-banner {
+  background: url('../images/video-bg.jpg') no-repeat center center;
+  background-size: cover;
+}
+/* line 8, ..\themes\ggproject_ui\less\parts\video.less */
+.page-video .views-field-nothing a {
+  color: #231f20;
+  text-decoration: none;
+}
+/* line 13, ..\themes\ggproject_ui\less\parts\video.less */
+.page-video .views-field-nothing h3 {
+  padding: 30px 0;
+  color: #231f20;
+  font-size: 13.333333333333332px;
+  font-size: 1.3333333333333333rem;
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'cormorantbold';
+  margin: 0;
+}
+/* line 22, ..\themes\ggproject_ui\less\parts\video.less */
+.page-video .col {
+  margin-bottom: 60px;
+}
+/* line 25, ..\themes\ggproject_ui\less\parts\video.less */
+.page-video .col img {
+  width: 100%;
+}
+/* line 2, ..\themes\ggproject_ui\less\parts\testimonials.less */
+.page-testimonials .page-banner {
+  background: url('../images/news-bg.jpg') no-repeat center center;
+  background-size: cover;
+}
+/* line 7, ..\themes\ggproject_ui\less\parts\testimonials.less */
+.page-testimonials .media-left {
+  width: 100%;
+  display: block;
+  margin-bottom: 30px;
+}
+@media (min-width: 992px) {
+  /* line 15, ..\themes\ggproject_ui\less\parts\testimonials.less */
+  .page-testimonials .media-left {
+    display: table-cell;
+    width: 30%;
+    padding-right: 40px;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 21, ..\themes\ggproject_ui\less\parts\testimonials.less */
+  .page-testimonials .media-left {
+    width: 40%;
+  }
+}
+/* line 26, ..\themes\ggproject_ui\less\parts\testimonials.less */
+.page-testimonials .views-field-title {
+  color: #231f20;
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'cormorantsemibold';
+  font-size: 20px;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+/* line 33, ..\themes\ggproject_ui\less\parts\testimonials.less */
+.page-testimonials .views-field-created {
+  color: #9d9d9d;
+  font-size: 10px;
+  font-size: 1rem;
+  margin-bottom: 60px;
+  display: block;
+}
+/* line 41, ..\themes\ggproject_ui\less\parts\testimonials.less */
+.page-testimonials .media-body p {
+  color: #666666;
+  font-size: 9.166666666666666px;
+  font-size: 0.9166666666666666rem;
+}
+/* line 46, ..\themes\ggproject_ui\less\parts\testimonials.less */
+.page-testimonials .media-body h4 {
+  color: #17a6b9;
   font-weight: normal;
   font-style: normal;
   font-family: 'cormorantregular';
+  font-size: 13.333333333333332px;
+  font-size: 1.3333333333333333rem;
+  line-height: 16.666666666666668px;
+  line-height: 1.6666666666666667rem;
 }
-/* line 8, ..\themes\ggproject_ui\less\parts\portfolio.less */
-.node-type-photogallery .field-name-field-intro {
+/* line 55, ..\themes\ggproject_ui\less\parts\testimonials.less */
+.page-testimonials .views-row {
+  margin-bottom: 60px;
+  padding-bottom: 90px;
+  border-bottom: #d5d6d8 1px solid;
+}
+/* line 3, ..\themes\ggproject_ui\less\parts\contacts.less */
+.page-node-265 .page-banner,
+.page-node-266 .page-banner {
+  background: url('../images/contacts-bg.jpg') no-repeat center center;
+  background-size: cover;
+  margin-bottom: 40px;
+}
+/* line 9, ..\themes\ggproject_ui\less\parts\contacts.less */
+.page-node-265 iframe,
+.page-node-266 iframe {
   margin-top: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: none;
+}
+/* line 2, ..\themes\ggproject_ui\less\parts\front.less */
+.front #carousel {
+  height: 700px;
+}
+/* line 5, ..\themes\ggproject_ui\less\parts\front.less */
+.front #carousel .item:nth-child(1) {
+  background: url('../images/slider-1.jpg') no-repeat center center;
+  background-size: cover;
+}
+/* line 10, ..\themes\ggproject_ui\less\parts\front.less */
+.front #carousel .item:nth-child(2) {
+  background: url('../images/slider-2.jpg') no-repeat center center;
+  background-size: cover;
+}
+/* line 15, ..\themes\ggproject_ui\less\parts\front.less */
+.front #carousel .item:nth-child(3) {
+  background: url('../images/slider-3.jpg') no-repeat center center;
+  background-size: cover;
+}
+/* line 20, ..\themes\ggproject_ui\less\parts\front.less */
+.front #carousel .item:nth-child(4) {
+  background: url('../images/slider-4.jpg') no-repeat center center;
+  background-size: cover;
+}
+/* line 25, ..\themes\ggproject_ui\less\parts\front.less */
+.front #carousel .carousel-indicators {
+  bottom: -60px;
+}
+/* line 28, ..\themes\ggproject_ui\less\parts\front.less */
+.front #carousel .carousel-indicators li {
+  border: black 1px solid;
+  border-radius: 0;
+  margin-left: 1px;
+  margin-right: 1px;
+}
+/* line 34, ..\themes\ggproject_ui\less\parts\front.less */
+.front #carousel .carousel-indicators li.active {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border: black 1px solid;
+}
+/* line 45, ..\themes\ggproject_ui\less\parts\front.less */
+.front .block-on-banner .container {
+  text-align: center;
+}
+/* line 49, ..\themes\ggproject_ui\less\parts\front.less */
+.front .block-on-banner .inner {
+  position: absolute;
+  bottom: 20%;
+  display: inline-block;
+}
+/* line 56, ..\themes\ggproject_ui\less\parts\front.less */
+.front .main-container {
+  margin-top: 60px;
+}
+/* line 60, ..\themes\ggproject_ui\less\parts\front.less */
+.front .content-bottom {
+  background: url('../images/slider-5.jpg') no-repeat center center;
+  background-size: cover;
+  height: 700px;
+}
+/* line 65, ..\themes\ggproject_ui\less\parts\front.less */
+.front .content-bottom .region-content-bottom {
+  position: relative;
+  height: 100%;
+}
+/* line 70, ..\themes\ggproject_ui\less\parts\front.less */
+.front .content-bottom #block-block-4 {
+  display: inline-block;
+  padding: 100px 150px;
+  background: rgba(255, 255, 255, 0.8);
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'cormorantmedium';
+  font-size: 13.333333333333332px;
+  font-size: 1.3333333333333333rem;
+  line-height: 17.5px;
+  line-height: 1.75rem;
+  width: 90%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+@media (min-width: 768px) {
+  /* line 83, ..\themes\ggproject_ui\less\parts\front.less */
+  .front .content-bottom #block-block-4 {
+    width: 80%;
+  }
+}
+@media (min-width: 992px) {
+  /* line 86, ..\themes\ggproject_ui\less\parts\front.less */
+  .front .content-bottom #block-block-4 {
+    width: 70%;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 89, ..\themes\ggproject_ui\less\parts\front.less */
+  .front .content-bottom #block-block-4 {
+    width: 60%;
+  }
 }

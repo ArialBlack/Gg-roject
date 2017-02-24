@@ -3,10 +3,38 @@
 /**
 * Implements hook_block_info().
 */
+
+module_load_include('inc', 'ggproject', 'ggproject.adminmessages');
+
+function ggproject_menu(){
+    $items=array();
+
+    $items['admin/ggproject/labels'] = array(
+        'title' => 'GG project admin labels',
+        'description' => 'Admin labels',
+        'type' => MENU_NORMAL_ITEM,
+        'page callback' => 'drupal_get_form',
+        'page arguments' => array('ggproject_admin_labels_form'),
+        'access arguments' => array('access adminstration page'),
+        'access callback' => TRUE,
+    );
+
+    return $items;
+}
+
 function ggproject_block_info() {
   $blocks = array();
+
   $blocks['ggproject_admin_blocks'] = array(
     'info' => t('GG-project admin blocks'),
+  );
+
+  $blocks['ggproject_serviceviews_blocks'] = array(
+    'info' => t('GG-project serviceviews blocks'),
+  );
+
+  $blocks['ggproject_slider_block'] = array(
+     'info' => t('GG-project slider'),
   );
 
   return $blocks;
@@ -23,6 +51,16 @@ function ggproject_block_view($delta = '') {
       $block['subject'] = '';
       $block['content'] = _ggproject_admin_block();
       break;
+
+      case 'ggproject_serviceviews_blocks':
+      $block['subject'] = '';
+      $block['content'] = _ggproject_serviceviews_block();
+      break;
+
+      case 'ggproject_slider_block':
+          $block['subject'] = '';
+          $block['content'] = _ggproject_slider_block();
+          break;
   }
 
   return $block;
@@ -92,5 +130,73 @@ function ggproject_form_alter(&$form, &$form_state, $form_id) {
 function ggproject_after_build($form, &$form_state) {
     $form['path']['pathauto'] = FALSE;
     return ($form);
-
 }
+
+function _ggproject_serviceviews_block() {
+    global $language ;
+    $lang = $language->language;
+
+    if ($lang == 'en') {
+        $lp = '/eng';
+    } else $lp = '';
+
+    $current_path = drupal_get_path_alias();
+
+    if ($current_path == 'services/weddings') {
+        $output = '<ul class="services-menu">';
+        $output = $output . '<li><a class="active" href="/services/weddings">' . t('Weddings') . '</a></li>';
+        $output = $output . '<li><a href="/services/love-story-105-105-105">' . t('Love story') . '</a></li>';
+        $output = $output . '<li><a href="/services/korporativy">' . t('Events') . '</a></li></ul>';
+    }
+
+    if ($current_path == 'services/love-story-105-105-105') {
+        $output = '<ul class="services-menu">';
+        $output = $output . '<li><a href="/services/weddings">' . t('Weddings') . '</a></li>';
+        $output = $output . '<li><a class="active" href="/services/love-story-105-105-105">' . t('Love story') . '</a></li>';
+        $output = $output . '<li><a href="/services/korporativy">' . t('Events') . '</a></li></ul>';
+    }
+
+    if ($current_path == 'services/korporativy') {
+        $output = '<ul class="services-menu">';
+        $output = $output . '<li><a href="/services/weddings">' . t('Weddings') . '</a></li>';
+        $output = $output . '<li><a href="/services/love-story-105-105-105">' . t('Love story') . '</a></li>';
+        $output = $output . '<li><a class="active" href="/services/korporativy">' . t('Events') . '</a></li></ul>';
+    }
+
+    return $output;
+}
+
+function _ggproject_slider_block() {
+
+    $tel = variable_get('tel_title');
+    $email = variable_get('email_title');
+
+
+    $content = '<div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">';
+
+    $content = $content . '<div class="carousel-inner">';
+    $content = $content . '<div class="active item"></div>';
+    $content = $content . '<div class="item"></div>';
+    $content = $content . '<div class="item"></div>';
+    $content = $content . '<div class="item"></div>';
+    $content = $content . '</div>';
+
+    $content = $content . '<ol class="carousel-indicators">';
+    $content = $content . '<li data-target="#carousel" data-slide-to="0" class="active"></li>';
+    $content = $content . '<li data-target="#carousel" data-slide-to="1"></li>';
+    $content = $content . '<li data-target="#carousel" data-slide-to="2"></li>';
+    $content = $content . '<li data-target="#carousel" data-slide-to="3"></li>';
+    $content = $content . '</ol></div>';
+
+    $content = $content . '<div class="block-on-banner">';
+    $content = $content . '<div class="container">';
+    $content = $content . '<div class="inner">';
+    $content = $content . '<div class="left-block">' . t('Events & Weddings') . '</div>';
+    $content = $content . '<div class="center-block"><a href="tel:+' . $tel . '"><span class="visible-xs">' . t('Call') . '</span><span class="hidden-xs">' . $tel . '</span></div>';
+    $content = $content . '<div class="right-block"><a class="btn-rounded color-ocean btn-sendmail" href="mailto:' . $email . '">' . t('Send email') . '</a></div>';
+    $content = $content . '</div></div></div>';
+
+    return $content;
+}
+
+

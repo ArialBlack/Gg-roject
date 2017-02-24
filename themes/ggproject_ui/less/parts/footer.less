@@ -1,0 +1,39 @@
+.footer {
+  background: #231f20;
+  color: @on-dark;
+
+  .block {
+    width: 100%;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    float: left;
+
+    @media (min-width: @screen-sm-min) {
+      width: 50%;
+    }
+    @media (min-width: @screen-md-min) {
+      width: 25%;
+    }
+
+  }
+
+  .clogos_slab {
+    width: 60px;
+    background: url(../images/slab-logo.png) no-repeat;
+    height: 49px;
+    margin-right: 20px;
+    display: block;
+    text-indent: -9999px;
+
+    &:hover {
+      background: url(../images/slab-logo-ani.gif) no-repeat;
+    }
+  }
+
+  .ctext {
+    .font-size(10);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+}

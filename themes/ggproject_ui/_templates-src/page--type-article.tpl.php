@@ -81,10 +81,10 @@ if ($lang == 'eng') {
 ?>
 
 <!--(bake parts/header.php)-->
- 
+
 <div class="page-banner">
   <div class="inner container">
-    <h2><?php print t('Portfolio'); ?></h2>
+    <h2><?php print t('News'); ?></h2>
   </div>
 </div>
 
@@ -112,7 +112,7 @@ if ($lang == 'eng') {
       <?php endif; ?>
       <?php print render($title_suffix); ?>
 
-      <a class="back2portfolio" href="<?php print $lang;?>/services/weddings"><?php print t('Back to portfolio'); ?>  ›</a>
+      <a class="back2portfolio" href="<?php print $lang;?>/services/weddings"><?php print t('Back to news'); ?>   ›</a>
 
       <?php print $messages; ?>
       <?php if (!empty($tabs)): ?>

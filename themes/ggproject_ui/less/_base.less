@@ -67,6 +67,7 @@
 html {
     height: 100%;
     font-size: @basefontsize * 1px;
+    color: @gg-text;
 }
 
 body {
@@ -79,6 +80,11 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'cormorantsemibold';
     font-weight: normal;
     .font-size(48);
+}
+
+a {
+    color: @gg-link;
+    transition: 0.3s all linear;
 }
 
 p {
@@ -98,3 +104,100 @@ img {
 h1.page-header {
     border: none;
 }
+
+.page-banner {
+    margin-bottom: 60px;
+    min-height: 480px; //todo: responsive
+
+    h1,
+    h2 {
+        color: @on-dark;
+        .f('b');
+        .font-size(126); //todo: responsive, todo: vertical align
+    }
+}
+
+.pager {
+    &.pager-load-more {
+        a {
+            background-color: #231f20;
+            border: none;
+            border-radius: 0;
+            color: @on-dark;
+            .f('m');
+            .font-size(28);
+            padding: 10px 35px;
+
+            &:hover {
+                background-color: @gg-blue;
+            }
+        }
+    }
+}
+
+.region-content ul.flippy {
+    margin-top: 60px;
+}
+
+.back2portfolio {
+    float: right;
+    color: @gg-gray;
+    .font-size(24);
+    .f('r');
+    margin-top: 15px;
+    padding-right: @img-padding;
+}
+
+article {
+    .field-name-body {
+        color: @gg-dark-gray;
+        .font-size(22);
+        .line-height(32);
+
+        p {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.carousel-fade {
+    .carousel-inner {
+        .item {
+            transition-property: opacity;
+        }
+
+        .item,
+        .active.left,
+        .active.right {
+            opacity: 0;
+        }
+
+        .active,
+        .next.left,
+        .prev.right {
+            opacity: 1;
+        }
+
+        .next,
+        .prev,
+        .active.left,
+        .active.right {
+            left: 0;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .carousel-control {
+        z-index: 2;
+    }
+}
+
+html,
+body,
+.carousel,
+.carousel-inner,
+.carousel-inner .item {
+    height: 100%;
+}
+
+

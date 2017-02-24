@@ -19,13 +19,13 @@
   }
 }
 
-.line(@m: 1) {
-    content: '';
-    display: block;
-    width: 240px;
-    height: 10px;
-    background: @nazk-yellow;
-    margin: 20px * @m 0;
+.line() {
+  content: '';
+  display: block;
+  height: @lh;
+  width: 30px;
+  background: @gg-text;
+  margin-bottom: @mt;
 }
 
 .font-size(@mysizeValue) {
@@ -42,4 +42,14 @@
   @pxValue: (@sizeValue * 10);
   line-height: ~"@{pxValue}px"; 
   line-height: ~"@{remValue}rem";
+}
+
+.c() {
+  .container();
+
+  @media (min-width: @min-xl) {
+    width: @min-xl - 30;
+  }
+  margin-left: auto;
+  margin-right: auto;
 }

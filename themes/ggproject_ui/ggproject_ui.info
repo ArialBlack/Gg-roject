@@ -10,7 +10,6 @@ base theme = bootstrap
 
 regions[prenavigation]     = 'Pre Navigation'
 regions[navigation]     = 'Navigation'
-regions[header]         = 'Top Bar'
 regions[highlighted]    = 'Highlighted'
 regions[help]           = 'Help'
 regions[precontent]        = 'PreContent'
@@ -51,6 +50,8 @@ scripts[] = 'js/bootstrap.min.js'
 scripts[] = 'js/tooltip.js'
 scripts[] = 'js/popover.js'
 ;scripts[] = 'js/jquery.waypoints.min.js'
+scripts[] = 'js/masonry.pkgd.min.js'
+scripts[] = 'js/instafeed.min.js'
 scripts[] = 'js/main.js'
 
 

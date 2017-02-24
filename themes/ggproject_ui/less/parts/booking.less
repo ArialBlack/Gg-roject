@@ -1,0 +1,60 @@
+.page-node-200,
+.page-node-201 {
+  .page-banner {
+    background: url('../images/booking-bg.jpg') no-repeat center center;
+    background-size: cover;
+  }
+
+  .views-field-title {
+    padding: 30px 0;
+    color: @gg-text;
+    .font-size(32);
+    .f('b');
+  }
+
+  .col {
+    margin-bottom: 60px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .nav-tabs {
+    border: none;
+    text-align: right;
+    margin-bottom: 60px;
+
+    li {
+      float: none;
+      display: inline;
+      margin-left: 20px;
+
+      a {
+        display: inline;
+        padding: 10px 40px;
+        .font-size(28);
+        color: @gg-text;
+        border: @gg-text 2px solid;
+
+        &:hover {
+          background-color: @gg-blue;
+          border: @gg-blue 2px solid;
+          color: @on-dark;
+          text-decoration: none;
+        }
+      }
+
+      &.active {
+        a {
+          background-color: @gg-blue;
+          border: @gg-blue 2px solid;
+          color: @on-dark;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+
