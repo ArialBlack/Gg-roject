@@ -2,12 +2,6 @@
   .page-banner {
     background: url('../images/portfolio-bg.jpg') no-repeat center center;
     background-size: cover;
-
-    h1 {
-      display: inline-block;
-      vertical-align: middle;
-      float: none;
-    }
   }
 
   .services-menu {
@@ -72,3 +66,52 @@
   }
 }
 
+//fixes
+
+@media (min-width: 320px) and (max-width:440px) {
+  .page-services{ 
+    .main-container {
+      #block-ggproject-ggproject-serviceviews-blocks {
+        ul {
+          float: left;
+          padding: 0;
+          li {
+            margin-left: 1px;
+            a {
+                padding: 10px 8px;
+                font-size: 80%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 441px) and (max-width:711px) {
+  .page-services{ 
+    .main-container {
+      #block-ggproject-ggproject-serviceviews-blocks {
+        ul {
+          float: left;
+          li {
+            margin-left: 7px;
+            a {
+                padding: 10px 15px;
+                font-size: 90%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:780px) {
+  #views-bootstrap-grid-1 {
+    .row {
+      margin-left: 0;
+        margin-right: 0;
+    }
+  }
+}

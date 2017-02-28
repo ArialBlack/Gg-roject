@@ -166,9 +166,11 @@ if ($lang == 'eng') {
 </div>
 
 <div class="instagram">
-    <p>instagram block here</p>
-    <div id="instafeed"></div>
+    <h2 class="instagram_title">GG-Project в Instagram</h2>
+    <ul id="instafeed" class="instafeed"></ul>
+    <a href="https://www.instagram.com/gg_project/" class="instagram_link">Загрузить еще</a>
 </div>
+
 
 <?php if (!empty($page['footer'])): ?>
     <footer class="footer">
