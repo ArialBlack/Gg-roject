@@ -10495,12 +10495,11 @@ body,
   padding: 11% 0;
   font-size: 150px;
 }
-/* line 17, ..\themes\ggproject_ui\less\pages\_404.less */
-.page-node-261 .page-banner .inner h1:after,
-.page-node-268 .page-banner .inner h1:after,
-.page-node-263 .page-banner .inner h1:after,
-.page-node-264 .page-banner .inner h1:after {
-  content: "К сожалению, запрашиваемой Вами страницы не существует на нашем сайте. Вероятно, она была удалена автором с сервера, либо её здесь никогда не было. Можно попробовать найти пропажу и воспользоваться главной страницей. Просим прощения за предоставленные неудобства.";
+/* line 19, ..\themes\ggproject_ui\less\pages\_404.less */
+.page-node-261 .page-banner .inner .subtitle-text,
+.page-node-268 .page-banner .inner .subtitle-text,
+.page-node-263 .page-banner .inner .subtitle-text,
+.page-node-264 .page-banner .inner .subtitle-text {
   font-size: 32px;
   display: block;
   padding: 2% 12%;
