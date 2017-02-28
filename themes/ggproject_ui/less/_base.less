@@ -107,13 +107,42 @@ h1.page-header {
 
 .page-banner {
     margin-bottom: 60px;
-    min-height: 480px; //todo: responsive
+    min-height: 200px;
+    display: table;
+    width: 100%;
 
-    h1,
-    h2 {
+    .inner {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    h1, h2 {
         color: @on-dark;
         .f('b');
-        .font-size(126); //todo: responsive, todo: vertical align
+        .font-size(45);
+        display: block;
+        .c();
+    }
+
+    @media (min-width: @screen-sm-min) {
+        min-height: 300px;
+        h1, h2 {
+            .font-size(75);
+        }
+    }
+
+    @media (min-width: @screen-md-min) {
+        min-height: 400px;
+        h1, h2 {
+            .font-size(100);
+        }
+    }
+
+    @media (min-width: @screen-lg-min) {
+        min-height: 480px;
+        h1, h2 {
+            .font-size(126);
+        }
     }
 }
 

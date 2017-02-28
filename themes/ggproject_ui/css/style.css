@@ -7749,7 +7749,11 @@ button.close {
 .modal-header:before,
 .modal-header:after,
 .modal-footer:before,
-.modal-footer:after {
+.modal-footer:after,
+.page-banner h1:before,
+.page-banner h1:after,
+.page-banner h2:before,
+.page-banner h2:after {
   content: " ";
   display: table;
 }
@@ -7769,7 +7773,9 @@ button.close {
 .pager:after,
 .panel-body:after,
 .modal-header:after,
-.modal-footer:after {
+.modal-footer:after,
+.page-banner h1:after,
+.page-banner h2:after {
   clear: both;
 }
 /* line 12, ..\build-front\bower_components\bootstrap\less\utilities.less */
@@ -9128,19 +9134,113 @@ h1.page-header {
 /* line 108, ..\themes\ggproject_ui\less\_base.less */
 .page-banner {
   margin-bottom: 60px;
-  min-height: 480px;
+  min-height: 200px;
+  display: table;
+  width: 100%;
 }
-/* line 112, ..\themes\ggproject_ui\less\_base.less */
+/* line 114, ..\themes\ggproject_ui\less\_base.less */
+.page-banner .inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 119, ..\themes\ggproject_ui\less\_base.less */
 .page-banner h1,
 .page-banner h2 {
   color: white;
   font-weight: normal;
   font-style: normal;
   font-family: 'cormorantbold';
-  font-size: 52.5px;
-  font-size: 5.25rem;
+  font-size: 18.75px;
+  font-size: 1.875rem;
+  display: block;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
-/* line 122, ..\themes\ggproject_ui\less\_base.less */
+@media (min-width: 768px) {
+  /* line 13, ..\build-front\bower_components\bootstrap\less\grid.less */
+  .page-banner h1,
+  .page-banner h2 {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 16, ..\build-front\bower_components\bootstrap\less\grid.less */
+  .page-banner h1,
+  .page-banner h2 {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 19, ..\build-front\bower_components\bootstrap\less\grid.less */
+  .page-banner h1,
+  .page-banner h2 {
+    width: 1170px;
+  }
+}
+/* line 108, ..\build-front\bower_components\bootstrap\less\navbar.less */
+.page-banner h1 > .navbar-header,
+.page-banner h2 > .navbar-header,
+.page-banner h1 > .navbar-collapse,
+.page-banner h2 > .navbar-collapse {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+@media (min-width: 1200px) {
+  /* line 113, ..\build-front\bower_components\bootstrap\less\navbar.less */
+  .page-banner h1 > .navbar-header,
+  .page-banner h2 > .navbar-header,
+  .page-banner h1 > .navbar-collapse,
+  .page-banner h2 > .navbar-collapse {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+@media (min-width: 1400px) {
+  /* line 50, ..\themes\ggproject_ui\less\_mixins.less */
+  .page-banner h1,
+  .page-banner h2 {
+    width: 1370px;
+  }
+}
+@media (min-width: 768px) {
+  /* line 127, ..\themes\ggproject_ui\less\_base.less */
+  .page-banner {
+    min-height: 300px;
+  }
+  /* line 129, ..\themes\ggproject_ui\less\_base.less */
+  .page-banner h1,
+  .page-banner h2 {
+    font-size: 31.25px;
+    font-size: 3.125rem;
+  }
+}
+@media (min-width: 992px) {
+  /* line 134, ..\themes\ggproject_ui\less\_base.less */
+  .page-banner {
+    min-height: 400px;
+  }
+  /* line 136, ..\themes\ggproject_ui\less\_base.less */
+  .page-banner h1,
+  .page-banner h2 {
+    font-size: 41.66666666666667px;
+    font-size: 4.166666666666667rem;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 141, ..\themes\ggproject_ui\less\_base.less */
+  .page-banner {
+    min-height: 480px;
+  }
+  /* line 143, ..\themes\ggproject_ui\less\_base.less */
+  .page-banner h1,
+  .page-banner h2 {
+    font-size: 52.5px;
+    font-size: 5.25rem;
+  }
+}
+/* line 151, ..\themes\ggproject_ui\less\_base.less */
 .pager.pager-load-more a {
   background-color: #231f20;
   border: none;
@@ -9153,15 +9253,15 @@ h1.page-header {
   font-size: 1.1666666666666667rem;
   padding: 10px 35px;
 }
-/* line 131, ..\themes\ggproject_ui\less\_base.less */
+/* line 160, ..\themes\ggproject_ui\less\_base.less */
 .pager.pager-load-more a:hover {
   background-color: #17a6b9;
 }
-/* line 138, ..\themes\ggproject_ui\less\_base.less */
+/* line 167, ..\themes\ggproject_ui\less\_base.less */
 .region-content ul.flippy {
   margin-top: 60px;
 }
-/* line 142, ..\themes\ggproject_ui\less\_base.less */
+/* line 171, ..\themes\ggproject_ui\less\_base.less */
 .back2portfolio {
   float: right;
   color: #9d9d9d;
@@ -9173,7 +9273,7 @@ h1.page-header {
   margin-top: 15px;
   padding-right: 10px;
 }
-/* line 152, ..\themes\ggproject_ui\less\_base.less */
+/* line 181, ..\themes\ggproject_ui\less\_base.less */
 article .field-name-body {
   color: #666666;
   font-size: 9.166666666666666px;
@@ -9181,27 +9281,27 @@ article .field-name-body {
   line-height: 13.333333333333332px;
   line-height: 1.3333333333333333rem;
 }
-/* line 157, ..\themes\ggproject_ui\less\_base.less */
+/* line 186, ..\themes\ggproject_ui\less\_base.less */
 article .field-name-body p {
   margin-bottom: 20px;
 }
-/* line 165, ..\themes\ggproject_ui\less\_base.less */
+/* line 194, ..\themes\ggproject_ui\less\_base.less */
 .carousel-fade .carousel-inner .item {
   transition-property: opacity;
 }
-/* line 169, ..\themes\ggproject_ui\less\_base.less */
+/* line 198, ..\themes\ggproject_ui\less\_base.less */
 .carousel-fade .carousel-inner .item,
 .carousel-fade .carousel-inner .active.left,
 .carousel-fade .carousel-inner .active.right {
   opacity: 0;
 }
-/* line 175, ..\themes\ggproject_ui\less\_base.less */
+/* line 204, ..\themes\ggproject_ui\less\_base.less */
 .carousel-fade .carousel-inner .active,
 .carousel-fade .carousel-inner .next.left,
 .carousel-fade .carousel-inner .prev.right {
   opacity: 1;
 }
-/* line 181, ..\themes\ggproject_ui\less\_base.less */
+/* line 210, ..\themes\ggproject_ui\less\_base.less */
 .carousel-fade .carousel-inner .next,
 .carousel-fade .carousel-inner .prev,
 .carousel-fade .carousel-inner .active.left,
@@ -9210,11 +9310,11 @@ article .field-name-body p {
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
 }
-/* line 190, ..\themes\ggproject_ui\less\_base.less */
+/* line 219, ..\themes\ggproject_ui\less\_base.less */
 .carousel-fade .carousel-control {
   z-index: 2;
 }
-/* line 195, ..\themes\ggproject_ui\less\_base.less */
+/* line 224, ..\themes\ggproject_ui\less\_base.less */
 html,
 body,
 .carousel,
@@ -9707,25 +9807,19 @@ body,
   background: url('../images/portfolio-bg.jpg') no-repeat center center;
   background-size: cover;
 }
-/* line 6, ..\themes\ggproject_ui\less\parts\portfolio.less */
-.page-services .page-banner h1 {
-  display: inline-block;
-  vertical-align: middle;
-  float: none;
-}
-/* line 13, ..\themes\ggproject_ui\less\parts\portfolio.less */
+/* line 7, ..\themes\ggproject_ui\less\parts\portfolio.less */
 .page-services .services-menu {
   float: right;
   margin-bottom: 60px;
   margin-right: 20px;
 }
-/* line 18, ..\themes\ggproject_ui\less\parts\portfolio.less */
+/* line 12, ..\themes\ggproject_ui\less\parts\portfolio.less */
 .page-services .services-menu li {
   list-style: none;
   display: inline-block;
   margin-left: 20px;
 }
-/* line 23, ..\themes\ggproject_ui\less\parts\portfolio.less */
+/* line 17, ..\themes\ggproject_ui\less\parts\portfolio.less */
 .page-services .services-menu li a {
   padding: 10px 40px;
   font-size: 11.666666666666668px;
@@ -9733,7 +9827,7 @@ body,
   color: #231f20;
   border: #231f20 2px solid;
 }
-/* line 29, ..\themes\ggproject_ui\less\parts\portfolio.less */
+/* line 23, ..\themes\ggproject_ui\less\parts\portfolio.less */
 .page-services .services-menu li a:hover,
 .page-services .services-menu li a.active {
   background-color: #17a6b9;
@@ -9741,24 +9835,24 @@ body,
   color: white;
   text-decoration: none;
 }
-/* line 40, ..\themes\ggproject_ui\less\parts\portfolio.less */
+/* line 34, ..\themes\ggproject_ui\less\parts\portfolio.less */
 .page-services .view-content {
   clear: both;
 }
-/* line 43, ..\themes\ggproject_ui\less\parts\portfolio.less */
+/* line 37, ..\themes\ggproject_ui\less\parts\portfolio.less */
 .page-services .view-content img {
   width: 100%;
 }
-/* line 47, ..\themes\ggproject_ui\less\parts\portfolio.less */
+/* line 41, ..\themes\ggproject_ui\less\parts\portfolio.less */
 .page-services .view-content .col {
   position: relative;
   margin-bottom: 30px;
 }
-/* line 51, ..\themes\ggproject_ui\less\parts\portfolio.less */
+/* line 45, ..\themes\ggproject_ui\less\parts\portfolio.less */
 .page-services .view-content .col:hover .views-field-title {
   background: #ffffff;
 }
-/* line 56, ..\themes\ggproject_ui\less\parts\portfolio.less */
+/* line 50, ..\themes\ggproject_ui\less\parts\portfolio.less */
 .page-services .view-content .views-field-title {
   position: absolute;
   width: 100%;
@@ -9766,7 +9860,7 @@ body,
   bottom: 0;
   transition: 0.3s all linear;
 }
-/* line 63, ..\themes\ggproject_ui\less\parts\portfolio.less */
+/* line 57, ..\themes\ggproject_ui\less\parts\portfolio.less */
 .page-services .view-content .views-field-title a {
   color: #231f20;
   font-weight: normal;
@@ -9779,38 +9873,38 @@ body,
   padding: 15px 30px;
 }
 @media (min-width: 320px) and (max-width: 440px) {
-  /* line 81, ..\themes\ggproject_ui\less\parts\portfolio.less */
+  /* line 75, ..\themes\ggproject_ui\less\parts\portfolio.less */
   .page-services .main-container #block-ggproject-ggproject-serviceviews-blocks ul {
     float: left;
     padding: 0;
   }
-  /* line 84, ..\themes\ggproject_ui\less\parts\portfolio.less */
+  /* line 78, ..\themes\ggproject_ui\less\parts\portfolio.less */
   .page-services .main-container #block-ggproject-ggproject-serviceviews-blocks ul li {
     margin-left: 1px;
   }
-  /* line 86, ..\themes\ggproject_ui\less\parts\portfolio.less */
+  /* line 80, ..\themes\ggproject_ui\less\parts\portfolio.less */
   .page-services .main-container #block-ggproject-ggproject-serviceviews-blocks ul li a {
     padding: 10px 8px;
     font-size: 80%;
   }
 }
 @media (min-width: 441px) and (max-width: 711px) {
-  /* line 101, ..\themes\ggproject_ui\less\parts\portfolio.less */
+  /* line 95, ..\themes\ggproject_ui\less\parts\portfolio.less */
   .page-services .main-container #block-ggproject-ggproject-serviceviews-blocks ul {
     float: left;
   }
-  /* line 103, ..\themes\ggproject_ui\less\parts\portfolio.less */
+  /* line 97, ..\themes\ggproject_ui\less\parts\portfolio.less */
   .page-services .main-container #block-ggproject-ggproject-serviceviews-blocks ul li {
     margin-left: 7px;
   }
-  /* line 105, ..\themes\ggproject_ui\less\parts\portfolio.less */
+  /* line 99, ..\themes\ggproject_ui\less\parts\portfolio.less */
   .page-services .main-container #block-ggproject-ggproject-serviceviews-blocks ul li a {
     padding: 10px 15px;
     font-size: 90%;
   }
 }
 @media (max-width: 780px) {
-  /* line 118, ..\themes\ggproject_ui\less\parts\portfolio.less */
+  /* line 112, ..\themes\ggproject_ui\less\parts\portfolio.less */
   #views-bootstrap-grid-1 .row {
     margin-left: 0;
     margin-right: 0;
@@ -9863,22 +9957,26 @@ body,
   margin-bottom: 20px;
 }
 /* line 41, ..\themes\ggproject_ui\less\parts\news.less */
+.page-news img {
+  width: 100%;
+}
+/* line 45, ..\themes\ggproject_ui\less\parts\news.less */
 .page-news .views-field-view-node {
   float: left;
   margin-top: 23px;
   padding-left: 75px;
 }
-/* line 46, ..\themes\ggproject_ui\less\parts\news.less */
+/* line 50, ..\themes\ggproject_ui\less\parts\news.less */
 .page-news .views-field-view-node a {
   color: #9d9d9d;
   font-size: 10px;
   font-size: 1rem;
 }
-/* line 50, ..\themes\ggproject_ui\less\parts\news.less */
+/* line 54, ..\themes\ggproject_ui\less\parts\news.less */
 .page-news .views-field-view-node a:after {
   content: '  ›';
 }
-/* line 62, ..\themes\ggproject_ui\less\parts\news.less */
+/* line 66, ..\themes\ggproject_ui\less\parts\news.less */
 .page-news .main-container #views-bootstrap-grid-1 .row {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -9887,31 +9985,31 @@ body,
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
 }
-/* line 65, ..\themes\ggproject_ui\less\parts\news.less */
+/* line 69, ..\themes\ggproject_ui\less\parts\news.less */
 .page-news .main-container #views-bootstrap-grid-1 .row .col {
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
-/* line 67, ..\themes\ggproject_ui\less\parts\news.less */
+/* line 71, ..\themes\ggproject_ui\less\parts\news.less */
 .page-news .main-container #views-bootstrap-grid-1 .row .col .views-field-body {
   margin-bottom: 3em;
 }
-/* line 70, ..\themes\ggproject_ui\less\parts\news.less */
+/* line 74, ..\themes\ggproject_ui\less\parts\news.less */
 .page-news .main-container #views-bootstrap-grid-1 .row .col .views-field-created,
 .page-news .main-container #views-bootstrap-grid-1 .row .col .views-field-view-node {
   position: absolute;
   bottom: 0;
 }
-/* line 74, ..\themes\ggproject_ui\less\parts\news.less */
+/* line 78, ..\themes\ggproject_ui\less\parts\news.less */
 .page-news .main-container #views-bootstrap-grid-1 .row .col .views-field-view-node {
   left: 20%;
 }
-/* line 85, ..\themes\ggproject_ui\less\parts\news.less */
+/* line 89, ..\themes\ggproject_ui\less\parts\news.less */
 .page-news #block-system-main .pager-load-more {
   margin-top: 0;
 }
-/* line 89, ..\themes\ggproject_ui\less\parts\news.less */
+/* line 93, ..\themes\ggproject_ui\less\parts\news.less */
 .page-news #block-system-main .views-field-title a:hover,
 .page-news #block-system-main .views-field-title a:focus {
   text-decoration: none;
@@ -10359,120 +10457,6 @@ body,
   width: 12.5%;
   height: 12.5vw;
   margin: 0;
-}
-/*.instagram {
-	&:before {
-		content: "GG-Project в Instagram";
-		font-family: 'cormorantbold';
-		color: #111111;
-		font-size: 32px;
-		text-align: center;
-		display: block;
-		padding-top: 6%;
-		padding-bottom: 3%;
-	}
-	p {
-		display: none;
-	}
-}
-
-#rudr_instafeed{
-  display: block;
-  list-style:none;
-  position: relative;
-  padding: 0;
-}
-#rudr_instafeed li img{
-  width:100%;
-  height:100%;
-}
-
-@media (min-width:320px) and (max-width:991px) {
-	#rudr_instafeed li{
-	  float:left;
-	  width:11.1111vw;
-	  height:11.1111vw;
-	  margin: 0;
-	  &:nth-child(6) {
-	  	width: ~"calc(11.1111vw * 2)";
-	  	height: ~"calc(11.1111vw * 2)";
-	  }
-	  &:nth-child(n + 11) {
-	  	position: absolute;
-	  	top: 11.1111vw;
-	  }
-	  &:nth-child(12) {
-	  	left: 11.1111vw;
-	  }
-	  &:nth-child(13) {
-	  	left: ~"calc(11.1111vw * 2)";
-	  }
-	  &:nth-child(14) {
-	  	left: ~"calc(11.1111vw * 3)";
-	  }
-	  &:nth-child(15) {
-	  	left: ~"calc(11.1111vw * 4)";
-	  }
-	}
-}
-@media (min-width: 992px){
-	#rudr_instafeed li{
-	  float:left;
-	  width:10.97vw;
-	  height:10.97vw;
-	  margin: 0;
-	  &:nth-child(6) {
-	  	width: ~"calc(10.97vw * 2)";
-	  	height: ~"calc(10.97vw * 2)";
-	  }
-	  &:nth-child(n + 11) {
-	  	position: absolute;
-	  	top: 10.97vw;
-	  }
-	  &:nth-child(12) {
-	  	left: 10.97vw;
-	  }
-	  &:nth-child(13) {
-	  	left: ~"calc(10.97vw * 2)";
-	  }
-	  &:nth-child(14) {
-	  	left: ~"calc(10.97vw * 3)";
-	  }
-	  &:nth-child(15) {
-	  	left: ~"calc(10.97vw * 4)";
-	  }
-	}
-}*/
-/* line 3, ..\themes\ggproject_ui\less\parts\global_banner.less */
-.page-services .page-banner h1,
-.page-news .page-banner h1,
-.page-node-265 .page-banner h1,
-.page-testimonials .page-banner h1,
-.page-node-200 .page-banner h1,
-.page-video .page-banner h1 {
-  margin-top: 175px;
-}
-@media (max-width: 630px) {
-  /* line 12, ..\themes\ggproject_ui\less\parts\global_banner.less */
-  .page-services .page-banner h1,
-  .page-news .page-banner h1,
-  .page-node-265 .page-banner h1,
-  .page-testimonials .page-banner h1,
-  .page-node-200 .page-banner h1,
-  .page-video .page-banner h1 {
-    font-size: 2.9rem;
-  }
-}
-@media (max-width: 360px) {
-  /* line 22, ..\themes\ggproject_ui\less\parts\global_banner.less */
-  .page-services .page-banner h1,
-  .page-news .page-banner h1,
-  .page-node-265 .page-banner h1,
-  .page-testimonials .page-banner h1,
-  .page-node-200 .page-banner h1,
-  .page-video .page-banner h1 {
-    font-size: 2.4rem;
-  }
 }
 /* line 5, ..\themes\ggproject_ui\less\pages\_404.less */
 .page-node-261 .page-banner,
