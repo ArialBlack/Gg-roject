@@ -9331,26 +9331,32 @@ body,
 *
 */
 @media (min-width: 1200px) and (max-width: 1400px - 1) {
-  /* line 25, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 26, ..\themes\ggproject_ui\less\_grid.less */
   .hidden-lg {
     display: none !important;
   }
 }
-/* line 31, ..\themes\ggproject_ui\less\_grid.less */
+/* line 32, ..\themes\ggproject_ui\less\_grid.less */
 .visible-xl-block,
 .visible-xl-inline,
 .visible-xl-inline-block,
 .visible-xl {
   display: none !important;
 }
+@media (max-width: 767px) {
+  /* line 40, ..\themes\ggproject_ui\less\_grid.less */
+  .col-sm-12 {
+    width: 100%;
+  }
+}
 @media (min-width: 1400px) {
-  /* line 39, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 46, ..\themes\ggproject_ui\less\_grid.less */
   .container {
     width: 1370px;
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 45, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 52, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-1,
   .col-xl-2,
   .col-xl-3,
@@ -9365,240 +9371,240 @@ body,
   .col-xl-12 {
     float: left;
   }
-  /* line 49, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 56, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-12 {
     width: 100%;
   }
-  /* line 53, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 60, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-11 {
     width: 91.66666667%;
   }
-  /* line 57, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 64, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-10 {
     width: 83.33333333%;
   }
-  /* line 61, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 68, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-9 {
     width: 75%;
   }
-  /* line 65, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 72, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-8 {
     width: 66.66666667%;
   }
-  /* line 69, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 76, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-7 {
     width: 58.33333333%;
   }
-  /* line 73, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 80, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-6 {
     width: 50%;
   }
-  /* line 77, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 84, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-5 {
     width: 41.66666667%;
   }
-  /* line 81, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 88, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-4 {
     width: 33.33333333%;
   }
-  /* line 85, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 92, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-3 {
     width: 25%;
   }
-  /* line 89, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 96, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-2 {
     width: 16.66666667%;
   }
-  /* line 93, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 100, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-1 {
     width: 8.33333333%;
   }
-  /* line 97, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 104, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-pull-12 {
     right: 100%;
   }
-  /* line 101, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 108, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-pull-11 {
     right: 91.66666667%;
   }
-  /* line 105, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 112, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-pull-10 {
     right: 83.33333333%;
   }
-  /* line 109, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 116, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-pull-9 {
     right: 75%;
   }
-  /* line 113, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 120, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-pull-8 {
     right: 66.66666667%;
   }
-  /* line 117, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 124, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-pull-7 {
     right: 58.33333333%;
   }
-  /* line 121, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 128, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-pull-6 {
     right: 50%;
   }
-  /* line 125, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 132, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-pull-5 {
     right: 41.66666667%;
   }
-  /* line 129, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 136, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-pull-4 {
     right: 33.33333333%;
   }
-  /* line 133, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 140, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-pull-3 {
     right: 25%;
   }
-  /* line 137, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 144, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-pull-2 {
     right: 16.66666667%;
   }
-  /* line 141, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 148, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-pull-1 {
     right: 8.33333333%;
   }
-  /* line 145, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 152, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-pull-0 {
     right: auto;
   }
-  /* line 149, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 156, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-push-12 {
     left: 100%;
   }
-  /* line 153, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 160, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-push-11 {
     left: 91.66666667%;
   }
-  /* line 157, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 164, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-push-10 {
     left: 83.33333333%;
   }
-  /* line 161, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 168, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-push-9 {
     left: 75%;
   }
-  /* line 165, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 172, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-push-8 {
     left: 66.66666667%;
   }
-  /* line 169, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 176, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-push-7 {
     left: 58.33333333%;
   }
-  /* line 173, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 180, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-push-6 {
     left: 50%;
   }
-  /* line 177, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 184, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-push-5 {
     left: 41.66666667%;
   }
-  /* line 181, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 188, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-push-4 {
     left: 33.33333333%;
   }
-  /* line 185, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 192, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-push-3 {
     left: 25%;
   }
-  /* line 189, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 196, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-push-2 {
     left: 16.66666667%;
   }
-  /* line 193, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 200, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-push-1 {
     left: 8.33333333%;
   }
-  /* line 197, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 204, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-push-0 {
     left: auto;
   }
-  /* line 201, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 208, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-offset-12 {
     margin-left: 100%;
   }
-  /* line 205, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 212, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-offset-11 {
     margin-left: 91.66666667%;
   }
-  /* line 209, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 216, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-offset-10 {
     margin-left: 83.33333333%;
   }
-  /* line 213, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 220, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-offset-9 {
     margin-left: 75%;
   }
-  /* line 217, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 224, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-offset-8 {
     margin-left: 66.66666667%;
   }
-  /* line 221, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 228, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-offset-7 {
     margin-left: 58.33333333%;
   }
-  /* line 225, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 232, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-offset-6 {
     margin-left: 50%;
   }
-  /* line 229, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 236, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-offset-5 {
     margin-left: 41.66666667%;
   }
-  /* line 233, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 240, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-offset-4 {
     margin-left: 33.33333333%;
   }
-  /* line 237, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 244, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-offset-3 {
     margin-left: 25%;
   }
-  /* line 241, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 248, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-offset-2 {
     margin-left: 16.66666667%;
   }
-  /* line 245, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 252, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-offset-1 {
     margin-left: 8.33333333%;
   }
-  /* line 249, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 256, ..\themes\ggproject_ui\less\_grid.less */
   .col-xl-offset-0 {
     margin-left: 0;
   }
-  /* line 253, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 260, ..\themes\ggproject_ui\less\_grid.less */
   .visible-xl {
     display: block !important;
   }
-  /* line 257, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 264, ..\themes\ggproject_ui\less\_grid.less */
   table.visible-xl {
     display: table;
   }
-  /* line 261, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 268, ..\themes\ggproject_ui\less\_grid.less */
   tr.visible-xl {
     display: table-row !important;
   }
-  /* line 265, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 272, ..\themes\ggproject_ui\less\_grid.less */
   th.visible-xl,
   td.visible-xl {
     display: table-cell !important;
   }
-  /* line 269, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 276, ..\themes\ggproject_ui\less\_grid.less */
   .visible-xl-block {
     display: block !important;
   }
-  /* line 273, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 280, ..\themes\ggproject_ui\less\_grid.less */
   .visible-xl-inline {
     display: inline !important;
   }
-  /* line 277, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 284, ..\themes\ggproject_ui\less\_grid.less */
   .visible-xl-inline-block {
     display: inline-block !important;
   }
-  /* line 281, ..\themes\ggproject_ui\less\_grid.less */
+  /* line 288, ..\themes\ggproject_ui\less\_grid.less */
   .hidden-xl {
     display: none !important;
   }
@@ -10476,40 +10482,41 @@ body,
 .page-node-268 .page-banner,
 .page-node-263 .page-banner,
 .page-node-264 .page-banner {
+  display: block;
   position: relative;
-  background: rgba(71, 71, 71, 0.87) url(../images/404_bg.jpg) no-repeat center center;
-  background-blend-mode: multiply;
+  background: url(../images/404_bg.jpg) no-repeat center center;
   background-size: cover;
   margin-bottom: 0;
+  min-height: 480px !important;
 }
-/* line 12, ..\themes\ggproject_ui\less\pages\_404.less */
+/* line 13, ..\themes\ggproject_ui\less\pages\_404.less */
+.page-node-261 .page-banner .inner,
+.page-node-268 .page-banner .inner,
+.page-node-263 .page-banner .inner,
+.page-node-264 .page-banner .inner {
+  display: block;
+}
+/* line 16, ..\themes\ggproject_ui\less\pages\_404.less */
 .page-node-261 .page-banner .inner h1,
 .page-node-268 .page-banner .inner h1,
 .page-node-263 .page-banner .inner h1,
 .page-node-264 .page-banner .inner h1 {
   text-align: center;
   height: 100%;
-  padding: 11% 0;
   font-size: 150px;
 }
-/* line 19, ..\themes\ggproject_ui\less\pages\_404.less */
-.page-node-261 .page-banner .inner .subtitle-text,
-.page-node-268 .page-banner .inner .subtitle-text,
-.page-node-263 .page-banner .inner .subtitle-text,
-.page-node-264 .page-banner .inner .subtitle-text {
+/* line 22, ..\themes\ggproject_ui\less\pages\_404.less */
+.page-node-261 .page-banner .inner p,
+.page-node-268 .page-banner .inner p,
+.page-node-263 .page-banner .inner p,
+.page-node-264 .page-banner .inner p {
   font-size: 32px;
   display: block;
   padding: 2% 12%;
   font-family: 'cormorantregular';
+  color: white;
 }
-/* line 27, ..\themes\ggproject_ui\less\pages\_404.less */
-.page-node-261 .main-container,
-.page-node-268 .main-container,
-.page-node-263 .main-container,
-.page-node-264 .main-container {
-  display: none;
-}
-/* line 30, ..\themes\ggproject_ui\less\pages\_404.less */
+/* line 32, ..\themes\ggproject_ui\less\pages\_404.less */
 .page-node-261 .instagram,
 .page-node-268 .instagram,
 .page-node-263 .instagram,

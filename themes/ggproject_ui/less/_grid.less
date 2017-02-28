@@ -8,6 +8,7 @@
     width: 100% / 12 * @n;
 }
 
+@max-xs: 767px;
 @min-lg: 1200px;
 @min-xl: 1400px;
 
@@ -33,6 +34,12 @@
 .visible-xl-inline-block,
 .visible-xl{
     display: none !important;
+}
+
+@media (max-width: @max-xs) {
+    .col-sm-12 {
+        width: 100%;
+    }
 }
 
 @media (min-width: @min-xl) {
