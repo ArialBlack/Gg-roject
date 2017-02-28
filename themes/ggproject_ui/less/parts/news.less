@@ -54,3 +54,41 @@
   }
 }
 
+//fixes
+
+.page-news {
+  .main-container {
+    #views-bootstrap-grid-1 {
+      .row {
+        display: flex;
+        flex-wrap:wrap;
+        .col {
+          flex-grow:1;
+          .views-field-body {
+            margin-bottom: 3em;
+          }
+          .views-field-created, .views-field-view-node {
+            position: absolute;
+            bottom: 0;
+          }
+          .views-field-view-node {
+            left: 20%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.page-news {
+  #block-system-main {
+    .pager-load-more {
+      margin-top: 0;
+    }
+    .views-field-title { 
+      a:hover, a:focus {
+      text-decoration: none;
+      } 
+    }
+  }
+}
