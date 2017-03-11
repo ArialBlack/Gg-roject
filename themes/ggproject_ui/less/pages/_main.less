@@ -9,6 +9,11 @@
       text-align: left;
       .inner {
         bottom: 7vh;
+
+        @media screen and (max-width: @screen-md-max) {
+          bottom: 15vh;
+        }
+
         .left-block {
           display: inline-block;
           background: rgba(17,17,17,0.7);
@@ -68,24 +73,26 @@
   }
 }
 
-@media (min-width:320px) and (max-width:430px) {
+@media screen and (min-width:320px) and (max-width:430px) {
   .page-node-259,
   .page-node-260 {
     .inner {
-      rigth: 0;
+      right: 30vw;
       .left-block, .center-block, .right-block {
-        padding: 26px 4px;
+        display: block !important;
         font-size:64%;
+        padding: 25px;
+        text-align: center;
       }
     }
   }
 }
 
-@media (min-width: 431px) and (max-width: 639px) {
+@media screen and (min-width: 431px) and (max-width: 639px) {
   .page-node-259,
   .page-node-260 {
     .inner {
-      left: 10vw;
+      left: 10%;
       .left-block, .center-block, .right-block {
         padding: 26px 4px;
         font-size: 80%;
@@ -94,11 +101,11 @@
   }
 }
 
-@media (min-width:640px){
+@media screen and (min-width:640px){
   .page-node-259,
   .page-node-260 {
     .inner {
-      left: 10vw;
+      left: 10%;
       .left-block, .center-block, .right-block {
         padding: 26px 10px;
       }
@@ -106,11 +113,23 @@
   }
 }
 
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .page-node-259,
   .page-node-260 {
     .inner {
-      left:21vw;
+      left: 15%;
+      .left-block, .center-block, .right-block {
+        padding: 26px 20px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: @min-lg) {
+  .page-node-259,
+  .page-node-260 {
+    .inner {
+      left: 20vw;
       .left-block, .center-block, .right-block {
         padding: 26px 20px;
       }

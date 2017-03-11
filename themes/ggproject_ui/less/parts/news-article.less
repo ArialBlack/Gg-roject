@@ -1,10 +1,18 @@
 .node-type-article {
   h1 {
     float: left;
+
+    @media screen and (max-width: @max-xs) {
+      .font-size(36);
+    }
   }
 
   .back2portfolio {
     padding-right: 0;
+
+    @media screen and (max-width: @max-xs) {
+      display: none;
+    }
   }
 
   .region-content {
@@ -16,6 +24,10 @@
     .font-size(24);
     margin-bottom: 60px;
     display: block;
+
+    @media screen and (max-width: @max-xs) {
+      margin-bottom: 10px;
+    }
   }
 
   .field-name-field-image {

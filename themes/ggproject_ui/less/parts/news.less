@@ -3,6 +3,12 @@
   .page-banner {
     background: url('../images/news-bg.jpg') no-repeat center center;
     background-size: cover;
+
+    @media screen and (max-width: @max-xs) {
+      h1 {
+        text-align: center;
+      }
+    }
   }
 }
 
@@ -89,10 +95,10 @@
     .pager-load-more {
       margin-top: 0;
     }
-    .views-field-title { 
+    .views-field-title {
       a:hover, a:focus {
       text-decoration: none;
-      } 
+      }
     }
   }
 }

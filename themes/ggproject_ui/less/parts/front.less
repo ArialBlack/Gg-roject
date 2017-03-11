@@ -2,6 +2,10 @@
   #carousel {
     height: 700px; //todo
 
+    @media screen and (max-width: @max-xs){
+      height: 500px;
+    }
+
     .item:nth-child(1) {
       background: url('../images/slider-1.jpg') no-repeat center center;
       background-size: cover;

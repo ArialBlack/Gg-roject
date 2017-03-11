@@ -1,6 +1,34 @@
 #navbar {
   background: none;
   border: none;
+  width: 100%;
+  margin-top: 0;
+  padding-top: 10px;
+  position: fixed;
+  z-index: 100;
+  background: white;
+  max-width: none;
+
+  @media screen and (max-width: @max-xs) {
+    .logo > img {
+      max-width: 50%;
+    }
+
+    padding-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  @media screen and (min-width: @screen-sm) {
+    .logo > img {
+      max-width: 70%;
+    }
+  }
+
+  @media screen and (min-width: @screen-lg) {
+    .logo > img {
+      max-width: 100%;
+    }
+  }
 
   .menu {
     float: right;
@@ -64,9 +92,35 @@
   .navbar-collapse {
     nav {
       margin-top: 1em;
+
+      @media screen and (max-width: @screen-md-max) {
+        margin-top: 0;
+        display: flex;
+        flex-flow: column;
+
+        .region-navigation {
+          order: 2;
+          flex: 1 100%;
+          text-align: center;
+
+          .language-switcher-locale-url {
+            padding: 0;
+          }
+        }
+
+        .menu {
+          order: 1;
+          flex: 1 100%;
+          text-align: center;
+        }
+      }
     }
   }
   .navbar-toggle {
     margin-top: 1em;
+
+    @media screen and (max-width: @max-xs) {
+      margin-top: 8px;
+    }
   }
 }
