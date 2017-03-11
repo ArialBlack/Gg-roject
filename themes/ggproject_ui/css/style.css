@@ -9133,8 +9133,8 @@ h1.page-header {
 }
 /* line 108, ..\themes\ggproject_ui\less\_base.less */
 .page-banner {
-  margin-bottom: 60px;
-  min-height: 200px;
+  margin-bottom: 40px;
+  min-height: 180px;
   display: table;
   width: 100%;
 }
@@ -9207,9 +9207,9 @@ h1.page-header {
 @media (min-width: 768px) {
   /* line 127, ..\themes\ggproject_ui\less\_base.less */
   .page-banner {
-    min-height: 300px;
+    min-height: 240px;
   }
-  /* line 129, ..\themes\ggproject_ui\less\_base.less */
+  /* line 130, ..\themes\ggproject_ui\less\_base.less */
   .page-banner h1,
   .page-banner h2 {
     font-size: 31.25px;
@@ -9217,11 +9217,12 @@ h1.page-header {
   }
 }
 @media (min-width: 992px) {
-  /* line 134, ..\themes\ggproject_ui\less\_base.less */
+  /* line 135, ..\themes\ggproject_ui\less\_base.less */
   .page-banner {
-    min-height: 400px;
+    min-height: 300px;
+    margin-bottom: 60px;
   }
-  /* line 136, ..\themes\ggproject_ui\less\_base.less */
+  /* line 139, ..\themes\ggproject_ui\less\_base.less */
   .page-banner h1,
   .page-banner h2 {
     font-size: 41.66666666666667px;
@@ -9229,39 +9230,42 @@ h1.page-header {
   }
 }
 @media (min-width: 1200px) {
-  /* line 141, ..\themes\ggproject_ui\less\_base.less */
+  /* line 144, ..\themes\ggproject_ui\less\_base.less */
   .page-banner {
-    min-height: 480px;
+    min-height: 380px;
   }
-  /* line 143, ..\themes\ggproject_ui\less\_base.less */
+  /* line 147, ..\themes\ggproject_ui\less\_base.less */
   .page-banner h1,
   .page-banner h2 {
     font-size: 52.5px;
     font-size: 5.25rem;
   }
 }
-/* line 151, ..\themes\ggproject_ui\less\_base.less */
+/* line 155, ..\themes\ggproject_ui\less\_base.less */
 .pager.pager-load-more a {
-  background-color: #231f20;
-  border: none;
+  background-color: white;
+  border: #231f20 1px solid;
   border-radius: 0;
-  color: white;
+  color: #231f20;
   font-weight: normal;
   font-style: normal;
   font-family: 'cormorantmedium';
   font-size: 11.666666666666668px;
   font-size: 1.1666666666666667rem;
   padding: 10px 35px;
+  text-decoration: none;
 }
-/* line 160, ..\themes\ggproject_ui\less\_base.less */
+/* line 67, ..\themes\ggproject_ui\less\_mixins.less */
 .pager.pager-load-more a:hover {
   background-color: #17a6b9;
+  border-color: #17a6b9;
+  color: white;
 }
-/* line 167, ..\themes\ggproject_ui\less\_base.less */
+/* line 161, ..\themes\ggproject_ui\less\_base.less */
 .region-content ul.flippy {
   margin-top: 60px;
 }
-/* line 171, ..\themes\ggproject_ui\less\_base.less */
+/* line 165, ..\themes\ggproject_ui\less\_base.less */
 .back2portfolio {
   float: right;
   color: #9d9d9d;
@@ -9273,7 +9277,7 @@ h1.page-header {
   margin-top: 15px;
   padding-right: 10px;
 }
-/* line 181, ..\themes\ggproject_ui\less\_base.less */
+/* line 175, ..\themes\ggproject_ui\less\_base.less */
 article .field-name-body {
   color: #666666;
   font-size: 9.166666666666666px;
@@ -9281,27 +9285,27 @@ article .field-name-body {
   line-height: 13.333333333333332px;
   line-height: 1.3333333333333333rem;
 }
-/* line 186, ..\themes\ggproject_ui\less\_base.less */
+/* line 180, ..\themes\ggproject_ui\less\_base.less */
 article .field-name-body p {
   margin-bottom: 20px;
 }
-/* line 194, ..\themes\ggproject_ui\less\_base.less */
+/* line 188, ..\themes\ggproject_ui\less\_base.less */
 .carousel-fade .carousel-inner .item {
   transition-property: opacity;
 }
-/* line 198, ..\themes\ggproject_ui\less\_base.less */
+/* line 192, ..\themes\ggproject_ui\less\_base.less */
 .carousel-fade .carousel-inner .item,
 .carousel-fade .carousel-inner .active.left,
 .carousel-fade .carousel-inner .active.right {
   opacity: 0;
 }
-/* line 204, ..\themes\ggproject_ui\less\_base.less */
+/* line 198, ..\themes\ggproject_ui\less\_base.less */
 .carousel-fade .carousel-inner .active,
 .carousel-fade .carousel-inner .next.left,
 .carousel-fade .carousel-inner .prev.right {
   opacity: 1;
 }
-/* line 210, ..\themes\ggproject_ui\less\_base.less */
+/* line 204, ..\themes\ggproject_ui\less\_base.less */
 .carousel-fade .carousel-inner .next,
 .carousel-fade .carousel-inner .prev,
 .carousel-fade .carousel-inner .active.left,
@@ -9310,17 +9314,45 @@ article .field-name-body p {
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
 }
-/* line 219, ..\themes\ggproject_ui\less\_base.less */
+/* line 213, ..\themes\ggproject_ui\less\_base.less */
 .carousel-fade .carousel-control {
   z-index: 2;
 }
-/* line 224, ..\themes\ggproject_ui\less\_base.less */
+/* line 218, ..\themes\ggproject_ui\less\_base.less */
 html,
 body,
 .carousel,
 .carousel-inner,
 .carousel-inner .item {
   height: 100%;
+}
+/* line 226, ..\themes\ggproject_ui\less\_base.less */
+.views-field-created,
+.submitted-by,
+.footer,
+#node-265 p,
+#node-266 p {
+  font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif !important;
+}
+/* line 234, ..\themes\ggproject_ui\less\_base.less */
+.views-field-created {
+  font-size: 5.833333333333334px !important;
+  font-size: 0.5833333333333334rem !important;
+}
+/* line 238, ..\themes\ggproject_ui\less\_base.less */
+.submitted-by {
+  font-size: 7.5px !important;
+  font-size: 0.75rem !important;
+}
+/* line 245, ..\themes\ggproject_ui\less\_base.less */
+#node-265 p strong,
+#node-266 p strong {
+  font-family: 'cormorantbold';
+}
+/* line 251, ..\themes\ggproject_ui\less\_base.less */
+.node .translation_ru,
+.node .translation_eng {
+  display: none !important;
 }
 /*
 *   CSS file with Bootstrap grid classes for screens bigger than 1600px. Just add this file after the Bootstrap CSS file and you will be able to juse col-xl, col-xl-push, hidden-xl, etc.
@@ -10440,37 +10472,39 @@ body,
 }
 /* line 14, ..\themes\ggproject_ui\less\parts\_instagram.less */
 .instagram .instagram_link {
-  margin: 15px 0 0;
-  display: inline-block;
-  text-decoration: none;
-  background-color: #231f20;
-  border: none;
+  background-color: white;
+  border: #231f20 1px solid;
   border-radius: 0;
-  color: white;
+  color: #231f20;
   font-weight: normal;
   font-style: normal;
   font-family: 'cormorantmedium';
+  font-size: 11.666666666666668px;
   font-size: 1.1666666666666667rem;
   padding: 10px 35px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 40px;
 }
-/* line 28, ..\themes\ggproject_ui\less\parts\_instagram.less */
+/* line 67, ..\themes\ggproject_ui\less\_mixins.less */
 .instagram .instagram_link:hover {
   background-color: #17a6b9;
-  text-decoration: none;
+  border-color: #17a6b9;
+  color: white;
 }
-/* line 34, ..\themes\ggproject_ui\less\parts\_instagram.less */
+/* line 20, ..\themes\ggproject_ui\less\parts\_instagram.less */
 .instagram #instafeed {
   display: block;
   list-style: none;
   position: relative;
   padding: 0;
 }
-/* line 41, ..\themes\ggproject_ui\less\parts\_instagram.less */
+/* line 27, ..\themes\ggproject_ui\less\parts\_instagram.less */
 .instagram #instafeed li img {
   width: 100%;
   height: 100%;
 }
-/* line 46, ..\themes\ggproject_ui\less\parts\_instagram.less */
+/* line 32, ..\themes\ggproject_ui\less\parts\_instagram.less */
 .instagram #instafeed li {
   float: left;
   width: 12.5%;
@@ -10523,169 +10557,211 @@ body,
 .page-node-264 .instagram {
   display: none;
 }
-/* line 3, ..\themes\ggproject_ui\less\pages\_main.less */
-.page-node-259 .precontent .container {
+/* line 4, ..\themes\ggproject_ui\less\pages\_main.less */
+.page-node-259 .precontent .container,
+.page-node-260 .precontent .container {
   position: relative;
   text-align: left;
 }
-/* line 4, ..\themes\ggproject_ui\less\pages\_main.less */
-.page-node-259 .precontent .container a:hover {
+/* line 5, ..\themes\ggproject_ui\less\pages\_main.less */
+.page-node-259 .precontent .container a:hover,
+.page-node-260 .precontent .container a:hover {
   text-decoration: none;
 }
-/* line 9, ..\themes\ggproject_ui\less\pages\_main.less */
-.page-node-259 .precontent .container .inner {
+/* line 10, ..\themes\ggproject_ui\less\pages\_main.less */
+.page-node-259 .precontent .container .inner,
+.page-node-260 .precontent .container .inner {
   bottom: 7vh;
 }
-/* line 11, ..\themes\ggproject_ui\less\pages\_main.less */
-.page-node-259 .precontent .container .inner .left-block {
+/* line 12, ..\themes\ggproject_ui\less\pages\_main.less */
+.page-node-259 .precontent .container .inner .left-block,
+.page-node-260 .precontent .container .inner .left-block {
   display: inline-block;
   background: rgba(17, 17, 17, 0.7);
   color: #ffffff;
 }
-/* line 16, ..\themes\ggproject_ui\less\pages\_main.less */
-.page-node-259 .precontent .container .inner .center-block {
+/* line 17, ..\themes\ggproject_ui\less\pages\_main.less */
+.page-node-259 .precontent .container .inner .center-block,
+.page-node-260 .precontent .container .inner .center-block {
+  font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif !important;
+  line-height: 25px;
+  padding-bottom: 33px;
   display: inline-block;
   background: rgba(17, 17, 17, 0.7);
 }
-/* line 19, ..\themes\ggproject_ui\less\pages\_main.less */
-.page-node-259 .precontent .container .inner .center-block a {
+/* line 24, ..\themes\ggproject_ui\less\pages\_main.less */
+.page-node-259 .precontent .container .inner .center-block a,
+.page-node-260 .precontent .container .inner .center-block a {
   color: #ffffff;
 }
-/* line 23, ..\themes\ggproject_ui\less\pages\_main.less */
-.page-node-259 .precontent .container .inner .right-block {
+/* line 28, ..\themes\ggproject_ui\less\pages\_main.less */
+.page-node-259 .precontent .container .inner .right-block,
+.page-node-260 .precontent .container .inner .right-block {
   display: inline-block;
   background: rgba(17, 17, 17, 0.7);
 }
-/* line 26, ..\themes\ggproject_ui\less\pages\_main.less */
-.page-node-259 .precontent .container .inner .right-block a {
+/* line 31, ..\themes\ggproject_ui\less\pages\_main.less */
+.page-node-259 .precontent .container .inner .right-block a,
+.page-node-260 .precontent .container .inner .right-block a {
   background: #17a6b9;
   padding: 8px;
   color: #ffffff;
 }
-/* line 40, ..\themes\ggproject_ui\less\pages\_main.less */
-.page-node-259 .main-container #block-system-main .field-items .odd p {
+/* line 45, ..\themes\ggproject_ui\less\pages\_main.less */
+.page-node-259 .main-container #block-system-main .field-items .odd p,
+.page-node-260 .main-container #block-system-main .field-items .odd p {
   margin-bottom: 10px;
 }
-/* line 43, ..\themes\ggproject_ui\less\pages\_main.less */
-.page-node-259 .main-container #block-system-main .field-items .odd ul {
+/* line 48, ..\themes\ggproject_ui\less\pages\_main.less */
+.page-node-259 .main-container #block-system-main .field-items .odd ul,
+.page-node-260 .main-container #block-system-main .field-items .odd ul {
   padding-left: 6px;
 }
-/* line 45, ..\themes\ggproject_ui\less\pages\_main.less */
-.page-node-259 .main-container #block-system-main .field-items .odd ul li {
+/* line 50, ..\themes\ggproject_ui\less\pages\_main.less */
+.page-node-259 .main-container #block-system-main .field-items .odd ul li,
+.page-node-260 .main-container #block-system-main .field-items .odd ul li {
   list-style-type: none;
 }
-/* line 48, ..\themes\ggproject_ui\less\pages\_main.less */
-.page-node-259 .main-container #block-system-main .field-items .odd ul li:before {
+/* line 53, ..\themes\ggproject_ui\less\pages\_main.less */
+.page-node-259 .main-container #block-system-main .field-items .odd ul li:before,
+.page-node-260 .main-container #block-system-main .field-items .odd ul li:before {
   content: "-";
   position: relative;
   left: -5px;
 }
-/* line 60, ..\themes\ggproject_ui\less\pages\_main.less */
-.page-node-259 .content-bottom p {
+/* line 65, ..\themes\ggproject_ui\less\pages\_main.less */
+.page-node-259 .content-bottom p,
+.page-node-260 .content-bottom p {
   text-align: center;
 }
 @media (min-width: 320px) and (max-width: 430px) {
-  /* line 68, ..\themes\ggproject_ui\less\pages\_main.less */
-  .page-node-259 .inner {
+  /* line 74, ..\themes\ggproject_ui\less\pages\_main.less */
+  .page-node-259 .inner,
+  .page-node-260 .inner {
     rigth: 0;
   }
-  /* line 70, ..\themes\ggproject_ui\less\pages\_main.less */
+  /* line 76, ..\themes\ggproject_ui\less\pages\_main.less */
   .page-node-259 .inner .left-block,
+  .page-node-260 .inner .left-block,
   .page-node-259 .inner .center-block,
-  .page-node-259 .inner .right-block {
+  .page-node-260 .inner .center-block,
+  .page-node-259 .inner .right-block,
+  .page-node-260 .inner .right-block {
     padding: 26px 4px;
     font-size: 64%;
   }
 }
 @media (min-width: 431px) and (max-width: 639px) {
-  /* line 80, ..\themes\ggproject_ui\less\pages\_main.less */
-  .page-node-259 .inner {
+  /* line 87, ..\themes\ggproject_ui\less\pages\_main.less */
+  .page-node-259 .inner,
+  .page-node-260 .inner {
     left: 10vw;
   }
-  /* line 82, ..\themes\ggproject_ui\less\pages\_main.less */
+  /* line 89, ..\themes\ggproject_ui\less\pages\_main.less */
   .page-node-259 .inner .left-block,
+  .page-node-260 .inner .left-block,
   .page-node-259 .inner .center-block,
-  .page-node-259 .inner .right-block {
+  .page-node-260 .inner .center-block,
+  .page-node-259 .inner .right-block,
+  .page-node-260 .inner .right-block {
     padding: 26px 4px;
     font-size: 80%;
   }
 }
 @media (min-width: 640px) {
-  /* line 92, ..\themes\ggproject_ui\less\pages\_main.less */
-  .page-node-259 .inner {
+  /* line 100, ..\themes\ggproject_ui\less\pages\_main.less */
+  .page-node-259 .inner,
+  .page-node-260 .inner {
     left: 10vw;
   }
-  /* line 94, ..\themes\ggproject_ui\less\pages\_main.less */
+  /* line 102, ..\themes\ggproject_ui\less\pages\_main.less */
   .page-node-259 .inner .left-block,
+  .page-node-260 .inner .left-block,
   .page-node-259 .inner .center-block,
-  .page-node-259 .inner .right-block {
+  .page-node-260 .inner .center-block,
+  .page-node-259 .inner .right-block,
+  .page-node-260 .inner .right-block {
     padding: 26px 10px;
   }
 }
 @media (min-width: 992px) {
-  /* line 103, ..\themes\ggproject_ui\less\pages\_main.less */
-  .page-node-259 .inner {
+  /* line 112, ..\themes\ggproject_ui\less\pages\_main.less */
+  .page-node-259 .inner,
+  .page-node-260 .inner {
     left: 21vw;
   }
-  /* line 105, ..\themes\ggproject_ui\less\pages\_main.less */
+  /* line 114, ..\themes\ggproject_ui\less\pages\_main.less */
   .page-node-259 .inner .left-block,
+  .page-node-260 .inner .left-block,
   .page-node-259 .inner .center-block,
-  .page-node-259 .inner .right-block {
+  .page-node-260 .inner .center-block,
+  .page-node-259 .inner .right-block,
+  .page-node-260 .inner .right-block {
     padding: 26px 20px;
   }
 }
 @media (min-width: 320px) {
-  /* line 115, ..\themes\ggproject_ui\less\pages\_main.less */
-  .page-node-259 .content-bottom #block-block-4 {
+  /* line 125, ..\themes\ggproject_ui\less\pages\_main.less */
+  .page-node-259 .content-bottom #block-block-4,
+  .page-node-260 .content-bottom #block-block-4 {
     padding: 100px 40px;
   }
-  /* line 117, ..\themes\ggproject_ui\less\pages\_main.less */
-  .page-node-259 .content-bottom #block-block-4 p {
+  /* line 127, ..\themes\ggproject_ui\less\pages\_main.less */
+  .page-node-259 .content-bottom #block-block-4 p,
+  .page-node-260 .content-bottom #block-block-4 p {
     font-size: 80%;
   }
 }
 @media (min-width: 320px) and (max-width: 569px) {
-  /* line 128, ..\themes\ggproject_ui\less\pages\_main.less */
-  .page-node-259 .main-container h1 {
+  /* line 139, ..\themes\ggproject_ui\less\pages\_main.less */
+  .page-node-259 .main-container h1,
+  .page-node-260 .main-container h1 {
     font-size: 1.5rem;
   }
 }
 @media (min-width: 570px) {
-  /* line 141, ..\themes\ggproject_ui\less\pages\_main.less */
-  .page-node-259 .main-container #block-system-main .field-items .even {
+  /* line 153, ..\themes\ggproject_ui\less\pages\_main.less */
+  .page-node-259 .main-container #block-system-main .field-items .even,
+  .pahe-node-260 .main-container #block-system-main .field-items .even {
     display: block;
     width: 100%;
     float: left;
   }
-  /* line 145, ..\themes\ggproject_ui\less\pages\_main.less */
-  .page-node-259 .main-container #block-system-main .field-items .even p {
+  /* line 157, ..\themes\ggproject_ui\less\pages\_main.less */
+  .page-node-259 .main-container #block-system-main .field-items .even p,
+  .pahe-node-260 .main-container #block-system-main .field-items .even p {
     display: block;
   }
-  /* line 146, ..\themes\ggproject_ui\less\pages\_main.less */
-  .page-node-259 .main-container #block-system-main .field-items .even p img {
+  /* line 158, ..\themes\ggproject_ui\less\pages\_main.less */
+  .page-node-259 .main-container #block-system-main .field-items .even p img,
+  .pahe-node-260 .main-container #block-system-main .field-items .even p img {
     float: left;
   }
-  /* line 151, ..\themes\ggproject_ui\less\pages\_main.less */
-  .page-node-259 .main-container #block-system-main .field-items .even img {
+  /* line 163, ..\themes\ggproject_ui\less\pages\_main.less */
+  .page-node-259 .main-container #block-system-main .field-items .even img,
+  .pahe-node-260 .main-container #block-system-main .field-items .even img {
     margin-right: 10px;
   }
-  /* line 155, ..\themes\ggproject_ui\less\pages\_main.less */
-  .page-node-259 .main-container #block-system-main .field-items .odd {
+  /* line 167, ..\themes\ggproject_ui\less\pages\_main.less */
+  .page-node-259 .main-container #block-system-main .field-items .odd,
+  .pahe-node-260 .main-container #block-system-main .field-items .odd {
     display: inline-block;
     width: 100%;
     float: left;
   }
 }
 @media (min-width: 992px) {
-  /* line 171, ..\themes\ggproject_ui\less\pages\_main.less */
-  .page-node-259 .main-container #block-system-main .field-items .even {
+  /* line 184, ..\themes\ggproject_ui\less\pages\_main.less */
+  .page-node-259 .main-container #block-system-main .field-items .even,
+  .page-node-260 .main-container #block-system-main .field-items .even {
     display: inline-block;
     width: 24%;
     margin-right: 0.7em;
     float: left;
   }
-  /* line 177, ..\themes\ggproject_ui\less\pages\_main.less */
-  .page-node-259 .main-container #block-system-main .field-items .odd {
+  /* line 190, ..\themes\ggproject_ui\less\pages\_main.less */
+  .page-node-259 .main-container #block-system-main .field-items .odd,
+  .page-node-260 .main-container #block-system-main .field-items .odd {
     display: inline-block;
     width: 70%;
     float: left;
