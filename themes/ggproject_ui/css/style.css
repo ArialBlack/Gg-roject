@@ -9669,66 +9669,69 @@ body,
 @media screen and (max-width: 767px) {
   /* line 12, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar {
+    border-bottom: 2px solid #17a6b9;
     padding-top: 10px;
     margin-bottom: 5px;
   }
-  /* line 13, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 15, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .logo > img {
     max-width: 50%;
   }
 }
 @media screen and (min-width: 768px) {
-  /* line 22, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 24, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .logo > img {
     max-width: 70%;
+    margin-left: 40px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 28, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 31, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .logo > img {
-    max-width: 100%;
+    max-width: 85%;
+    margin-left: 50px;
   }
 }
-/* line 33, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 37, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar .menu {
   float: right;
 }
-/* line 37, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 41, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar .menu li a {
   font-size: 7.5px;
   font-size: 0.75rem;
   text-transform: uppercase;
   text-decoration: none;
 }
-/* line 42, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 46, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar .menu li a:hover,
 #navbar .menu li a:focus {
   background: none;
   color: #17a6b9;
 }
-/* line 50, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 54, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar .menu li.active a {
   background: none;
   color: #17a6b9;
 }
-/* line 58, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 62, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar .region-navigation {
   float: right;
   margin-top: 7px;
 }
-/* line 64, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 68, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar #block-locale-language .block-title {
   display: none;
 }
-/* line 69, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 73, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar #block-locale-language .language-switcher-locale-url li {
   list-style: none;
 }
-/* line 72, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 76, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar #block-locale-language .language-switcher-locale-url li.active {
   display: none;
 }
-/* line 76, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 80, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar #block-locale-language .language-switcher-locale-url li a {
   font-size: 7.5px;
   font-size: 0.75rem;
@@ -9737,12 +9740,16 @@ body,
   padding-top: 15px;
   padding-bottom: 15px;
 }
-/* line 93, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 96, ..\themes\ggproject_ui\less\parts\navbar.less */
+#navbar .navbar-collapse {
+  padding: 0;
+}
+/* line 99, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar .navbar-collapse nav {
   margin-top: 1em;
 }
 @media screen and (max-width: 1199px) {
-  /* line 96, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 102, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .navbar-collapse nav {
     margin-top: 0;
     display: -webkit-flex;
@@ -9752,7 +9759,7 @@ body,
         -ms-flex-flow: column;
             flex-flow: column;
   }
-  /* line 101, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 107, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .navbar-collapse nav .region-navigation {
     -webkit-order: 2;
         -ms-flex-order: 2;
@@ -9761,12 +9768,24 @@ body,
         -ms-flex: 1 100%;
             flex: 1 100%;
     text-align: center;
+    background: #231f20;
+    margin-top: 0;
   }
-  /* line 106, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 114, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .navbar-collapse nav .region-navigation .language-switcher-locale-url {
     padding: 0;
   }
-  /* line 111, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 117, ..\themes\ggproject_ui\less\parts\navbar.less */
+  #navbar .navbar-collapse nav .region-navigation .language-switcher-locale-url .language-link {
+    margin-top: 5px;
+    border-radius: 15px;
+    border: 1px solid #ffffff;
+    display: inline-block;
+    padding: 5px 10px !important;
+    color: #fff;
+    line-height: 1.5;
+  }
+  /* line 129, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .navbar-collapse nav .menu {
     -webkit-order: 1;
         -ms-flex-order: 1;
@@ -9775,14 +9794,46 @@ body,
         -ms-flex: 1 100%;
             flex: 1 100%;
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  /* line 136, ..\themes\ggproject_ui\less\parts\navbar.less */
+  #navbar .navbar-collapse nav .menu li.leaf {
+    background: #17a6b9;
+    border-bottom: 1px solid #ffffff;
+  }
+  /* line 140, ..\themes\ggproject_ui\less\parts\navbar.less */
+  #navbar .navbar-collapse nav .menu li.leaf:last-child {
+    border-bottom: 0 none;
+  }
+  /* line 144, ..\themes\ggproject_ui\less\parts\navbar.less */
+  #navbar .navbar-collapse nav .menu li.leaf a {
+    color: #ffffff;
+    padding-top: 30px;
+    padding-bottom: 40px;
   }
 }
-/* line 119, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 154, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar .navbar-toggle {
   margin-top: 1em;
+  border: 0 none;
+}
+/* line 158, ..\themes\ggproject_ui\less\parts\navbar.less */
+#navbar .navbar-toggle:hover,
+#navbar .navbar-toggle:focus {
+  background: transparent;
+}
+/* line 161, ..\themes\ggproject_ui\less\parts\navbar.less */
+#navbar .navbar-toggle:hover .icon-bar,
+#navbar .navbar-toggle:focus .icon-bar {
+  background-color: #17a6b9;
+}
+/* line 166, ..\themes\ggproject_ui\less\parts\navbar.less */
+#navbar .navbar-toggle .icon-bar {
+  background-color: #000;
 }
 @media screen and (max-width: 767px) {
-  /* line 122, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 170, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .navbar-toggle {
     margin-top: 8px;
   }
@@ -10553,72 +10604,83 @@ body,
 /* line 9, ..\themes\ggproject_ui\less\parts\front.less */
 .front #carousel .item:nth-child(1) {
   background: url('../images/slider-1.jpg') no-repeat center center;
-  background-size: cover;
+  background-size: 150% 75%;
 }
 /* line 14, ..\themes\ggproject_ui\less\parts\front.less */
 .front #carousel .item:nth-child(2) {
   background: url('../images/slider-2.jpg') no-repeat center center;
-  background-size: cover;
+  background-size: 150% 75%;
 }
 /* line 19, ..\themes\ggproject_ui\less\parts\front.less */
 .front #carousel .item:nth-child(3) {
   background: url('../images/slider-3.jpg') no-repeat center center;
-  background-size: cover;
+  background-size: 150% 75%;
 }
 /* line 24, ..\themes\ggproject_ui\less\parts\front.less */
 .front #carousel .item:nth-child(4) {
   background: url('../images/slider-4.jpg') no-repeat center center;
-  background-size: cover;
+  background-size: 150% 75%;
 }
 /* line 29, ..\themes\ggproject_ui\less\parts\front.less */
 .front #carousel .carousel-indicators {
   bottom: -60px;
 }
-/* line 32, ..\themes\ggproject_ui\less\parts\front.less */
+@media screen and (max-width: 767px) {
+  /* line 32, ..\themes\ggproject_ui\less\parts\front.less */
+  .front #carousel .carousel-indicators {
+    display: none;
+  }
+}
+/* line 36, ..\themes\ggproject_ui\less\parts\front.less */
 .front #carousel .carousel-indicators li {
   border: black 1px solid;
   border-radius: 0;
   margin-left: 1px;
   margin-right: 1px;
 }
-/* line 38, ..\themes\ggproject_ui\less\parts\front.less */
+/* line 42, ..\themes\ggproject_ui\less\parts\front.less */
 .front #carousel .carousel-indicators li.active {
   width: 10px;
   height: 10px;
   background-color: black;
   border: black 1px solid;
 }
-/* line 49, ..\themes\ggproject_ui\less\parts\front.less */
+/* line 53, ..\themes\ggproject_ui\less\parts\front.less */
 .front .block-on-banner .container {
   text-align: center;
 }
-/* line 53, ..\themes\ggproject_ui\less\parts\front.less */
+/* line 57, ..\themes\ggproject_ui\less\parts\front.less */
 .front .block-on-banner .inner {
   position: absolute;
   bottom: 20%;
   display: inline-block;
 }
-/* line 60, ..\themes\ggproject_ui\less\parts\front.less */
+/* line 64, ..\themes\ggproject_ui\less\parts\front.less */
 .front .main-container {
   margin-top: 60px;
 }
-/* line 64, ..\themes\ggproject_ui\less\parts\front.less */
+@media screen and (max-width: 767px) {
+  /* line 67, ..\themes\ggproject_ui\less\parts\front.less */
+  .front .main-container {
+    margin-top: -60px;
+  }
+}
+/* line 72, ..\themes\ggproject_ui\less\parts\front.less */
 .front .content-bottom {
   background: url('../images/slider-5.jpg') no-repeat center center;
   background-size: cover;
   height: 700px;
 }
-/* line 69, ..\themes\ggproject_ui\less\parts\front.less */
+/* line 77, ..\themes\ggproject_ui\less\parts\front.less */
 .front .content-bottom .region-content-bottom {
   position: relative;
   height: 100%;
 }
-/* line 74, ..\themes\ggproject_ui\less\parts\front.less */
+/* line 82, ..\themes\ggproject_ui\less\parts\front.less */
 .front .content-bottom #block-block-4 {
   display: inline-block;
   padding: 100px 150px;
-  background: rgba(17, 17, 17, 0.7);
-  color: white;
+  background: rgba(255, 255, 255, 0.8);
   font-weight: normal;
   font-style: normal;
   font-family: 'cormorantmedium';
@@ -10634,19 +10696,19 @@ body,
           transform: translate(-50%, -50%);
 }
 @media (min-width: 768px) {
-  /* line 88, ..\themes\ggproject_ui\less\parts\front.less */
+  /* line 95, ..\themes\ggproject_ui\less\parts\front.less */
   .front .content-bottom #block-block-4 {
     width: 80%;
   }
 }
 @media (min-width: 992px) {
-  /* line 91, ..\themes\ggproject_ui\less\parts\front.less */
+  /* line 98, ..\themes\ggproject_ui\less\parts\front.less */
   .front .content-bottom #block-block-4 {
     width: 70%;
   }
 }
 @media (min-width: 1200px) {
-  /* line 94, ..\themes\ggproject_ui\less\parts\front.less */
+  /* line 101, ..\themes\ggproject_ui\less\parts\front.less */
   .front .content-bottom #block-block-4 {
     width: 60%;
   }
@@ -10772,96 +10834,99 @@ body,
   /* line 13, ..\themes\ggproject_ui\less\pages\_main.less */
   .page-node-259 .precontent .container .inner,
   .page-node-260 .precontent .container .inner {
-    bottom: 15vh;
+    bottom: 75px;
   }
 }
 /* line 17, ..\themes\ggproject_ui\less\pages\_main.less */
 .page-node-259 .precontent .container .inner .left-block,
 .page-node-260 .precontent .container .inner .left-block {
   display: inline-block;
-  background: rgba(17, 17, 17, 0.7);
-  color: #ffffff;
+  background: rgba(255, 255, 255, 0.8);
 }
-/* line 22, ..\themes\ggproject_ui\less\pages\_main.less */
+/* line 21, ..\themes\ggproject_ui\less\pages\_main.less */
 .page-node-259 .precontent .container .inner .center-block,
 .page-node-260 .precontent .container .inner .center-block {
   font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif !important;
   line-height: 25px;
   padding-bottom: 33px;
   display: inline-block;
-  background: rgba(17, 17, 17, 0.7);
+  background: rgba(255, 255, 255, 0.8);
 }
-/* line 29, ..\themes\ggproject_ui\less\pages\_main.less */
+/* line 28, ..\themes\ggproject_ui\less\pages\_main.less */
 .page-node-259 .precontent .container .inner .center-block a,
 .page-node-260 .precontent .container .inner .center-block a {
-  color: #ffffff;
+  color: #000000;
 }
-/* line 33, ..\themes\ggproject_ui\less\pages\_main.less */
+/* line 32, ..\themes\ggproject_ui\less\pages\_main.less */
 .page-node-259 .precontent .container .inner .right-block,
 .page-node-260 .precontent .container .inner .right-block {
   display: inline-block;
-  background: rgba(17, 17, 17, 0.7);
+  background: rgba(255, 255, 255, 0.8);
 }
-/* line 36, ..\themes\ggproject_ui\less\pages\_main.less */
+/* line 35, ..\themes\ggproject_ui\less\pages\_main.less */
 .page-node-259 .precontent .container .inner .right-block a,
 .page-node-260 .precontent .container .inner .right-block a {
   background: #17a6b9;
   padding: 8px;
   color: #ffffff;
 }
-/* line 50, ..\themes\ggproject_ui\less\pages\_main.less */
+/* line 49, ..\themes\ggproject_ui\less\pages\_main.less */
 .page-node-259 .main-container #block-system-main .field-items .odd p,
 .page-node-260 .main-container #block-system-main .field-items .odd p {
   margin-bottom: 10px;
 }
-/* line 53, ..\themes\ggproject_ui\less\pages\_main.less */
+/* line 52, ..\themes\ggproject_ui\less\pages\_main.less */
 .page-node-259 .main-container #block-system-main .field-items .odd ul,
 .page-node-260 .main-container #block-system-main .field-items .odd ul {
   padding-left: 6px;
 }
-/* line 55, ..\themes\ggproject_ui\less\pages\_main.less */
+/* line 54, ..\themes\ggproject_ui\less\pages\_main.less */
 .page-node-259 .main-container #block-system-main .field-items .odd ul li,
 .page-node-260 .main-container #block-system-main .field-items .odd ul li {
   list-style-type: none;
 }
-/* line 58, ..\themes\ggproject_ui\less\pages\_main.less */
+/* line 57, ..\themes\ggproject_ui\less\pages\_main.less */
 .page-node-259 .main-container #block-system-main .field-items .odd ul li:before,
 .page-node-260 .main-container #block-system-main .field-items .odd ul li:before {
   content: "-";
   position: relative;
   left: -5px;
 }
-/* line 70, ..\themes\ggproject_ui\less\pages\_main.less */
+/* line 69, ..\themes\ggproject_ui\less\pages\_main.less */
 .page-node-259 .content-bottom p,
 .page-node-260 .content-bottom p {
   text-align: center;
 }
 @media screen and (min-width: 320px) and (max-width: 430px) {
-  /* line 79, ..\themes\ggproject_ui\less\pages\_main.less */
+  /* line 78, ..\themes\ggproject_ui\less\pages\_main.less */
   .page-node-259 .inner,
   .page-node-260 .inner {
-    right: 30vw;
+    left: 10px;
   }
-  /* line 81, ..\themes\ggproject_ui\less\pages\_main.less */
+  /* line 80, ..\themes\ggproject_ui\less\pages\_main.less */
   .page-node-259 .inner .left-block,
   .page-node-260 .inner .left-block,
   .page-node-259 .inner .center-block,
   .page-node-260 .inner .center-block,
   .page-node-259 .inner .right-block,
   .page-node-260 .inner .right-block {
-    display: block !important;
-    font-size: 64%;
-    padding: 15px 25px 10px !important;
-    text-align: center;
+    padding: 25px 5px;
+    font-size: 70%;
+  }
+  /* line 85, ..\themes\ggproject_ui\less\pages\_main.less */
+  .page-node-259 .inner .center-block,
+  .page-node-260 .inner .center-block {
+    padding-bottom: 30px !important;
+    line-height: 27px !important;
   }
 }
 @media screen and (min-width: 431px) and (max-width: 639px) {
-  /* line 94, ..\themes\ggproject_ui\less\pages\_main.less */
+  /* line 96, ..\themes\ggproject_ui\less\pages\_main.less */
   .page-node-259 .inner,
   .page-node-260 .inner {
     left: 10%;
   }
-  /* line 96, ..\themes\ggproject_ui\less\pages\_main.less */
+  /* line 98, ..\themes\ggproject_ui\less\pages\_main.less */
   .page-node-259 .inner .left-block,
   .page-node-260 .inner .left-block,
   .page-node-259 .inner .center-block,
@@ -10873,12 +10938,12 @@ body,
   }
 }
 @media screen and (min-width: 640px) {
-  /* line 107, ..\themes\ggproject_ui\less\pages\_main.less */
+  /* line 109, ..\themes\ggproject_ui\less\pages\_main.less */
   .page-node-259 .inner,
   .page-node-260 .inner {
     left: 10%;
   }
-  /* line 109, ..\themes\ggproject_ui\less\pages\_main.less */
+  /* line 111, ..\themes\ggproject_ui\less\pages\_main.less */
   .page-node-259 .inner .left-block,
   .page-node-260 .inner .left-block,
   .page-node-259 .inner .center-block,
@@ -10889,12 +10954,12 @@ body,
   }
 }
 @media screen and (min-width: 992px) {
-  /* line 119, ..\themes\ggproject_ui\less\pages\_main.less */
+  /* line 121, ..\themes\ggproject_ui\less\pages\_main.less */
   .page-node-259 .inner,
   .page-node-260 .inner {
     left: 15%;
   }
-  /* line 121, ..\themes\ggproject_ui\less\pages\_main.less */
+  /* line 123, ..\themes\ggproject_ui\less\pages\_main.less */
   .page-node-259 .inner .left-block,
   .page-node-260 .inner .left-block,
   .page-node-259 .inner .center-block,
@@ -10905,12 +10970,12 @@ body,
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 131, ..\themes\ggproject_ui\less\pages\_main.less */
+  /* line 133, ..\themes\ggproject_ui\less\pages\_main.less */
   .page-node-259 .inner,
   .page-node-260 .inner {
     left: 20vw;
   }
-  /* line 133, ..\themes\ggproject_ui\less\pages\_main.less */
+  /* line 135, ..\themes\ggproject_ui\less\pages\_main.less */
   .page-node-259 .inner .left-block,
   .page-node-260 .inner .left-block,
   .page-node-259 .inner .center-block,
@@ -10921,48 +10986,48 @@ body,
   }
 }
 @media (min-width: 320px) {
-  /* line 144, ..\themes\ggproject_ui\less\pages\_main.less */
+  /* line 146, ..\themes\ggproject_ui\less\pages\_main.less */
   .page-node-259 .content-bottom #block-block-4,
   .page-node-260 .content-bottom #block-block-4 {
     padding: 100px 40px;
   }
-  /* line 146, ..\themes\ggproject_ui\less\pages\_main.less */
+  /* line 148, ..\themes\ggproject_ui\less\pages\_main.less */
   .page-node-259 .content-bottom #block-block-4 p,
   .page-node-260 .content-bottom #block-block-4 p {
     font-size: 80%;
   }
 }
 @media (min-width: 320px) and (max-width: 569px) {
-  /* line 158, ..\themes\ggproject_ui\less\pages\_main.less */
+  /* line 160, ..\themes\ggproject_ui\less\pages\_main.less */
   .page-node-259 .main-container h1,
   .page-node-260 .main-container h1 {
     font-size: 1.5rem;
   }
 }
 @media (min-width: 570px) {
-  /* line 172, ..\themes\ggproject_ui\less\pages\_main.less */
+  /* line 174, ..\themes\ggproject_ui\less\pages\_main.less */
   .page-node-259 .main-container #block-system-main .field-items .even,
   .pahe-node-260 .main-container #block-system-main .field-items .even {
     display: block;
     width: 100%;
     float: left;
   }
-  /* line 176, ..\themes\ggproject_ui\less\pages\_main.less */
+  /* line 178, ..\themes\ggproject_ui\less\pages\_main.less */
   .page-node-259 .main-container #block-system-main .field-items .even p,
   .pahe-node-260 .main-container #block-system-main .field-items .even p {
     display: block;
   }
-  /* line 177, ..\themes\ggproject_ui\less\pages\_main.less */
+  /* line 179, ..\themes\ggproject_ui\less\pages\_main.less */
   .page-node-259 .main-container #block-system-main .field-items .even p img,
   .pahe-node-260 .main-container #block-system-main .field-items .even p img {
     float: left;
   }
-  /* line 182, ..\themes\ggproject_ui\less\pages\_main.less */
+  /* line 184, ..\themes\ggproject_ui\less\pages\_main.less */
   .page-node-259 .main-container #block-system-main .field-items .even img,
   .pahe-node-260 .main-container #block-system-main .field-items .even img {
     margin-right: 10px;
   }
-  /* line 186, ..\themes\ggproject_ui\less\pages\_main.less */
+  /* line 188, ..\themes\ggproject_ui\less\pages\_main.less */
   .page-node-259 .main-container #block-system-main .field-items .odd,
   .pahe-node-260 .main-container #block-system-main .field-items .odd {
     display: inline-block;
@@ -10970,20 +11035,26 @@ body,
     float: left;
   }
 }
-@media (min-width: 992px) {
-  /* line 203, ..\themes\ggproject_ui\less\pages\_main.less */
+@media (min-width: 1200px) {
+  /* line 205, ..\themes\ggproject_ui\less\pages\_main.less */
   .page-node-259 .main-container #block-system-main .field-items .even,
   .page-node-260 .main-container #block-system-main .field-items .even {
     display: inline-block;
-    width: 24%;
+    width: 45%;
     margin-right: 0.7em;
     float: left;
   }
-  /* line 209, ..\themes\ggproject_ui\less\pages\_main.less */
+  /* line 211, ..\themes\ggproject_ui\less\pages\_main.less */
+  .page-node-259 .main-container #block-system-main .field-items .even img,
+  .page-node-260 .main-container #block-system-main .field-items .even img {
+    min-height: 650px;
+    max-width: none;
+  }
+  /* line 216, ..\themes\ggproject_ui\less\pages\_main.less */
   .page-node-259 .main-container #block-system-main .field-items .odd,
   .page-node-260 .main-container #block-system-main .field-items .odd {
     display: inline-block;
-    width: 70%;
-    float: left;
+    width: 45%;
+    float: right;
   }
 }
