@@ -10604,79 +10604,103 @@ body,
 /* line 9, ..\themes\ggproject_ui\less\parts\front.less */
 .front #carousel .item:nth-child(1) {
   background: url('../images/slider-1.jpg') no-repeat center center;
-  background-size: 150% 75%;
+  background-size: cover;
 }
-/* line 14, ..\themes\ggproject_ui\less\parts\front.less */
+@media screen and (max-width: 767px) {
+  /* line 12, ..\themes\ggproject_ui\less\parts\front.less */
+  .front #carousel .item:nth-child(1) {
+    background-size: 150% 75%;
+  }
+}
+/* line 17, ..\themes\ggproject_ui\less\parts\front.less */
 .front #carousel .item:nth-child(2) {
   background: url('../images/slider-2.jpg') no-repeat center center;
-  background-size: 150% 75%;
+  background-size: cover;
 }
-/* line 19, ..\themes\ggproject_ui\less\parts\front.less */
+@media screen and (max-width: 767px) {
+  /* line 20, ..\themes\ggproject_ui\less\parts\front.less */
+  .front #carousel .item:nth-child(2) {
+    background-size: 150% 75%;
+  }
+}
+/* line 25, ..\themes\ggproject_ui\less\parts\front.less */
 .front #carousel .item:nth-child(3) {
   background: url('../images/slider-3.jpg') no-repeat center center;
-  background-size: 150% 75%;
+  background-size: cover;
 }
-/* line 24, ..\themes\ggproject_ui\less\parts\front.less */
+@media screen and (max-width: 767px) {
+  /* line 28, ..\themes\ggproject_ui\less\parts\front.less */
+  .front #carousel .item:nth-child(3) {
+    background-size: 150% 75%;
+  }
+}
+/* line 33, ..\themes\ggproject_ui\less\parts\front.less */
 .front #carousel .item:nth-child(4) {
   background: url('../images/slider-4.jpg') no-repeat center center;
-  background-size: 150% 75%;
+  background-size: cover;
 }
-/* line 29, ..\themes\ggproject_ui\less\parts\front.less */
+@media screen and (max-width: 767px) {
+  /* line 36, ..\themes\ggproject_ui\less\parts\front.less */
+  .front #carousel .item:nth-child(4) {
+    background-size: 150% 75%;
+  }
+}
+/* line 41, ..\themes\ggproject_ui\less\parts\front.less */
 .front #carousel .carousel-indicators {
   bottom: -60px;
 }
 @media screen and (max-width: 767px) {
-  /* line 32, ..\themes\ggproject_ui\less\parts\front.less */
+  /* line 44, ..\themes\ggproject_ui\less\parts\front.less */
   .front #carousel .carousel-indicators {
     display: none;
   }
 }
-/* line 36, ..\themes\ggproject_ui\less\parts\front.less */
+/* line 48, ..\themes\ggproject_ui\less\parts\front.less */
 .front #carousel .carousel-indicators li {
   border: black 1px solid;
   border-radius: 0;
   margin-left: 1px;
   margin-right: 1px;
 }
-/* line 42, ..\themes\ggproject_ui\less\parts\front.less */
+/* line 54, ..\themes\ggproject_ui\less\parts\front.less */
 .front #carousel .carousel-indicators li.active {
   width: 10px;
   height: 10px;
   background-color: black;
   border: black 1px solid;
 }
-/* line 53, ..\themes\ggproject_ui\less\parts\front.less */
+/* line 65, ..\themes\ggproject_ui\less\parts\front.less */
 .front .block-on-banner .container {
   text-align: center;
 }
-/* line 57, ..\themes\ggproject_ui\less\parts\front.less */
+/* line 69, ..\themes\ggproject_ui\less\parts\front.less */
 .front .block-on-banner .inner {
   position: absolute;
   bottom: 20%;
   display: inline-block;
 }
-/* line 64, ..\themes\ggproject_ui\less\parts\front.less */
+/* line 76, ..\themes\ggproject_ui\less\parts\front.less */
 .front .main-container {
   margin-top: 60px;
 }
 @media screen and (max-width: 767px) {
-  /* line 67, ..\themes\ggproject_ui\less\parts\front.less */
+  /* line 79, ..\themes\ggproject_ui\less\parts\front.less */
   .front .main-container {
     margin-top: -60px;
   }
 }
-/* line 72, ..\themes\ggproject_ui\less\parts\front.less */
+/* line 84, ..\themes\ggproject_ui\less\parts\front.less */
 .front .content-bottom {
   background: url('../images/slider-5.jpg') no-repeat center center;
   background-size: cover;
   height: 700px;
 }
-/* line 77, ..\themes\ggproject_ui\less\parts\front.less */
+/* line 89, ..\themes\ggproject_ui\less\parts\front.less */
 .front .content-bottom .region-content-bottom {
   position: relative;
   height: 100%;
 }
-/* line 82, ..\themes\ggproject_ui\less\parts\front.less */
+/* line 94, ..\themes\ggproject_ui\less\parts\front.less */
 .front .content-bottom #block-block-4 {
   display: inline-block;
   padding: 100px 150px;
@@ -10696,19 +10720,19 @@ body,
           transform: translate(-50%, -50%);
 }
 @media (min-width: 768px) {
-  /* line 95, ..\themes\ggproject_ui\less\parts\front.less */
+  /* line 107, ..\themes\ggproject_ui\less\parts\front.less */
   .front .content-bottom #block-block-4 {
     width: 80%;
   }
 }
 @media (min-width: 992px) {
-  /* line 98, ..\themes\ggproject_ui\less\parts\front.less */
+  /* line 110, ..\themes\ggproject_ui\less\parts\front.less */
   .front .content-bottom #block-block-4 {
     width: 70%;
   }
 }
 @media (min-width: 1200px) {
-  /* line 101, ..\themes\ggproject_ui\less\parts\front.less */
+  /* line 113, ..\themes\ggproject_ui\less\parts\front.less */
   .front .content-bottom #block-block-4 {
     width: 60%;
   }
