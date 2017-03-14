@@ -2,6 +2,12 @@
   .page-banner {
     background: url('../images/video-bg.jpg') no-repeat center center;
     background-size: cover;
+
+    @media screen and (max-width: @max-xs) {
+      h1 {
+        text-align: center;
+      }
+    }
   }
 
   .views-field-nothing {

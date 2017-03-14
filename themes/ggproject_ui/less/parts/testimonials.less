@@ -2,6 +2,12 @@
   .page-banner {
     background: url('../images/news-bg.jpg') no-repeat center center;
     background-size: cover;
+
+    @media screen and (max-width: @max-xs) {
+      h1 {
+        text-align: center;
+      }
+    }
   }
 
   .media-left {
@@ -28,6 +34,11 @@
     .f('sb');
     .font-size(48);
     margin-bottom: 20px;
+
+    @media screen and (max-width: @max-xs) {
+      .font-size(36);
+      margin-bottom: 0;
+    }
   }
 
   .views-field-created {
@@ -35,6 +46,10 @@
     .font-size(24);
     margin-bottom: 60px;
     display: block;
+
+    @media screen and (max-width: @max-xs) {
+      margin-bottom: 20px;
+    }
   }
 
   .media-body {
@@ -56,13 +71,18 @@
     margin-bottom: 60px;
     padding-bottom: 90px;
     border-bottom: @gg-line 1px solid;
+
+    @media screen and (max-width: @max-xs) {
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+    }
   }
 
 }
 
 //fixes
 
-.page-testimonials {  
+.page-testimonials {
   #block-system-main {
     .views-row-5 {
       p {
@@ -77,6 +97,10 @@
     .media-body {
       .media-heading {
         margin-bottom:40px;
+
+        @media screen and (max-width: @max-xs) {
+          margin-bottom: 20px;
+        }
       }
     }
   }

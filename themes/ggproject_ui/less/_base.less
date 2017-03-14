@@ -48,7 +48,7 @@
     visibility: visible;
     height: 1px;
     width: 1px;
-    
+
     @media (min-width: 1200px) {
         display: none;
         visibility: hidden;
@@ -74,7 +74,7 @@ body {
     font-family: 'cormorantregular';
     .font-size(24);
     .line-height(32);
-} 
+}
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'cormorantsemibold';
@@ -110,6 +110,16 @@ h1.page-header {
     min-height: 180px;
     display: table;
     width: 100%;
+
+    padding-top: 100px;
+
+    @media screen and (max-width: @screen-md-max) {
+      padding-top: 75px;
+    }
+
+    @media screen and (max-width: @max-xs) {
+      padding-top: 50px;
+    }
 
     .inner {
         display: table-cell;

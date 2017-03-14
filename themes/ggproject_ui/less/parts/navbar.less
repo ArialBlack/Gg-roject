@@ -1,6 +1,38 @@
 #navbar {
   background: none;
   border: none;
+  width: 100%;
+  margin-top: 0;
+  padding-top: 10px;
+  position: fixed;
+  z-index: 100;
+  background: white;
+  max-width: none;
+
+  @media screen and (max-width: @max-xs) {
+    border-bottom: 2px solid @gg-blue;
+
+    .logo > img {
+      max-width: 50%;
+    }
+
+    padding-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  @media screen and (min-width: @screen-sm) {
+    .logo > img {
+      max-width: 70%;
+      margin-left: 40px;
+    }
+  }
+
+  @media screen and (min-width: @screen-lg) {
+    .logo > img {
+      max-width: 85%;
+      margin-left: 50px;
+    }
+  }
 
   .menu {
     float: right;
@@ -62,11 +94,81 @@
 
 #navbar {
   .navbar-collapse {
+    padding: 0;
+
     nav {
       margin-top: 1em;
+
+      @media screen and (max-width: @screen-md-max) {
+        margin-top: 0;
+        display: flex;
+        flex-flow: column;
+
+        .region-navigation {
+          order: 2;
+          flex: 1 100%;
+          text-align: center;
+          background: #231f20;
+          margin-top: 0;
+
+          .language-switcher-locale-url {
+            padding: 0;
+
+            .language-link {
+              margin-top: 5px;
+              border-radius: 15px;
+              border: 1px solid #ffffff;
+              display: inline-block;
+              padding: 5px 10px !important;
+              color: #fff;
+              line-height: 1.5;
+            }
+          }
+        }
+
+        .menu {
+          order: 1;
+          flex: 1 100%;
+          text-align: center;
+          margin-top: 0;
+          margin-bottom: 0;
+
+          li.leaf {
+            background: @gg-blue;
+            border-bottom: 1px solid #ffffff;
+
+            &:last-child {
+              border-bottom: 0 none;
+            }
+
+            a {
+              color: #ffffff;
+              padding-top: 30px;
+              padding-bottom: 40px;
+            }
+          }
+        }
+      }
     }
   }
   .navbar-toggle {
     margin-top: 1em;
+    border: 0 none;
+
+    &:hover, &:focus {
+      background: transparent;
+
+      .icon-bar {
+        background-color: @gg-blue;
+      }
+    }
+
+    .icon-bar {
+      background-color: #000;
+    }
+
+    @media screen and (max-width: @max-xs) {
+      margin-top: 8px;
+    }
   }
 }

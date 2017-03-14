@@ -2,6 +2,12 @@
   .page-banner {
     background: url('../images/portfolio-bg.jpg') no-repeat center center;
     background-size: cover;
+
+    @media screen and (max-width: @max-xs) {
+      h1 {
+        text-align: center;
+      }
+    }
   }
 
   .services-menu {
@@ -69,14 +75,18 @@
 //fixes
 
 @media (min-width: 320px) and (max-width:440px) {
-  .page-services{ 
+  .page-services{
     .main-container {
       #block-ggproject-ggproject-serviceviews-blocks {
         ul {
           float: left;
           padding: 0;
+          text-align: center;
+          width: 100%;
+          margin-right: 0;
+
           li {
-            margin-left: 1px;
+            margin-left: 5px;
             a {
                 padding: 10px 8px;
                 font-size: 80%;
@@ -89,7 +99,7 @@
 }
 
 @media (min-width: 441px) and (max-width:711px) {
-  .page-services{ 
+  .page-services{
     .main-container {
       #block-ggproject-ggproject-serviceviews-blocks {
         ul {
