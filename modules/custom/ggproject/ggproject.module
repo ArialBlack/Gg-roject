@@ -192,11 +192,10 @@ function _ggproject_slider_block() {
     $content = $content . '<div class="container">';
     $content = $content . '<div class="inner">';
     $content = $content . '<div class="left-block">' . t('Events & Weddings') . '</div>';
-    $content = $content . '<div class="center-block"><a href="tel:+' . $tel . '"><span class="visible-xs">' . t('Call') . '</span><span class="hidden-xs">' . $tel . '</span></div>';
-    $content = $content . '<div class="right-block"><a class="btn-rounded color-ocean btn-sendmail" href="mailto:' . $email . '">' . t('Send email') . '</a></div>';
+    $content = $content . '<div class="center-block"><a href="tel:+' . $tel . '"><span class="visible-xs">' . t('Call us now') . '</span><span class="hidden-xs">' . $tel . '</span></div>';
+    $content = $content . '<div class="right-block"><a class="btn-rounded color-ocean btn-sendmail" href="mailto:' . $email . '">' . t('Send email to us') . '</a></div>';
     $content = $content . '</div></div></div>';
 
     return $content;
 }
-
 
