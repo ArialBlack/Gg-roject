@@ -33,8 +33,8 @@ function ggproject_block_info() {
     'info' => t('GG-project serviceviews blocks'),
   );
 
-  $blocks['ggproject_slider_block'] = array(
-     'info' => t('GG-project slider'),
+  $blocks['ggproject_cinfo_block'] = array(
+     'info' => t('GG-project info block'),
   );
 
   return $blocks;
@@ -60,6 +60,11 @@ function ggproject_block_view($delta = '') {
       case 'ggproject_slider_block':
           $block['subject'] = '';
           $block['content'] = _ggproject_slider_block();
+          break;
+
+      case 'ggproject_cinfo_block':
+          $block['subject'] = '';
+          $block['content'] = _ggproject_cinfo_block();
           break;
   }
 
@@ -198,4 +203,24 @@ function _ggproject_slider_block() {
 
     return $content;
 }
+
+function _ggproject_cinfo_block() {
+
+    $tel = variable_get('tel_title');
+    $email = variable_get('email_title');
+
+
+    $content = '';
+
+    $content = $content . '<div class="info-on-menu">';
+    $content = $content . '<div class="container">';
+    $content = $content . '<div class="inner">';
+    $content = $content . '<div class="left-block">' . t('Events & Weddings') . '</div>';
+    $content = $content . '<div class="center-block"><a href="tel:+' . $tel . '"><span class="visible-xs">' . t('Call us now') . '</span><span class="hidden-xs">' . $tel . '</span></div>';
+    $content = $content . '<div class="right-block"><a class="btn-rounded color-ocean btn-sendmail" href="mailto:' . $email . '">' . t('Send email to us') . '</a></div>';
+    $content = $content . '</div></div></div>';
+
+    return $content;
+}
+
 

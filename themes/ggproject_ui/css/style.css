@@ -9727,10 +9727,6 @@ body,
 #navbar #block-locale-language .language-switcher-locale-url li {
   list-style: none;
 }
-/* line 76, ..\themes\ggproject_ui\less\parts\navbar.less */
-#navbar #block-locale-language .language-switcher-locale-url li.active {
-  display: none;
-}
 /* line 80, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar #block-locale-language .language-switcher-locale-url li a {
   font-size: 7.5px;
@@ -9837,6 +9833,14 @@ body,
   #navbar .navbar-toggle {
     margin-top: 8px;
   }
+}
+/* line 176, ..\themes\ggproject_ui\less\parts\navbar.less */
+.info-on-menu {
+  display: none;
+}
+/* line 181, ..\themes\ggproject_ui\less\parts\navbar.less */
+.navbar-collapse.collapse.in .info-on-menu {
+  display: block;
 }
 /* line 1, ..\themes\ggproject_ui\less\parts\footer.less */
 .footer {
@@ -10737,60 +10741,48 @@ body,
     width: 60%;
   }
 }
-/* line 1, ..\themes\ggproject_ui\less\parts\_instagram.less */
-.instagram {
-  text-align: center;
+/* line 5, ..\themes\ggproject_ui\less\parts\carousel.less */
+#block-views-slider-portfolio-block-1 .carousel-inner > .item {
+  transition: 500ms ease-in-out left;
 }
-/* line 4, ..\themes\ggproject_ui\less\parts\_instagram.less */
-.instagram_title {
-  font-family: 'cormorantbold';
-  color: #111111;
-  font-size: 32px;
-  text-align: center;
-  display: block;
-  padding-top: 6%;
-  padding-bottom: 3%;
+/* line 9, ..\themes\ggproject_ui\less\parts\carousel.less */
+#block-views-slider-portfolio-block-1 .carousel-inner .active.left {
+  left: -33%;
 }
-/* line 14, ..\themes\ggproject_ui\less\parts\_instagram.less */
-.instagram .instagram_link {
-  background-color: white;
-  border: #231f20 1px solid;
-  border-radius: 0;
-  color: #231f20;
-  font-weight: normal;
-  font-style: normal;
-  font-family: 'cormorantmedium';
-  font-size: 11.666666666666668px;
-  font-size: 1.1666666666666667rem;
-  padding: 10px 35px;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 40px;
+/* line 12, ..\themes\ggproject_ui\less\parts\carousel.less */
+#block-views-slider-portfolio-block-1 .carousel-inner .active.right {
+  left: 33%;
 }
-/* line 67, ..\themes\ggproject_ui\less\_mixins.less */
-.instagram .instagram_link:hover {
-  background-color: #17a6b9;
-  border-color: #17a6b9;
-  color: white;
+/* line 16, ..\themes\ggproject_ui\less\parts\carousel.less */
+#block-views-slider-portfolio-block-1 .carousel-inner .next {
+  left: 33%;
 }
-/* line 20, ..\themes\ggproject_ui\less\parts\_instagram.less */
-.instagram #instafeed {
-  display: block;
-  list-style: none;
-  position: relative;
-  padding: 0;
+/* line 19, ..\themes\ggproject_ui\less\parts\carousel.less */
+#block-views-slider-portfolio-block-1 .carousel-inner .prev {
+  left: -33%;
 }
-/* line 27, ..\themes\ggproject_ui\less\parts\_instagram.less */
-.instagram #instafeed li img {
-  width: 100%;
-  height: 100%;
+@media all and (transform-3d), (-webkit-transform-3d) {
+  /* line 23, ..\themes\ggproject_ui\less\parts\carousel.less */
+  #block-views-slider-portfolio-block-1 .carousel-inner > .item {
+    transition: 500ms ease-in-out left;
+    transition: 500ms ease-in-out all;
+    -webkit-backface-visibility: visible;
+            backface-visibility: visible;
+    -webkit-transform: none!important;
+            transform: none!important;
+  }
 }
-/* line 32, ..\themes\ggproject_ui\less\parts\_instagram.less */
-.instagram #instafeed li {
+/* line 33, ..\themes\ggproject_ui\less\parts\carousel.less */
+#block-views-slider-portfolio-block-1 .carouse-control.left,
+#block-views-slider-portfolio-block-1 .carouse-control.right {
+  background-image: none;
+}
+/* line 39, ..\themes\ggproject_ui\less\parts\carousel.less */
+#block-views-slider-portfolio-block-1 .item .views-field-nothing {
+  width: 33%;
   float: left;
-  width: 12.5%;
-  height: 12.5vw;
-  margin: 0;
+  position: relative;
+  min-height: 1px;
 }
 /* line 5, ..\themes\ggproject_ui\less\pages\_404.less */
 .page-node-261 .page-banner,

@@ -84,7 +84,6 @@ if ($lang == 'eng') {
  
 <div class="page-banner">
   <div class="inner container">
-    <h1><?php print $title; ?></h1>
   </div>
 </div>
 
@@ -106,7 +105,11 @@ if ($lang == 'eng') {
       <?php endif; ?>
       <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
       <a id="main-content"></a>
-
+      <?php print render($title_prefix); ?>
+      <?php if (!empty($title)): ?>
+        <h1 class="page-header"><?php print $title; ?></h1>
+      <?php endif; ?>
+      <?php print render($title_suffix); ?>
       <?php print $messages; ?>
       <?php if (!empty($tabs)): ?>
         <?php print render($tabs); ?>
@@ -129,7 +132,9 @@ if ($lang == 'eng') {
   </div>
 </div>
 
-<!--(bake parts/instagram-block.php)-->
+<?php if (!empty($page['slider'])): ?>
+  <div class="page-slider"><?php print render($page['slider']); ?></div>
+<?php endif; ?>
 
 <!--(bake parts/footer.php)-->
 
