@@ -120,7 +120,6 @@ if ($lang == 'eng') {
 
 <div class="page-banner">
   <div class="inner container">
-    <h2><?php print t('News'); ?></h2>
   </div>
 </div>
 
@@ -172,12 +171,9 @@ if ($lang == 'eng') {
   </div>
 </div>
 
-<div class="instagram">
-    <h2 class="instagram_title">GG-Project в Instagram</h2>
-    <ul id="instafeed" class="instafeed"></ul>
-    <a href="https://www.instagram.com/gg_project/" class="instagram_link" target="_blank"><?php print t('Load more');?></a>
-</div>
-
+<?php if (!empty($page['slider'])): ?>
+  <div class="page-slider"><?php print render($page['slider']); ?></div>
+<?php endif; ?>
 
 <?php if (!empty($page['footer'])): ?>
     <footer class="footer">

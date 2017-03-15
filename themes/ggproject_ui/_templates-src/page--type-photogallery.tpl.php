@@ -84,7 +84,6 @@ if ($lang == 'eng') {
  
 <div class="page-banner">
   <div class="inner container">
-    <h2><?php print t('Portfolio'); ?></h2>
   </div>
 </div>
 
@@ -136,7 +135,9 @@ if ($lang == 'eng') {
   </div>
 </div>
 
-<!--(bake parts/instagram-block.php)-->
+<?php if (!empty($page['slider'])): ?>
+  <div class="page-slider"><?php print render($page['slider']); ?></div>
+<?php endif; ?>
 
 <!--(bake parts/footer.php)-->
 
