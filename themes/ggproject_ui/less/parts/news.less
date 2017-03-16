@@ -68,6 +68,34 @@
 
 .page-news {
   .main-container {
+
+    .page-header {
+      .font-size(40);
+      position: relative;
+      padding-left: 150px;
+      padding-bottom: 0;
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 12px;
+        width: 170px;
+        height: 15px;
+        z-index: -1;
+        background: #eee;
+      }
+
+      @media screen and (max-width: @max-xs) {
+        padding-left: 40px;
+        float: initial;
+
+        &:before {
+          width: 65px;
+        }
+      }
+    }
+
     #views-bootstrap-grid-1 {
       .row {
         display: flex;

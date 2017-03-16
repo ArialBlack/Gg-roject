@@ -41,6 +41,31 @@
       float: left;
       position: relative;
       min-height: 1px;
+
+      &:hover {
+        span {
+          display: block !important;
+        }
+      }
+
+      a {
+        span {
+          display: none;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          color: @gg-white;
+          border: 1px solid;
+          border-radius: 30px;
+          padding: 10px 20px;
+          transition: color .2s linear;
+
+          &:hover {
+            color: @gg-blue;
+          }
+        }
+      }
     }
   }
 }

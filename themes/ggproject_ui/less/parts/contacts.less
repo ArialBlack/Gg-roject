@@ -1,15 +1,7 @@
 .page-node-265,
 .page-node-266 {
   .page-banner {
-    background: url('../images/contacts-bg.jpg') no-repeat center center;
-    background-size: cover;
-    margin-bottom: 40px;
-
-    @media screen and (max-width: @max-xs) {
-      h1 {
-        text-align: center;
-      }
-    }
+    display: none;
   }
 
   iframe {
@@ -18,6 +10,37 @@
     padding-right: 15px;
     border: none;
   }
+
+  .main-container {
+    padding-top: 150px;
+
+    .page-header {
+      .font-size(40);
+      position: relative;
+      padding-left: 150px;
+      padding-bottom: 0;
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 12px;
+        width: 170px;
+        height: 15px;
+        z-index: -1;
+        background: #eee;
+      }
+
+      @media screen and (max-width: @max-xs) {
+        padding-left: 40px;
+        float: initial;
+
+        &:before {
+          width: 65px;
+        }
+      }
+    }
+  }
 }
 
 //fixes
@@ -25,8 +48,18 @@
 .page-node-265 {
   #block-system-main {
     .field-item {
-      .col-sm-6 {
-        padding-left: 14%;
+      .contacts-center-block {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        padding: 0 80px;
+
+        .col-sm-6 {
+          padding-left: 30px;
+          background: #eee;
+          flex-grow:1;
+        }
       }
     }
   }
