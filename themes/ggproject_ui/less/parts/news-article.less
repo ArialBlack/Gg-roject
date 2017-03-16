@@ -1,9 +1,50 @@
 .node-type-article {
-  h1 {
+  .page-header {
+    .font-size(40);
+    position: relative;
+    padding-left: 150px;
+    padding-bottom: 0;
     float: left;
 
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 12px;
+      width: 170px;
+      height: 15px;
+      z-index: -1;
+      background: #eee;
+    }
+
     @media screen and (max-width: @max-xs) {
-      .font-size(36);
+      padding-left: 40px;
+      float: initial;
+
+      &:before {
+        width: 65px;
+      }
+    }
+  }
+
+  .field-type-text-with-summary p {
+    margin-bottom:10px;
+    line-height:25px;
+  }
+
+  .field-type-text-with-summary,
+  .field-type-text-long,
+  .submitted-by {
+    @media (min-width: 768px) {
+      padding-left: 150px;
+    }
+    @media (min-width: 992px) {
+      padding-left: 150px;
+      padding-right: 100px;
+    }
+
+    @media (min-width:1024px) {
+      padding-right: 200px;
     }
   }
 
@@ -20,9 +61,9 @@
   }
 
   .submitted-by {
-    color: @gg-gray;
+    font-style: italic;
+    font-size: .92rem !important;
     .font-size(24);
-    margin-bottom: 60px;
     display: block;
 
     @media screen and (max-width: @max-xs) {
@@ -31,10 +72,11 @@
   }
 
   .field-name-field-image {
-    float: left;
-    padding-right: 40px;
-    padding-bottom: 20px;
-    padding-top: 10px;
+    display: none;
+    //float: left;
+    //padding-right: 40px;
+    //padding-bottom: 20px;
+    //padding-top: 10px;
   }
 
   .field-name-field-existing-gallery {
@@ -43,6 +85,7 @@
     }
 
     .field-name-field-intro {
+      margin-top: 40px;
       margin-bottom: 0;
 
       &:before {
