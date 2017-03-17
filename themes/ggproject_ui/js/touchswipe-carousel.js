@@ -1,26 +1,32 @@
-(function() {
-  $(document).ready(function() {
-    console.log('swipe works');
-    var swipeTreshold = 75,
-      $carousel = $('#views-bootstrap-carousel-1'),
-      // $carouselItem= $ ('#views-bootstrap-carousel-1 .item');
+(function($) {
+  $(function() {
 
-    $carousel.swipe( {
-      swipeLeft: function() {
-        console.log('swipe left');
-        $carousel.carousel('next');
-      },
+    $(document).ready(function() {
 
-      swipeRight: function() {
-        console.log('swipe right');
-        $carousel.carousel('prev');
-      },
 
-      threshold: swipeTreshold,
-      allowPageScroll:'vertical',
-      preventDefaultEvents: false,
-      fingers:1
-    });
+      var swipeTreshold = 75,
+          $carousel = $('#views-bootstrap-carousel-1');
+
+      $carousel.carousel({
+            interval: false
+      });
+
+
+      $carousel.swipe( {
+        swipeLeft: function() {
+          $carousel.carousel('next');
+        },
+
+        swipeRight: function() {
+          $carousel.carousel('prev');
+        },
+
+        threshold: swipeTreshold,
+        allowPageScroll:'vertical',
+        preventDefaultEvents: false
+      });
+
   });
 
-});
+  }); // end of document ready
+})(jQuery); // end of jQuery name space
