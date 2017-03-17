@@ -71,7 +71,6 @@
 
   #block-locale-language {
     margin-top: 2px;
-    margin-left: 10px;
     border:1px solid #777;
     border-radius: 25px;
     overflow: hidden;
@@ -82,17 +81,13 @@
     transition:border-color .3s linear;
     color: #777;
 
-    @media screen and (max-width: 1199px) {
-      //margin-left: 0;
+
+    @media screen and (max-width: 1200px) {
       padding: 4px 45px;
       width: 220px;
       margin-top: 25px;
-
-      &,
-      a,
-      span {
-        color: @gg-white !important;
-      }
+      color: @gg-white;
+      border-color: @gg-white;
     }
 
     &:hover {
@@ -104,6 +99,10 @@
 
       li {
         display: block !important;
+        @media screen and (max-width: @min-lg) {
+          display: inline-block !important;
+
+        }
       }
     }
 
@@ -133,6 +132,9 @@
 
         &.active {
           display: block;
+          @media screen and (max-width:@min-lg) {
+            display: inline-block;
+          }
         }
 
         a {
@@ -144,6 +146,10 @@
           padding-bottom: 15px;
           line-height:95%;
           border:none;
+
+          @media screen and (max-width:@min-lg) {
+            color: @gg-white;
+          }
 
           &:hover {
             color: @gg-blue;
@@ -167,8 +173,9 @@
       @media screen and (max-width:@min-lg) {
         overflow: hidden;
         overflow-y: scroll;
-        position: absolute;
-        height: 100vh;
+        position: fixed;
+        padding-bottom: 60px;
+        height: 100%;
         width: 100%;
 
         .region-navigation {
@@ -227,8 +234,8 @@
 
             a {
               color: #ffffff;
-              padding-top: 30px;
-              padding-bottom: 40px;
+              padding: 16vh 0;
+              font-size: 6vh;
             }
           }
         }
@@ -268,14 +275,6 @@
     width:75%;
     float: right;
     position: relative;
-    padding-bottom: 100px;
-    @media screen and (max-width: 1199px) {
-      a,
-      span {
-        color: @gg-white !important;
-      }
-    }
-
     .info-on-menu {
       display: inline-block;
 
@@ -291,7 +290,13 @@
         border:1px solid #777;
         border-radius: 25px;
         transition:border-color .3s linear;
-        color: #777;
+        &,
+        a,
+        span {
+          color: @gg-white !important;
+          border-color: @gg-white !important;
+        }
+
 
         &:hover {
           border-color: @gg-blue;
@@ -306,11 +311,8 @@
       }
 
       .center-block {
-        left:25vw;
+        left:20%;
         padding-bottom: 4px;
-        @media (min-width:@max-xs) {
-          left:17vw;
-        }
       }
 
       .right-block {
