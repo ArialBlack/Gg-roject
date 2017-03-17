@@ -9294,7 +9294,6 @@ h1.page-header {
 }
 /* line 184, ..\themes\ggproject_ui\less\_base.less */
 .back2portfolio {
-  float: right;
   color: #9d9d9d;
   font-size: 10px;
   font-size: 1rem;
@@ -9304,7 +9303,7 @@ h1.page-header {
   margin-top: 15px;
   padding-right: 10px;
 }
-/* line 194, ..\themes\ggproject_ui\less\_base.less */
+/* line 193, ..\themes\ggproject_ui\less\_base.less */
 article .field-name-body {
   color: #666666;
   font-size: 9.166666666666666px;
@@ -9312,27 +9311,27 @@ article .field-name-body {
   line-height: 13.333333333333332px;
   line-height: 1.3333333333333333rem;
 }
-/* line 199, ..\themes\ggproject_ui\less\_base.less */
+/* line 198, ..\themes\ggproject_ui\less\_base.less */
 article .field-name-body p {
   margin-bottom: 20px;
 }
-/* line 207, ..\themes\ggproject_ui\less\_base.less */
+/* line 206, ..\themes\ggproject_ui\less\_base.less */
 .carousel-fade .carousel-inner .item {
   transition-property: opacity;
 }
-/* line 211, ..\themes\ggproject_ui\less\_base.less */
+/* line 210, ..\themes\ggproject_ui\less\_base.less */
 .carousel-fade .carousel-inner .item,
 .carousel-fade .carousel-inner .active.left,
 .carousel-fade .carousel-inner .active.right {
   opacity: 0;
 }
-/* line 217, ..\themes\ggproject_ui\less\_base.less */
+/* line 216, ..\themes\ggproject_ui\less\_base.less */
 .carousel-fade .carousel-inner .active,
 .carousel-fade .carousel-inner .next.left,
 .carousel-fade .carousel-inner .prev.right {
   opacity: 1;
 }
-/* line 223, ..\themes\ggproject_ui\less\_base.less */
+/* line 222, ..\themes\ggproject_ui\less\_base.less */
 .carousel-fade .carousel-inner .next,
 .carousel-fade .carousel-inner .prev,
 .carousel-fade .carousel-inner .active.left,
@@ -9341,11 +9340,11 @@ article .field-name-body p {
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
 }
-/* line 232, ..\themes\ggproject_ui\less\_base.less */
+/* line 231, ..\themes\ggproject_ui\less\_base.less */
 .carousel-fade .carousel-control {
   z-index: 2;
 }
-/* line 237, ..\themes\ggproject_ui\less\_base.less */
+/* line 236, ..\themes\ggproject_ui\less\_base.less */
 html,
 body,
 .carousel,
@@ -9353,7 +9352,7 @@ body,
 .carousel-inner .item {
   height: 100%;
 }
-/* line 245, ..\themes\ggproject_ui\less\_base.less */
+/* line 244, ..\themes\ggproject_ui\less\_base.less */
 .views-field-created,
 .submitted-by,
 .footer,
@@ -9361,22 +9360,22 @@ body,
 #node-266 p {
   font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif !important;
 }
-/* line 253, ..\themes\ggproject_ui\less\_base.less */
+/* line 252, ..\themes\ggproject_ui\less\_base.less */
 .views-field-created {
   font-size: 5.833333333333334px !important;
   font-size: 0.5833333333333334rem !important;
 }
-/* line 257, ..\themes\ggproject_ui\less\_base.less */
+/* line 256, ..\themes\ggproject_ui\less\_base.less */
 .submitted-by {
   font-size: 7.5px !important;
   font-size: 0.75rem !important;
 }
-/* line 264, ..\themes\ggproject_ui\less\_base.less */
+/* line 263, ..\themes\ggproject_ui\less\_base.less */
 #node-265 p strong,
 #node-266 p strong {
   font-family: 'cormorantbold';
 }
-/* line 270, ..\themes\ggproject_ui\less\_base.less */
+/* line 269, ..\themes\ggproject_ui\less\_base.less */
 .node .translation_ru,
 .node .translation_eng {
   display: none !important;
@@ -9751,8 +9750,20 @@ body,
   transition: border-color 0.3s linear;
   color: #777;
 }
+@media screen and (max-width: 992px) {
+  /* line 84, ..\themes\ggproject_ui\less\parts\navbar.less */
+  #navbar #block-locale-language {
+    padding: 2px 18px !important;
+    width: 280px !important;
+  }
+  /* line 87, ..\themes\ggproject_ui\less\parts\navbar.less */
+  #navbar #block-locale-language a,
+  #navbar #block-locale-language h2 {
+    font-size: 4vh !important;
+  }
+}
 @media screen and (max-width: 1200px) {
-  /* line 85, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 94, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar #block-locale-language {
     padding: 4px 45px;
     width: 220px;
@@ -9761,25 +9772,25 @@ body,
     border-color: white;
   }
 }
-/* line 93, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 102, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar #block-locale-language:hover {
   border-color: #17a6b9;
 }
-/* line 96, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 105, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar #block-locale-language:hover .block-title {
   color: #17a6b9;
 }
-/* line 100, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 109, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar #block-locale-language:hover li {
   display: block !important;
 }
 @media screen and (max-width: 1200px) {
-  /* line 102, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 111, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar #block-locale-language:hover li {
     display: inline-block !important;
   }
 }
-/* line 110, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 119, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar #block-locale-language .block-title {
   font-size: 0.75rem;
   display: inline-block;
@@ -9787,28 +9798,28 @@ body,
   margin: 6px 5px 0 0;
   transition: color .3s linear;
 }
-/* line 118, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 127, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar #block-locale-language .language-switcher-locale-url {
   display: inline-block;
   padding: 0;
   margin-bottom: 0;
 }
-/* line 129, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 138, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar #block-locale-language .language-switcher-locale-url li {
   list-style: none;
   display: none;
 }
-/* line 133, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 142, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar #block-locale-language .language-switcher-locale-url li.active {
   display: block;
 }
 @media screen and (max-width: 1200px) {
-  /* line 135, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 144, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar #block-locale-language .language-switcher-locale-url li.active {
     display: inline-block;
   }
 }
-/* line 140, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 149, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar #block-locale-language .language-switcher-locale-url li a {
   font-size: 7.5px;
   font-size: 0.75rem;
@@ -9821,25 +9832,25 @@ body,
   border: none;
 }
 @media screen and (max-width: 1200px) {
-  /* line 150, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 159, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar #block-locale-language .language-switcher-locale-url li a {
     color: white;
   }
 }
-/* line 154, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 163, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar #block-locale-language .language-switcher-locale-url li a:hover {
   color: #17a6b9;
 }
-/* line 168, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 177, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar .navbar-collapse {
   padding: 0;
 }
-/* line 171, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 180, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar .navbar-collapse nav {
   margin-top: 1em;
 }
 @media screen and (max-width: 1200px) {
-  /* line 173, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 182, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .navbar-collapse nav {
     overflow: hidden;
     overflow-y: scroll;
@@ -9848,17 +9859,17 @@ body,
     height: 100%;
     width: 100%;
   }
-  /* line 181, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 190, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .navbar-collapse nav .region-navigation {
-    min-height: 120px;
+    min-height: 190px;
   }
-  /* line 184, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 193, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .navbar-collapse nav .region-navigation .inner .center-block {
     padding: 4px 18px!important;
   }
 }
 @media screen and (max-width: 1199px) {
-  /* line 190, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 199, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .navbar-collapse nav {
     margin-top: 0;
     display: -webkit-flex;
@@ -9868,7 +9879,7 @@ body,
         -ms-flex-flow: column;
             flex-flow: column;
   }
-  /* line 195, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 204, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .navbar-collapse nav .region-navigation {
     -webkit-order: 2;
         -ms-flex-order: 2;
@@ -9880,11 +9891,11 @@ body,
     background: #231f20;
     margin-top: 0;
   }
-  /* line 203, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 212, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .navbar-collapse nav .region-navigation .language-switcher-locale-url {
     padding: 0;
   }
-  /* line 206, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 215, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .navbar-collapse nav .region-navigation .language-switcher-locale-url .language-link {
     margin-top: 5px;
     border-radius: 15px;
@@ -9894,7 +9905,7 @@ body,
     color: #fff;
     line-height: 1.5;
   }
-  /* line 218, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 227, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .navbar-collapse nav .menu {
     -webkit-order: 1;
         -ms-flex-order: 1;
@@ -9908,67 +9919,67 @@ body,
     margin-right: 0;
     margin-left: 0;
   }
-  /* line 227, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 236, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .navbar-collapse nav .menu li.leaf {
     background: #17a6b9;
     border-bottom: 1px solid #ffffff;
   }
-  /* line 231, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 240, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .navbar-collapse nav .menu li.leaf:last-child {
     border-bottom: 0 none;
   }
-  /* line 235, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 244, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .navbar-collapse nav .menu li.leaf a {
     color: #ffffff;
-    padding: 16vh 0;
-    font-size: 6vh;
+    padding: 13vh 0;
+    font-size: 5vh;
   }
 }
-/* line 245, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 254, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar .navbar-toggle {
   margin-top: 1em;
   border: 0 none;
 }
-/* line 249, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 258, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar .navbar-toggle:hover,
 #navbar .navbar-toggle:focus {
   background: transparent;
 }
-/* line 252, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 261, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar .navbar-toggle:hover .icon-bar,
 #navbar .navbar-toggle:focus .icon-bar {
   background-color: #17a6b9;
 }
-/* line 257, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 266, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar .navbar-toggle .icon-bar {
   background-color: #000;
 }
 @media screen and (max-width: 767px) {
-  /* line 261, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 270, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .navbar-toggle {
     margin-top: 8px;
   }
 }
-/* line 267, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 276, ..\themes\ggproject_ui\less\parts\navbar.less */
 .info-on-menu {
   display: none;
 }
-/* line 273, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 282, ..\themes\ggproject_ui\less\parts\navbar.less */
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block {
   display: inline-block;
   width: 75%;
   float: right;
   position: relative;
 }
-/* line 278, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 287, ..\themes\ggproject_ui\less\parts\navbar.less */
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu {
   display: inline-block;
 }
-/* line 281, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 290, ..\themes\ggproject_ui\less\parts\navbar.less */
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .left-block {
   display: none;
 }
-/* line 285, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 294, ..\themes\ggproject_ui\less\parts\navbar.less */
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .center-block,
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .right-block {
   position: absolute;
@@ -9978,7 +9989,7 @@ body,
   border-radius: 25px;
   transition: border-color 0.3s linear;
 }
-/* line 293, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 302, ..\themes\ggproject_ui\less\parts\navbar.less */
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .center-block,
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .right-block,
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .center-block a,
@@ -9988,12 +9999,12 @@ body,
   color: white !important;
   border-color: white !important;
 }
-/* line 301, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 310, ..\themes\ggproject_ui\less\parts\navbar.less */
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .center-block:hover,
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .right-block:hover {
   border-color: #17a6b9;
 }
-/* line 305, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 314, ..\themes\ggproject_ui\less\parts\navbar.less */
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .center-block span,
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .right-block span,
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .center-block a,
@@ -10002,12 +10013,19 @@ body,
   font-style: 0.75rem;
   color: #777;
 }
-/* line 313, ..\themes\ggproject_ui\less\parts\navbar.less */
+@media screen and (max-width: 992px) {
+  /* line 322, ..\themes\ggproject_ui\less\parts\navbar.less */
+  .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .center-block a,
+  .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .right-block a {
+    font-size: 4vh !important;
+  }
+}
+/* line 328, ..\themes\ggproject_ui\less\parts\navbar.less */
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .center-block {
-  left: 20%;
+  left: 23%;
   padding-bottom: 4px;
 }
-/* line 318, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 333, ..\themes\ggproject_ui\less\parts\navbar.less */
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .right-block {
   right: 5vw;
 }
@@ -10132,6 +10150,25 @@ body,
 /* line 121, ..\themes\ggproject_ui\less\parts\footer.less */
 body > iframe {
   position: absolute;
+}
+/* line 3, ..\themes\ggproject_ui\less\parts\event.less */
+.node-type-photogallery .back2portfolio {
+  padding-right: 0;
+}
+@media screen and (max-width: 767px) {
+  /* line 6, ..\themes\ggproject_ui\less\parts\event.less */
+  .node-type-photogallery .back2portfolio {
+    float: right;
+    display: inline-block;
+  }
+}
+@media (min-width: 767px) {
+  /* line 12, ..\themes\ggproject_ui\less\parts\event.less */
+  .node-type-photogallery .back2portfolio {
+    float: left;
+    display: block;
+    width: inherit;
+  }
 }
 /* line 22, ..\themes\ggproject_ui\less\parts\event.less */
 .node-type-photogallery .field-item.even {
@@ -10632,6 +10669,21 @@ body > iframe {
 .node-type-article .back2portfolio {
   padding-right: 0;
 }
+@media screen and (max-width: 767px) {
+  /* line 57, ..\themes\ggproject_ui\less\parts\news-article.less */
+  .node-type-article .back2portfolio {
+    float: right;
+    display: inline-block;
+  }
+}
+@media (min-width: 767px) {
+  /* line 63, ..\themes\ggproject_ui\less\parts\news-article.less */
+  .node-type-article .back2portfolio {
+    float: left;
+    display: block;
+    width: inherit;
+  }
+}
 /* line 73, ..\themes\ggproject_ui\less\parts\news-article.less */
 .node-type-article .region-content {
   clear: both;
@@ -11031,12 +11083,20 @@ body > iframe {
   width: 100%;
 }
 /* line 82, ..\themes\ggproject_ui\less\parts\testimonials.less */
+.page-testimonials .media-body .title {
+  color: #17a6b9;
+}
+/* line 86, ..\themes\ggproject_ui\less\parts\testimonials.less */
+.page-testimonials .media-body .created {
+  font-style: italic;
+}
+/* line 90, ..\themes\ggproject_ui\less\parts\testimonials.less */
 .page-testimonials .media-body p {
   color: #666666;
   font-size: 9.166666666666666px;
   font-size: 0.9166666666666666rem;
 }
-/* line 87, ..\themes\ggproject_ui\less\parts\testimonials.less */
+/* line 95, ..\themes\ggproject_ui\less\parts\testimonials.less */
 .page-testimonials .media-body h4 {
   color: #17a6b9;
   font-weight: normal;
@@ -11047,34 +11107,34 @@ body > iframe {
   line-height: 16.666666666666668px;
   line-height: 1.6666666666666667rem;
 }
-/* line 96, ..\themes\ggproject_ui\less\parts\testimonials.less */
+/* line 104, ..\themes\ggproject_ui\less\parts\testimonials.less */
 .page-testimonials .views-row {
   margin-bottom: 60px;
   padding-bottom: 90px;
   border-bottom: #d5d6d8 1px solid;
 }
 @media screen and (max-width: 767px) {
-  /* line 101, ..\themes\ggproject_ui\less\parts\testimonials.less */
+  /* line 109, ..\themes\ggproject_ui\less\parts\testimonials.less */
   .page-testimonials .views-row {
     margin-bottom: 30px;
     padding-bottom: 20px;
   }
 }
-/* line 114, ..\themes\ggproject_ui\less\parts\testimonials.less */
+/* line 122, ..\themes\ggproject_ui\less\parts\testimonials.less */
 .page-testimonials #block-system-main .views-row-5 p {
   margin-bottom: 20px;
 }
-/* line 117, ..\themes\ggproject_ui\less\parts\testimonials.less */
+/* line 125, ..\themes\ggproject_ui\less\parts\testimonials.less */
 .page-testimonials #block-system-main .views-row-5 ol {
   padding-left: 19px;
 }
 @media screen and (max-width: 992px) {
-  /* line 124, ..\themes\ggproject_ui\less\parts\testimonials.less */
+  /* line 132, ..\themes\ggproject_ui\less\parts\testimonials.less */
   .page-testimonials .views-field-nothing .media-body {
     display: block;
   }
 }
-/* line 128, ..\themes\ggproject_ui\less\parts\testimonials.less */
+/* line 136, ..\themes\ggproject_ui\less\parts\testimonials.less */
 .page-testimonials .views-field-nothing .media-body .media-heading {
   font-weight: normal;
   font-style: normal;
@@ -11093,48 +11153,54 @@ body > iframe {
   margin-left: 10px;
   margin-bottom: 10px;
 }
-/* line 142, ..\themes\ggproject_ui\less\parts\testimonials.less */
+/* line 150, ..\themes\ggproject_ui\less\parts\testimonials.less */
 .page-testimonials .views-field-nothing .media-body .media-heading:before,
 .page-testimonials .views-field-nothing .media-body .media-heading:after {
   content: '"';
 }
 @media screen and (max-width: 767px) {
-  /* line 146, ..\themes\ggproject_ui\less\parts\testimonials.less */
+  /* line 154, ..\themes\ggproject_ui\less\parts\testimonials.less */
   .page-testimonials .views-field-nothing .media-body .media-heading {
     margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 992px) {
-  /* line 150, ..\themes\ggproject_ui\less\parts\testimonials.less */
+  /* line 158, ..\themes\ggproject_ui\less\parts\testimonials.less */
   .page-testimonials .views-field-nothing .media-body .media-heading {
     float: inherit;
     width: 100%;
     margin-left: 0;
   }
 }
+@media (min-width: 992px) {
+  /* line 164, ..\themes\ggproject_ui\less\parts\testimonials.less */
+  .page-testimonials .views-field-nothing .media-body .media-heading {
+    margin-top: -60px;
+  }
+}
 @media (max-width: 992px) {
-  /* line 163, ..\themes\ggproject_ui\less\parts\testimonials.less */
+  /* line 175, ..\themes\ggproject_ui\less\parts\testimonials.less */
   .page-testimonials .views-row {
     position: relative;
   }
-  /* line 166, ..\themes\ggproject_ui\less\parts\testimonials.less */
+  /* line 178, ..\themes\ggproject_ui\less\parts\testimonials.less */
   .page-testimonials .views-row .views-field-title {
     position: absolute;
     right: 15px;
     width: 70%;
     text-align: right;
   }
-  /* line 172, ..\themes\ggproject_ui\less\parts\testimonials.less */
+  /* line 184, ..\themes\ggproject_ui\less\parts\testimonials.less */
   .page-testimonials .views-row .views-field-title span {
     line-height: 100%;
   }
-  /* line 177, ..\themes\ggproject_ui\less\parts\testimonials.less */
+  /* line 189, ..\themes\ggproject_ui\less\parts\testimonials.less */
   .page-testimonials .views-row .views-field-created {
     position: absolute;
     right: 15px;
     top: 145px;
   }
-  /* line 183, ..\themes\ggproject_ui\less\parts\testimonials.less */
+  /* line 195, ..\themes\ggproject_ui\less\parts\testimonials.less */
   .page-testimonials .views-row .views-field-nothing {
     margin-bottom: 45px;
   }

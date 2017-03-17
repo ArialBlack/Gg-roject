@@ -81,6 +81,15 @@
     transition:border-color .3s linear;
     color: #777;
 
+    @media screen and (max-width:992px) {
+      padding: 2px 18px !important;
+      width: 280px !important;
+      a,
+      h2 {
+        font-size:4vh !important;
+      }
+    }
+
 
     @media screen and (max-width: 1200px) {
       padding: 4px 45px;
@@ -179,7 +188,7 @@
         width: 100%;
 
         .region-navigation {
-          min-height: 120px;
+          min-height: 190px;
 
           .inner .center-block {
             padding: 4px 18px!important;
@@ -234,8 +243,8 @@
 
             a {
               color: #ffffff;
-              padding: 16vh 0;
-              font-size: 6vh;
+              padding: 13vh 0;
+              font-size: 5vh;
             }
           }
         }
@@ -308,10 +317,16 @@
           font-style: 0.75rem;
           color: #777;
         }
+
+        @media screen and (max-width:992px) {
+          a {
+            font-size: 4vh !important;
+          }
+        }
       }
 
       .center-block {
-        left:20%;
+        left:23%;
         padding-bottom: 4px;
       }
 

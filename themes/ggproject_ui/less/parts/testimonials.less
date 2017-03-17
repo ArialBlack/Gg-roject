@@ -79,6 +79,14 @@
   	max-width: 768px;
   	width: 100%;
 
+    .title {
+      color:@gg-blue;
+    }
+
+    .created {
+      font-style: italic;
+    }
+
     p {
       color: @gg-dark-gray;
       .font-size(22);
@@ -153,6 +161,10 @@
           margin-left: 0;
         }
 
+        @media (min-width:992px) {
+          margin-top: -60px;
+        }
+
       }
     }
   }
@@ -163,7 +175,7 @@
     .views-row {
     	position: relative;
 
-      .views-field-title { 
+      .views-field-title {
       	position: absolute;
       	right: 15px;
       	width: 70%;
