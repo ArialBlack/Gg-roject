@@ -117,6 +117,7 @@ if ($lang == 'eng') {
         <?php endif; ?>
     </div>
 </header>
+
  
 <div class="page-banner">
   <div class="inner container">

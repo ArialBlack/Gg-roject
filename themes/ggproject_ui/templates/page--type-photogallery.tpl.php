@@ -118,6 +118,7 @@ if ($lang == 'eng') {
     </div>
 </header>
 
+
 <div class="page-banner">
   <div class="inner container">
   </div>
