@@ -15,6 +15,19 @@
 .page-news {
   .col {
     margin-bottom: 90px;
+    background: #eee;
+    -webkit-background-clip: content-box;
+    -moz-background-clip: content-box;
+    background-clip: content-box;
+  }
+
+  .view-news {
+    .views-field-nothing {
+      padding: 0 30px;
+    }
+    @media screen and (max-width: 992px) {
+      padding: 0 40px;
+    }
   }
 
   .views-field-title {
@@ -61,6 +74,9 @@
         content: '  ›';
       }
     }
+  }
+  .pager-next a {
+    border-radius: 30px;
   }
 }
 

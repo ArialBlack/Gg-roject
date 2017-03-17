@@ -74,6 +74,15 @@ body {
     font-family: 'cormorantregular';
     .font-size(24);
     .line-height(32);
+  @media screen and (max-width: 768px) {
+    * {
+      max-width:768px;
+    }
+    width: 768px;
+    .container {
+      width: 768px;
+    }
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {

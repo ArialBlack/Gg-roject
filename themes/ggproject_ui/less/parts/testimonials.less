@@ -10,22 +10,45 @@
     }
   }
 
+  .page-header {
+  	.font-size(40);
+  	position: relative;
+  	padding-left: 150px;
+  	padding-bottom: 0;
+
+  	&:before {
+  		content: '';
+  		position: absolute;
+  		left: 0;
+  		top: 17px;
+  		width: 170px;
+  		height: 15px;
+  		z-index: -1;
+  		background: #eee;
+  	}
+
+  	@media screen and (max-width: @max-xs) {
+  		padding-left: 40px;
+  		float: initial;
+
+  		&:before {
+  			width: 65px;
+  		}
+  	}
+  }
+
   .media-left {
-    width: 100%;
-    display: block;
+    width: 25%;
+    display: inline-block;
     margin-bottom: 30px;
+    float: left;
 
     @media (min-width: @screen-sm-min) {
       //width: 70%;
     }
     @media (min-width: @screen-md-min) {
-      display: table-cell;
-      width: 30%;
       padding-right: 40px;
       margin-bottom: 0;
-    }
-    @media (min-width: @screen-lg-min) {
-      width: 40%;
     }
   }
 
@@ -44,7 +67,7 @@
   .views-field-created {
     color: @gg-gray;
     .font-size(24);
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     display: block;
 
     @media screen and (max-width: @max-xs) {
@@ -53,6 +76,9 @@
   }
 
   .media-body {
+  	max-width: 768px;
+  	width: 100%;
+
     p {
       color: @gg-dark-gray;
       .font-size(22);
@@ -94,24 +120,68 @@
     }
   }
   .views-field-nothing {
-    .media-body {
-      .media-heading {
-        margin-bottom:40px;
+  	.media-body {
+  		@media screen and (max-width: 992px) {
+  			display: block;
+  		}
+
+  		.media-heading {
+  			.f('b');
+  			.font-size(30);
+  			.line-height(39);
+  			float: right;
+  			width: 50%;
+  			background-color: #eee;
+  			padding: 40px;
+  			font-style: italic;
+  			color: #17a6b9;
+  			margin-right: 0;
+  			margin-left: 10px;
+        margin-bottom: 10px;
+
+        &:before, &:after {
+        	content: '"';
+        }
 
         @media screen and (max-width: @max-xs) {
           margin-bottom: 20px;
         }
+
+        @media screen and (max-width: 992px) {
+          float: inherit;
+          width: 100%;
+          margin-left: 0;
+        }
+
       }
     }
   }
 }
+
 @media (max-width: 992px) {
   .page-testimonials {
     .views-row {
-      .views-field-title {
+    	position: relative;
+
+      .views-field-title { 
+      	position: absolute;
+      	right: 15px;
+      	width: 70%;
+      	text-align: right;
+
         span {
           line-height: 100%;
         }
+      }
+
+      .views-field-created {
+      	position: absolute;
+      	right: 15px;
+      	top: 145px;
+      }
+
+      .views-field-nothing {
+      	margin-bottom: 45px;
       }
     }
   }
