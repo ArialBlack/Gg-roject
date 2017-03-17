@@ -8,15 +8,15 @@
   }
 
   .block {
-    width: 100%;
-    position: relative;
+    width: initial;
+    //position: relative;
     min-height: 1px;
     padding-left: 15px;
     padding-right: 15px;
-    float: left;
+    //float: left;
 
     @media (min-width:320px) {
-      width: 50%;
+      display: inline-block;
     }
     @media (min-width: @screen-md-min) {
       width: 25%;
@@ -78,20 +78,46 @@
 }
 
 .region-footer {
-      #block-block-5 {
-        margin-top:1em;
-      }
-      #block-block-9 {
-        margin-top: 1em;
-      }
-}
+  #block-block-5 {
 
-#block-block-8 {
-  a {
-    color: white;
-    .font-size(32);
+    @media (min-width:992px){
+      margin-top:1em;
+      position: absolute;
+      width:75vw;
+      max-width: 1300px;
+    }
+
+
+    .footer-social-descr {
+      @media (min-width:992px){
+        position: absolute;
+        right:0;
+        top:0;
+      }
+
+      font-size: 1.5rem;
+
+      a {
+        color: @gg-white;
+
+        &:hover {
+          text-decoration: none;
+          color: inherit;
+        }
+      }
+    }
+  }
+
+  #block-block-6 {
+    @media (min-width:992px){
+      margin: auto;
+      float: none;
+      display: block;
+    }
   }
 }
+
+
 body>iframe {
   position: absolute;
 }

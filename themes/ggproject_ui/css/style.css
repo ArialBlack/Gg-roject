@@ -9992,7 +9992,13 @@ body,
   left: 25vw;
   padding-bottom: 4px;
 }
-/* line 313, ..\themes\ggproject_ui\less\parts\navbar.less */
+@media (min-width: 767px) {
+  /* line 311, ..\themes\ggproject_ui\less\parts\navbar.less */
+  .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .center-block {
+    left: 17vw;
+  }
+}
+/* line 316, ..\themes\ggproject_ui\less\parts\navbar.less */
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .right-block {
   right: 5vw;
 }
@@ -10010,17 +10016,15 @@ body,
 }
 /* line 10, ..\themes\ggproject_ui\less\parts\footer.less */
 .footer .block {
-  width: 100%;
-  position: relative;
+  width: initial;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  float: left;
 }
 @media (min-width: 320px) {
   /* line 18, ..\themes\ggproject_ui\less\parts\footer.less */
   .footer .block {
-    width: 50%;
+    display: inline-block;
   }
 }
 @media (min-width: 992px) {
@@ -10078,21 +10082,45 @@ body,
     margin-right: 3em;
   }
 }
-/* line 81, ..\themes\ggproject_ui\less\parts\footer.less */
-.region-footer #block-block-5 {
-  margin-top: 1em;
+@media (min-width: 992px) {
+  /* line 83, ..\themes\ggproject_ui\less\parts\footer.less */
+  .region-footer #block-block-5 {
+    margin-top: 1em;
+    position: absolute;
+    width: 75vw;
+    max-width: 1300px;
+  }
 }
-/* line 84, ..\themes\ggproject_ui\less\parts\footer.less */
-.region-footer #block-block-9 {
-  margin-top: 1em;
+/* line 91, ..\themes\ggproject_ui\less\parts\footer.less */
+.region-footer #block-block-5 .footer-social-descr {
+  font-size: 1.5rem;
 }
-/* line 90, ..\themes\ggproject_ui\less\parts\footer.less */
-#block-block-8 a {
+@media (min-width: 992px) {
+  /* line 92, ..\themes\ggproject_ui\less\parts\footer.less */
+  .region-footer #block-block-5 .footer-social-descr {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+/* line 100, ..\themes\ggproject_ui\less\parts\footer.less */
+.region-footer #block-block-5 .footer-social-descr a {
   color: white;
-  font-size: 13.333333333333332px;
-  font-size: 1.3333333333333333rem;
 }
-/* line 95, ..\themes\ggproject_ui\less\parts\footer.less */
+/* line 103, ..\themes\ggproject_ui\less\parts\footer.less */
+.region-footer #block-block-5 .footer-social-descr a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+@media (min-width: 992px) {
+  /* line 112, ..\themes\ggproject_ui\less\parts\footer.less */
+  .region-footer #block-block-6 {
+    margin: auto;
+    float: none;
+    display: block;
+  }
+}
+/* line 121, ..\themes\ggproject_ui\less\parts\footer.less */
 body > iframe {
   position: absolute;
 }
