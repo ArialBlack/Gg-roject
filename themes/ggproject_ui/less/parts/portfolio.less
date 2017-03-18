@@ -33,7 +33,10 @@
           float: initial;
 
           &:before {
-            width: 65px;
+            width: 70px;
+            height: 26px;
+            bottom: 8px;
+            left: -15px;
           }
         }
     }
@@ -50,9 +53,10 @@
 
       a {
         .font-size(20);
-        .f('b');
+        .f('r');
         color: @gg-text;
         border: @gg-text 1px solid;
+        letter-spacing: .5px;
         padding: 10px 25px;
         border-radius: 30px;
         font-weight: bold;
@@ -62,6 +66,10 @@
           background-color: @gg-blue;
           border: @gg-blue 2px solid;
           color: @on-dark;
+          text-decoration: none;
+        }
+
+        &:focus {
           text-decoration: none;
         }
       }

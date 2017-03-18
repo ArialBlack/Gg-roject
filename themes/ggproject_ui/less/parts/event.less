@@ -3,6 +3,14 @@
   .back2portfolio {
     padding-right: 0;
 
+    &:hover {
+      text-decoration: none;
+
+      span {
+        text-decoration: underline;
+      }
+    }
+
     @media screen and (max-width: @max-xs) {
       float: right;
       display: inline-block;
@@ -65,7 +73,10 @@
       padding-left: 40px;
 
       &:before {
-        width: 65px;
+        width: 70px;
+        height: 26px;
+        top: 9px;
+        left: -15px;
       }
     }
   }
@@ -81,7 +92,9 @@
 
   p {
     .f(22);
+    letter-spacing: .6px;
     line-height: 150%;
+    opacity: .9;
   }
 }
 

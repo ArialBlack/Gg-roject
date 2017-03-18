@@ -9,6 +9,7 @@
 
   @media screen and (max-width:@min-lg) {
     position:fixed;
+    top: 0;
   }
 
   z-index: 100;
@@ -55,6 +56,7 @@
 
     li {
       a {
+        letter-spacing: 0.4px;
         color: @gg-text;
         .font-size(18);
         text-transform: uppercase;
@@ -99,9 +101,14 @@
       }
     }
 
-    @media screen and (max-width:992px) {
+    @media screen and (max-width:567px) {
       padding: 2px 18px !important;
       width: 260px !important;
+    }
+
+    @media (min-width:568px) and (max-width:992px) {
+      width: 180px !important;
+      padding: 2px 18px !important;
     }
 
 
@@ -165,7 +172,6 @@
 
         a {
           .font-size(18);
-          color: #777;
           text-transform: uppercase;
           text-decoration: none;
           padding-top: 15px;
@@ -176,6 +182,7 @@
 
           @media screen and (max-width:@min-lg) {
             color: @gg-white;
+            margin: 0;
           }
 
           &:hover {
@@ -261,7 +268,7 @@
 
             a {
               color: #ffffff;
-              padding: 13vh 0;
+              padding: 12.5vh 0;
               font-size: 5vh;
             }
           }

@@ -79,10 +79,14 @@ body {
       width: 768px;
     }
   }
+
+  @media screen and (max-width: @min-lg) {
+    padding-top:55px;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'cormorantsemibold';
+    font-family: 'cormorantregular';
     font-weight: normal;
     .font-size(48);
 }
@@ -237,13 +241,13 @@ body,
     height: 100%;
 }
 
-.views-field-created,
-.submitted-by,
-.footer,
-#node-265 p,
-#node-266 p {
-    font-family: @digit-font;
-}
+//.views-field-created,
+//.submitted-by,
+//.footer,
+//#node-265 p,
+//#node-266 p {
+//    font-family: @digit-font;
+//}
 
 .views-field-created {
     .font-size(14) !important;

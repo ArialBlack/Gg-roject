@@ -105,7 +105,7 @@ if ($lang == 'eng') {
       <?php endif; ?>
       <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
       <a id="main-content"></a>
-      <a class="back2portfolio" href="<?php print $lang;?>/services/weddings">‹<?php print t('Back to portfolio'); ?></a>
+      <a class="back2portfolio" href="<?php print $lang;?>/services/weddings">‹ <span><?php print t('Back to portfolio'); ?></span></a>
       <?php print render($title_prefix); ?>
       <?php if (!empty($title)): ?>
         <h1 class="page-header"><?php print $title; ?></h1>

@@ -45,6 +45,10 @@
     .line-height(24);
     margin-bottom: 30px;
     min-height: 80px; //todo equal height
+
+    span {
+      letter-spacing: .5px;
+    }
   }
 
   .views-field-created {
@@ -62,6 +66,8 @@
     float: left;
     margin-top: @mt + @lh;
     padding-left: 75px; //todo:responsive
+    margin-bottom: 2px;
+    text-decoration: underline;
 
     a {
       color: @gg-gray;
@@ -105,7 +111,10 @@
         float: initial;
 
         &:before {
-          width: 65px;
+          width: 70px;
+          height: 26px;
+          bottom: 8px;
+          left: -15px;
         }
       }
     }
@@ -116,6 +125,7 @@
         flex-wrap:wrap;
         .col {
           flex-grow:1;
+
           .views-field-body {
             margin-bottom: 2.5em;
           }
@@ -125,7 +135,7 @@
             text-transform: lowercase;
           }
           .views-field-view-node {
-            left: 20%;
+            right:10%;
           }
         }
       }

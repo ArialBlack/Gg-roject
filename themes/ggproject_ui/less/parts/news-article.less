@@ -22,7 +22,10 @@
       float: initial;
 
       &:before {
-        width: 65px;
+        width: 70px;
+        height: 26px;
+        bottom: 8px;
+        left: -15px;
       }
     }
   }
@@ -33,6 +36,7 @@
   .field-type-text-with-summary p {
     margin-bottom:10px;
     line-height:25px;
+    letter-spacing: .5px;
   }
 
   .field-type-text-with-summary,
@@ -58,6 +62,14 @@
   .back2portfolio {
     padding-right: 0;
 
+    &:hover {
+      text-decoration: none;
+
+      span {
+        text-decoration: underline;
+      }
+    }
+
     @media screen and (max-width: @max-xs) {
       float: right;
       display: inline-block;
@@ -80,6 +92,7 @@
   }
 
   .submitted-by {
+    margin-bottom: 20px;
     font-style: italic;
     font-size: .92rem !important;
     .font-size(24);
