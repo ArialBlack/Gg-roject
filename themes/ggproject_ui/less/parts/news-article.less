@@ -38,6 +38,10 @@
   .field-type-text-with-summary,
   .field-type-text-long,
   .submitted-by {
+    @media screen and (max-width: @max-xs) {
+      padding-left: 20px;
+    }
+
     @media (min-width: 768px) {
       padding-left: 150px;
     }
@@ -57,6 +61,7 @@
     @media screen and (max-width: @max-xs) {
       float: right;
       display: inline-block;
+      margin-right: 44px !important;
     }
 
 

@@ -45,7 +45,8 @@
 
 //fixes
 
-.page-node-265 {
+.page-node-265,
+.page-node-266 {
   #block-system-main {
     .field-item.even{
       float: none !important;
@@ -58,8 +59,20 @@
 
         .col-sm-6 {
           padding-left: 30px;
+
+          @media screen and (max-width:@max-xs) {
+            padding-left: 24px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+          }
+
           background: #eee;
+          color: @gg-text;
           flex-grow:1;
+
+          strong {
+            color: @gg-blue;
+          }
         }
       }
     }

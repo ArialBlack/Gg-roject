@@ -9,6 +9,11 @@
     position: relative;
     padding-left: 150px;
     padding-bottom: 0;
+    padding-right: 160px;
+
+    @media screen and (max-width:@min-lg) {
+      padding-right: 0;
+    }
 
     &:before {
       content: '';
@@ -52,14 +57,19 @@
           height:72px;
 
           @media (min-width: 320px) {
-            width: 300px;
-            font-size: .7rem;
+            width: 270px;
+            font-size: 30px;
           }
 
-          @media (min-width:992px){
-            width:360px;
+          //@media (min-width:@max-xs) {
+          //  width: 330px;
+          //  font-size: 24px;
+          //}
+
+          @media (min-width:@max-xs){
+            width:330px;
             vertical-align: top;
-            font-size: 1rem;
+            font-size: 1.2rem;
           }
         }
         //.center-block {
@@ -80,6 +90,7 @@
           text-align: center;
           height:72px;
 
+
           .btn-sendmail:hover {
             color: @gg-white;
             background: @gg-blue;
@@ -87,10 +98,10 @@
           }
 
           @media (min-width: 320px) {
-            width: 300px;
+            width: 345px;
             span,
             a {
-              font-size: .7rem;
+              font-size: 26px;
             }
 
             .btn-sendmail {
@@ -98,12 +109,39 @@
             }
           }
 
-          @media (min-width:992px) {
-            width:360px;
+          @media screen and (max-width:@max-xs) {
+            span {
+              border:1px solid;
+              border-radius: 30px;
+              padding: 4px 10px;
+              margin-left: 5px;
+              transition: background-color .2s linear;
+
+              &:hover {
+                background-color: @gg-blue;
+              }
+            }
+
+            a:hover{
+              text-decoration: none;
+            }
+          }
+
+          //@media (min-width:@max-xs) {
+          //  width: 330px;
+          //
+          //  .hidden-xs {
+          //    font-size: 21px;
+          //  }
+          //}
+
+
+          @media (min-width:768px) {
+            width:330px;
 
             span,
             a {
-              font-size: 1rem;
+              font-size: .9rem;
             }
 
             .btn-sendmail {
@@ -267,38 +305,6 @@
   }
 }
 
-
-//@media (min-width: 570px) {
-//  .page-node-259,
-//  .pahe-node-260 {
-//    .main-container {
-//      #block-system-main {
-//        .field-items {
-//          .even {
-//            display: block;
-//            width: 100%;
-//            float: left;
-//            p {
-//              img {
-//                float: left;
-//              }
-//              display: block;
-//            }
-//            img {
-//              margin-right: 10px;
-//            }
-//          }
-//          .odd {
-//            display: inline-block;
-//            width: 100%;
-//            float: left;
-//          }
-//        }
-//      }
-//    }
-//  }
-//}
-
 @media (min-width: @max-xs) {
   .page-node-259,
   .page-node-260 {
@@ -310,6 +316,11 @@
           }
           .odd {
             padding-left: 130px;
+
+            @media screen and (max-width:@min-lg){
+              padding-right: 160px;
+            }
+
           }
         }
       }

@@ -52,9 +52,6 @@
     .font-size(24);
     float: left;
 
-    &:before {
-      .line();
-    }
   }
 
   .main-container img {
@@ -68,7 +65,7 @@
 
     a {
       color: @gg-gray;
-      .font-size(24);
+      font-size: 0.9rem;
 
       &:after {
         content: '  ›';
@@ -77,6 +74,7 @@
   }
   .pager-next a {
     border-radius: 30px;
+    margin-top: -20px;
   }
 }
 
@@ -119,11 +117,12 @@
         .col {
           flex-grow:1;
           .views-field-body {
-            margin-bottom: 3em;
+            margin-bottom: 2.5em;
           }
           .views-field-created, .views-field-view-node {
             position: absolute;
             bottom: 0;
+            text-transform: lowercase;
           }
           .views-field-view-node {
             left: 20%;

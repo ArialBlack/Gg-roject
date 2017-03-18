@@ -1,47 +1,88 @@
-//.page-video {
-//  #cboxCurrent,
-//  #cboxTitle {
-//    display: none !important;
-//  }
-//
-//  #colorbox {
-//    overflow: visible !important;
-//
-//    #cboxWrapper {
-//      background: none;
-//      overflow: visible !important;
-//
-//      #cboxContent {
-//        background: none;
-//        overflow: visible;
-//
-//        #cboxLoadedContent{
-//          width: 700px !important;
-//          height: 500px !important;
-//          float: none;
-//          margin: auto;
-//        }
-//
-//        #cboxPrevious {
-//          position: absolute;
-//          top: 40%;
-//          left: 22%;
-//        }
-//
-//        #cboxNext {
-//          position: absolute;
-//          top: 40%;
-//          left: 76%;
-//        }
-//
-//        #cboxClose {
-//          top: 0;
-//          left: 76%;
-//        }
-//
-//
-//      }
-//    }
-//  }
-//
-//}
+.page-video {
+  #cboxCurrent,
+  #cboxTitle {
+    display: none !important;
+  }
+
+  #colorbox {
+    overflow: visible !important;
+
+    #cboxWrapper {
+      background: none;
+      overflow: visible !important;
+
+      #cboxContent {
+        background: none;
+        overflow: visible;
+
+        #cboxLoadedContent{
+          width: 700px !important;
+          height: 500px !important;
+          float: none;
+          margin: auto;
+        }
+
+        #cboxPrevious {
+          position: absolute;
+          top: 40%;
+          left: 20%;
+
+          @media screen and (max-width:992px) {
+            left: -4%;
+          }
+
+          bottom: 0;
+          right: 0;
+          background: url(../images/prev.png) no-repeat;
+          width: 35px;
+          background-size: cover;
+          height: 34px;
+          text-indent: -9999px;
+        }
+
+        #cboxNext {
+          position: absolute;
+          top: 40%;
+          left: 77.5%;
+
+          @media screen and (max-width:992px) {
+            left: 100%;
+          }
+
+          bottom: 0;
+          right: 0;
+          background: url(../images/next.png) no-repeat;
+          width: 35px;
+          background-size: cover;
+          height: 34px;
+          text-indent: -9999px;
+        }
+
+        #cboxClose {
+          top: 0;
+          left: 77%;
+
+          @media screen and (max-width:992px) {
+            left: 100%;
+          }
+
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          background: url(../images/close.png) no-repeat;
+          width: 25px;
+          background-size: cover;
+          height: 25px;
+          text-indent: -9999px;
+
+          &:before {
+
+          }
+        }
+
+
+      }
+    }
+  }
+
+}
