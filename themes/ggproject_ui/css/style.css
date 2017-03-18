@@ -9752,24 +9752,23 @@ body,
   height: auto;
   width: 150px;
   transition: border-color 0.3s linear;
-  color: #777;
 }
 @media screen and (max-width: 767px) {
-  /* line 97, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 96, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar #block-locale-language a,
   #navbar #block-locale-language h2 {
     font-size: 5vh !important;
   }
 }
 @media screen and (max-width: 992px) {
-  /* line 103, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 102, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar #block-locale-language {
     padding: 2px 18px !important;
     width: 260px !important;
   }
 }
 @media screen and (max-width: 1200px) {
-  /* line 109, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 108, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar #block-locale-language {
     float: left;
     display: inline-block;
@@ -9780,31 +9779,32 @@ body,
     border-color: white;
   }
 }
-/* line 119, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 118, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar #block-locale-language:hover {
   border-color: #17a6b9;
 }
-/* line 122, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 121, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar #block-locale-language:hover .block-title {
   color: #17a6b9;
 }
-/* line 126, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 125, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar #block-locale-language:hover li {
   display: block !important;
 }
 @media screen and (max-width: 1200px) {
-  /* line 128, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 127, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar #block-locale-language:hover li {
     display: block !important;
   }
 }
-/* line 136, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 135, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar #block-locale-language .block-title {
   font-size: 0.8rem;
   display: inline-block;
   float: left;
   margin: 6px 5px 0 0;
   transition: color .3s linear;
+  font-family: 'cormorantregular';
 }
 /* line 144, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar #block-locale-language .language-switcher-locale-url {
@@ -10504,8 +10504,7 @@ body > iframe {
 /* line 36, ..\themes\ggproject_ui\less\parts\news.less */
 .page-news .views-field-title a {
   color: #231f20;
-  font-size: 13.333333333333332px;
-  font-size: 1.3333333333333333rem;
+  font-size: 1rem;
 }
 /* line 42, ..\themes\ggproject_ui\less\parts\news.less */
 .page-news .views-field-body {
@@ -11513,23 +11512,43 @@ body > iframe {
 #block-views-slider-portfolio-block-1 .carousel-inner .prev {
   transition: 100ms all;
 }
-/* line 43, ..\themes\ggproject_ui\less\parts\carousel.less */
-#block-views-slider-portfolio-block-1 .carouse-control.left,
-#block-views-slider-portfolio-block-1 .carouse-control.right {
-  background-image: none;
+/* line 44, ..\themes\ggproject_ui\less\parts\carousel.less */
+#block-views-slider-portfolio-block-1 .carousel-control.left:hover,
+#block-views-slider-portfolio-block-1 .carousel-control.right:hover {
+  opacity: 1 !important;
 }
-/* line 49, ..\themes\ggproject_ui\less\parts\carousel.less */
+/* line 52, ..\themes\ggproject_ui\less\parts\carousel.less */
+#block-views-slider-portfolio-block-1 .carousel-control .icon-prev {
+  background: url(../images/prev.png) no-repeat;
+  background-size: contain;
+  margin-left: -30px;
+}
+/* line 57, ..\themes\ggproject_ui\less\parts\carousel.less */
+#block-views-slider-portfolio-block-1 .carousel-control .icon-prev:before {
+  content: "" !important;
+}
+/* line 62, ..\themes\ggproject_ui\less\parts\carousel.less */
+#block-views-slider-portfolio-block-1 .carousel-control .icon-next {
+  background: url(../images/next.png) no-repeat;
+  background-size: contain;
+  margin-right: -30px;
+}
+/* line 67, ..\themes\ggproject_ui\less\parts\carousel.less */
+#block-views-slider-portfolio-block-1 .carousel-control .icon-next:before {
+  content: "" !important;
+}
+/* line 74, ..\themes\ggproject_ui\less\parts\carousel.less */
 #block-views-slider-portfolio-block-1 .item .views-field-nothing {
   width: 33.33333%;
   float: left;
   position: relative;
   min-height: 1px;
 }
-/* line 56, ..\themes\ggproject_ui\less\parts\carousel.less */
+/* line 81, ..\themes\ggproject_ui\less\parts\carousel.less */
 #block-views-slider-portfolio-block-1 .item .views-field-nothing:hover .view_node {
   display: block !important;
 }
-/* line 62, ..\themes\ggproject_ui\less\parts\carousel.less */
+/* line 87, ..\themes\ggproject_ui\less\parts\carousel.less */
 #block-views-slider-portfolio-block-1 .item .views-field-nothing .view-img:before {
   content: "";
   transition: opacity .3s ease;
@@ -11541,11 +11560,11 @@ body > iframe {
   left: 0;
   right: 0;
 }
-/* line 74, ..\themes\ggproject_ui\less\parts\carousel.less */
+/* line 99, ..\themes\ggproject_ui\less\parts\carousel.less */
 #block-views-slider-portfolio-block-1 .item .views-field-nothing .view-img:hover:before {
   opacity: .4;
 }
-/* line 94, ..\themes\ggproject_ui\less\parts\carousel.less */
+/* line 119, ..\themes\ggproject_ui\less\parts\carousel.less */
 #block-views-slider-portfolio-block-1 .item .views-field-nothing .view_node {
   z-index: 100;
   display: none;
@@ -11560,15 +11579,15 @@ body > iframe {
   padding: 10px 20px;
   transition: color .2s linear;
 }
-/* line 107, ..\themes\ggproject_ui\less\parts\carousel.less */
+/* line 132, ..\themes\ggproject_ui\less\parts\carousel.less */
 #block-views-slider-portfolio-block-1 .item .views-field-nothing .view_node a {
   color: white;
 }
-/* line 111, ..\themes\ggproject_ui\less\parts\carousel.less */
+/* line 136, ..\themes\ggproject_ui\less\parts\carousel.less */
 #block-views-slider-portfolio-block-1 .item .views-field-nothing .view_node:hover {
   color: #17a6b9;
 }
-/* line 113, ..\themes\ggproject_ui\less\parts\carousel.less */
+/* line 138, ..\themes\ggproject_ui\less\parts\carousel.less */
 #block-views-slider-portfolio-block-1 .item .views-field-nothing .view_node:hover a {
   text-decoration: none;
   color: #17a6b9;

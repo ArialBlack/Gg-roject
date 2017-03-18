@@ -39,9 +39,34 @@
     }
        } */
   }
-  .carouse-control{
-    &.left, &.right{
-      background-image: none;
+  .carousel-control{
+
+    &.left:hover,
+    &.right:hover {
+      opacity: 1 !important;
+    }
+    //&.left, &.right{
+    //  background-image: none;
+    //}
+
+    .icon-prev {
+      background:url(../images/prev.png) no-repeat;
+      background-size:contain;
+      margin-left: -30px;
+
+      &:before {
+        content:"" !important;
+      }
+    }
+
+    .icon-next {
+      background:url(../images/next.png) no-repeat;
+      background-size:contain;
+      margin-right:-30px;
+
+      &:before {
+        content:"" !important;
+      }
     }
   }
 
