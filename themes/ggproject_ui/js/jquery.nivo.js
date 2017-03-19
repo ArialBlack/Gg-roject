@@ -6,8 +6,9 @@
  * Free to use and abuse under the MIT license.
  * http://www.opensource.org/licenses/mit-license.php
  */
-
 (function($) {
+    $(function() {
+
     var NivoSlider = function(element, options){
         // Defaults are below
         var settings = $.extend({}, $.fn.nivoSlider.defaults, options);
@@ -658,5 +659,6 @@
     };
 
     $.fn._reverse = [].reverse;
-    
-})(jQuery);
+
+    }); // end of document ready
+})(jQuery); // end of jQuery name space
