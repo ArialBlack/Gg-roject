@@ -5,6 +5,7 @@
  * these variables directly from ../bootstrap/less/variables.less to this file.
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+@import 'https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.css';
 @import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css';
 /* line 9, ..\build-front\bower_components\bootstrap\less\normalize.less */
 html {
@@ -9061,7 +9062,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   font-weight: normal;
   font-style: normal;
 }
-/* line 42, ..\themes\ggproject_ui\less\_base.less */
+/* line 43, ..\themes\ggproject_ui\less\_base.less */
 #bpMArker {
   display: inline-block;
   visibility: visible;
@@ -9069,26 +9070,26 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   width: 1px;
 }
 @media (min-width: 1200px) {
-  /* line 48, ..\themes\ggproject_ui\less\_base.less */
+  /* line 49, ..\themes\ggproject_ui\less\_base.less */
   #bpMArker {
     display: none;
     visibility: hidden;
   }
 }
 @media (min-width: 992px) {
-  /* line 56, ..\themes\ggproject_ui\less\_base.less */
+  /* line 57, ..\themes\ggproject_ui\less\_base.less */
   .not-front #bpMArker {
     display: none;
     visibility: hidden;
   }
 }
-/* line 63, ..\themes\ggproject_ui\less\_base.less */
+/* line 64, ..\themes\ggproject_ui\less\_base.less */
 html {
   height: 100%;
   font-size: 24px;
   color: #231f20;
 }
-/* line 69, ..\themes\ggproject_ui\less\_base.less */
+/* line 70, ..\themes\ggproject_ui\less\_base.less */
 body {
   font-family: 'cormorantregular';
   font-size: 10px;
@@ -9097,26 +9098,26 @@ body {
   line-height: 1.3333333333333333rem;
 }
 @media screen and (max-width: 768px) {
-  /* line 73, ..\themes\ggproject_ui\less\_base.less */
+  /* line 74, ..\themes\ggproject_ui\less\_base.less */
   body {
     width: 768px;
   }
-  /* line 74, ..\themes\ggproject_ui\less\_base.less */
+  /* line 75, ..\themes\ggproject_ui\less\_base.less */
   body * {
     max-width: 768px;
   }
-  /* line 78, ..\themes\ggproject_ui\less\_base.less */
+  /* line 79, ..\themes\ggproject_ui\less\_base.less */
   body .container {
     width: 768px;
   }
 }
 @media screen and (max-width: 1200px) {
-  /* line 83, ..\themes\ggproject_ui\less\_base.less */
+  /* line 84, ..\themes\ggproject_ui\less\_base.less */
   body {
     padding-top: 55px;
   }
 }
-/* line 88, ..\themes\ggproject_ui\less\_base.less */
+/* line 89, ..\themes\ggproject_ui\less\_base.less */
 h1,
 h2,
 h3,
@@ -9128,30 +9129,30 @@ h6 {
   font-size: 20px;
   font-size: 2rem;
 }
-/* line 94, ..\themes\ggproject_ui\less\_base.less */
+/* line 95, ..\themes\ggproject_ui\less\_base.less */
 a {
   color: #17a6b9;
   transition: 0.3s all linear;
 }
-/* line 99, ..\themes\ggproject_ui\less\_base.less */
+/* line 100, ..\themes\ggproject_ui\less\_base.less */
 p {
   margin-bottom: 40px;
 }
-/* line 103, ..\themes\ggproject_ui\less\_base.less */
+/* line 104, ..\themes\ggproject_ui\less\_base.less */
 img {
   max-width: 100%;
   height: auto;
 }
-/* line 108, ..\themes\ggproject_ui\less\_base.less */
+/* line 109, ..\themes\ggproject_ui\less\_base.less */
 .translation_en,
 .translation_uk {
   display: none !important;
 }
-/* line 113, ..\themes\ggproject_ui\less\_base.less */
+/* line 114, ..\themes\ggproject_ui\less\_base.less */
 h1.page-header {
   border: none;
 }
-/* line 117, ..\themes\ggproject_ui\less\_base.less */
+/* line 118, ..\themes\ggproject_ui\less\_base.less */
 .page-banner {
   margin-bottom: 40px;
   min-height: 180px;
@@ -9160,23 +9161,23 @@ h1.page-header {
   padding-top: 100px;
 }
 @media screen and (max-width: 1199px) {
-  /* line 125, ..\themes\ggproject_ui\less\_base.less */
+  /* line 126, ..\themes\ggproject_ui\less\_base.less */
   .page-banner {
     padding-top: 75px;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 129, ..\themes\ggproject_ui\less\_base.less */
+  /* line 130, ..\themes\ggproject_ui\less\_base.less */
   .page-banner {
     padding-top: 50px;
   }
 }
-/* line 133, ..\themes\ggproject_ui\less\_base.less */
+/* line 134, ..\themes\ggproject_ui\less\_base.less */
 .page-banner .inner {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 138, ..\themes\ggproject_ui\less\_base.less */
+/* line 139, ..\themes\ggproject_ui\less\_base.less */
 .page-banner h1,
 .page-banner h2 {
   color: white;
@@ -9238,11 +9239,11 @@ h1.page-header {
   }
 }
 @media (min-width: 768px) {
-  /* line 146, ..\themes\ggproject_ui\less\_base.less */
+  /* line 147, ..\themes\ggproject_ui\less\_base.less */
   .page-banner {
     min-height: 240px;
   }
-  /* line 149, ..\themes\ggproject_ui\less\_base.less */
+  /* line 150, ..\themes\ggproject_ui\less\_base.less */
   .page-banner h1,
   .page-banner h2 {
     font-size: 31.25px;
@@ -9250,12 +9251,12 @@ h1.page-header {
   }
 }
 @media (min-width: 992px) {
-  /* line 154, ..\themes\ggproject_ui\less\_base.less */
+  /* line 155, ..\themes\ggproject_ui\less\_base.less */
   .page-banner {
     min-height: 300px;
     margin-bottom: 60px;
   }
-  /* line 158, ..\themes\ggproject_ui\less\_base.less */
+  /* line 159, ..\themes\ggproject_ui\less\_base.less */
   .page-banner h1,
   .page-banner h2 {
     font-size: 41.66666666666667px;
@@ -9263,18 +9264,18 @@ h1.page-header {
   }
 }
 @media (min-width: 1200px) {
-  /* line 163, ..\themes\ggproject_ui\less\_base.less */
+  /* line 164, ..\themes\ggproject_ui\less\_base.less */
   .page-banner {
     min-height: 380px;
   }
-  /* line 166, ..\themes\ggproject_ui\less\_base.less */
+  /* line 167, ..\themes\ggproject_ui\less\_base.less */
   .page-banner h1,
   .page-banner h2 {
     font-size: 52.5px;
     font-size: 5.25rem;
   }
 }
-/* line 174, ..\themes\ggproject_ui\less\_base.less */
+/* line 175, ..\themes\ggproject_ui\less\_base.less */
 .pager.pager-load-more a {
   background-color: white;
   border: #231f20 1px solid;
@@ -9294,11 +9295,11 @@ h1.page-header {
   border-color: #17a6b9;
   color: white;
 }
-/* line 180, ..\themes\ggproject_ui\less\_base.less */
+/* line 181, ..\themes\ggproject_ui\less\_base.less */
 .region-content ul.flippy {
   margin-top: 60px;
 }
-/* line 184, ..\themes\ggproject_ui\less\_base.less */
+/* line 185, ..\themes\ggproject_ui\less\_base.less */
 .back2portfolio {
   color: #9d9d9d;
   font-size: 10px;
@@ -9309,7 +9310,7 @@ h1.page-header {
   margin-top: 15px;
   padding-right: 10px;
 }
-/* line 193, ..\themes\ggproject_ui\less\_base.less */
+/* line 194, ..\themes\ggproject_ui\less\_base.less */
 article .field-name-body {
   color: #666666;
   font-size: 9.166666666666666px;
@@ -9317,27 +9318,27 @@ article .field-name-body {
   line-height: 13.333333333333332px;
   line-height: 1.3333333333333333rem;
 }
-/* line 198, ..\themes\ggproject_ui\less\_base.less */
+/* line 199, ..\themes\ggproject_ui\less\_base.less */
 article .field-name-body p {
   margin-bottom: 20px;
 }
-/* line 206, ..\themes\ggproject_ui\less\_base.less */
+/* line 207, ..\themes\ggproject_ui\less\_base.less */
 .carousel-fade .carousel-inner .item {
   transition-property: opacity;
 }
-/* line 210, ..\themes\ggproject_ui\less\_base.less */
+/* line 211, ..\themes\ggproject_ui\less\_base.less */
 .carousel-fade .carousel-inner .item,
 .carousel-fade .carousel-inner .active.left,
 .carousel-fade .carousel-inner .active.right {
   opacity: 0;
 }
-/* line 216, ..\themes\ggproject_ui\less\_base.less */
+/* line 217, ..\themes\ggproject_ui\less\_base.less */
 .carousel-fade .carousel-inner .active,
 .carousel-fade .carousel-inner .next.left,
 .carousel-fade .carousel-inner .prev.right {
   opacity: 1;
 }
-/* line 222, ..\themes\ggproject_ui\less\_base.less */
+/* line 223, ..\themes\ggproject_ui\less\_base.less */
 .carousel-fade .carousel-inner .next,
 .carousel-fade .carousel-inner .prev,
 .carousel-fade .carousel-inner .active.left,
@@ -9346,11 +9347,11 @@ article .field-name-body p {
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
 }
-/* line 231, ..\themes\ggproject_ui\less\_base.less */
+/* line 232, ..\themes\ggproject_ui\less\_base.less */
 .carousel-fade .carousel-control {
   z-index: 2;
 }
-/* line 236, ..\themes\ggproject_ui\less\_base.less */
+/* line 237, ..\themes\ggproject_ui\less\_base.less */
 html,
 body,
 .carousel,
@@ -9358,22 +9359,22 @@ body,
 .carousel-inner .item {
   height: 100%;
 }
-/* line 252, ..\themes\ggproject_ui\less\_base.less */
+/* line 253, ..\themes\ggproject_ui\less\_base.less */
 .views-field-created {
   font-size: 5.833333333333334px !important;
   font-size: 0.5833333333333334rem !important;
 }
-/* line 256, ..\themes\ggproject_ui\less\_base.less */
+/* line 257, ..\themes\ggproject_ui\less\_base.less */
 .submitted-by {
   font-size: 7.5px !important;
   font-size: 0.75rem !important;
 }
-/* line 263, ..\themes\ggproject_ui\less\_base.less */
+/* line 264, ..\themes\ggproject_ui\less\_base.less */
 #node-265 p strong,
 #node-266 p strong {
   font-family: 'cormorantbold';
 }
-/* line 269, ..\themes\ggproject_ui\less\_base.less */
+/* line 270, ..\themes\ggproject_ui\less\_base.less */
 .node .translation_ru,
 .node .translation_eng {
   display: none !important;
