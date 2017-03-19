@@ -9751,7 +9751,7 @@ body,
   white-space: nowrap;
   padding: 4px 18px;
   height: auto;
-  width: 130px;
+  width: 145px;
   transition: border-color 0.3s linear;
 }
 @media screen and (max-width: 767px) {
