@@ -9751,7 +9751,7 @@ body,
   white-space: nowrap;
   padding: 4px 18px;
   height: auto;
-  width: 150px;
+  width: 130px;
   transition: border-color 0.3s linear;
 }
 @media screen and (max-width: 767px) {
@@ -9814,28 +9814,34 @@ body,
   transition: color .3s linear;
   font-family: 'cormorantregular';
 }
-/* line 151, ..\themes\ggproject_ui\less\parts\navbar.less */
+@media screen and (max-width: 500px) {
+  /* line 150, ..\themes\ggproject_ui\less\parts\navbar.less */
+  #navbar #block-locale-language .block-title {
+    margin-top: 1px;
+  }
+}
+/* line 157, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar #block-locale-language .language-switcher-locale-url {
   display: inline-block;
   padding: 0;
   margin-bottom: 0;
 }
-/* line 162, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 168, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar #block-locale-language .language-switcher-locale-url li {
   list-style: none;
   display: none;
 }
-/* line 166, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 172, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar #block-locale-language .language-switcher-locale-url li.active {
   display: block;
 }
 @media screen and (max-width: 1200px) {
-  /* line 168, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 174, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar #block-locale-language .language-switcher-locale-url li.active {
     display: inline-block;
   }
 }
-/* line 173, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 179, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar #block-locale-language .language-switcher-locale-url li a {
   font-size: 7.5px;
   font-size: 0.75rem;
@@ -9848,26 +9854,28 @@ body,
   color: #231f20;
 }
 @media screen and (max-width: 1200px) {
-  /* line 183, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 189, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar #block-locale-language .language-switcher-locale-url li a {
     color: white;
     margin: 0;
   }
 }
-/* line 188, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 194, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar #block-locale-language .language-switcher-locale-url li a:hover {
   color: #17a6b9;
 }
-/* line 202, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 208, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar .navbar-collapse {
   padding: 0;
+  position: relative;
+  z-index: 9999;
 }
-/* line 205, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 213, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar .navbar-collapse nav {
   margin-top: 1em;
 }
 @media screen and (max-width: 1200px) {
-  /* line 207, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 215, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .navbar-collapse nav {
     overflow: hidden;
     overflow-y: scroll;
@@ -9876,17 +9884,17 @@ body,
     height: 100%;
     width: 100%;
   }
-  /* line 215, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 223, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .navbar-collapse nav .region-navigation {
     min-height: 190px;
   }
-  /* line 218, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 226, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .navbar-collapse nav .region-navigation .inner .center-block {
     padding: 4px 18px!important;
   }
 }
 @media screen and (max-width: 1199px) {
-  /* line 224, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 232, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .navbar-collapse nav {
     margin-top: 0;
     display: -webkit-flex;
@@ -9896,7 +9904,7 @@ body,
         -ms-flex-flow: column;
             flex-flow: column;
   }
-  /* line 229, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 237, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .navbar-collapse nav .region-navigation {
     -webkit-order: 2;
         -ms-flex-order: 2;
@@ -9908,11 +9916,11 @@ body,
     background: #231f20;
     margin-top: 0;
   }
-  /* line 237, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 245, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .navbar-collapse nav .region-navigation .language-switcher-locale-url {
     padding: 0;
   }
-  /* line 240, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 248, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .navbar-collapse nav .region-navigation .language-switcher-locale-url .language-link {
     margin-top: 5px;
     border-radius: 15px;
@@ -9922,7 +9930,7 @@ body,
     color: #fff;
     line-height: 1.5;
   }
-  /* line 252, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 260, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .navbar-collapse nav .menu {
     -webkit-order: 1;
         -ms-flex-order: 1;
@@ -9936,29 +9944,29 @@ body,
     margin-right: 0;
     margin-left: 0;
   }
-  /* line 261, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 269, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .navbar-collapse nav .menu li.leaf {
     background: #17a6b9;
     border-bottom: 1px solid #ffffff;
   }
-  /* line 265, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 273, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .navbar-collapse nav .menu li.leaf:last-child {
     border-bottom: 0 none;
   }
-  /* line 269, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 277, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .navbar-collapse nav .menu li.leaf a {
     color: #ffffff;
     padding: 12.5vh 0;
     font-size: 5vh;
   }
 }
-/* line 279, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 287, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar .navbar-toggle {
   margin-top: 1em;
   border: 0 none;
 }
 @media screen and (max-width: 768px) {
-  /* line 284, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 292, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .navbar-toggle .icon-bar {
     width: 38px;
     height: 7px;
@@ -9966,18 +9974,18 @@ body,
     border-radius: 2px;
   }
 }
-/* line 292, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 300, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar .navbar-toggle:hover,
 #navbar .navbar-toggle:focus {
   background: transparent;
 }
-/* line 295, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 303, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar .navbar-toggle:hover .icon-bar,
 #navbar .navbar-toggle:focus .icon-bar {
   background-color: #17a6b9;
 }
 @media screen and (max-width: 768px) {
-  /* line 298, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 306, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .navbar-toggle:hover .icon-bar,
   #navbar .navbar-toggle:focus .icon-bar {
     width: 38px;
@@ -9986,30 +9994,30 @@ body,
     border-radius: 2px;
   }
 }
-/* line 307, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 315, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar .navbar-toggle .icon-bar {
   background-color: #000;
 }
-/* line 317, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 325, ..\themes\ggproject_ui\less\parts\navbar.less */
 .info-on-menu {
   display: none;
 }
-/* line 323, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 331, ..\themes\ggproject_ui\less\parts\navbar.less */
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block {
   display: inline-block;
   width: 65%;
   float: right;
   position: relative;
 }
-/* line 328, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 336, ..\themes\ggproject_ui\less\parts\navbar.less */
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu {
   display: inline-block;
 }
-/* line 331, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 339, ..\themes\ggproject_ui\less\parts\navbar.less */
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .left-block {
   display: none;
 }
-/* line 335, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 343, ..\themes\ggproject_ui\less\parts\navbar.less */
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .center-block,
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .right-block {
   position: absolute;
@@ -10019,7 +10027,7 @@ body,
   border-radius: 25px;
   transition: border-color 0.3s linear;
 }
-/* line 343, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 351, ..\themes\ggproject_ui\less\parts\navbar.less */
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .center-block,
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .right-block,
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .center-block a,
@@ -10029,12 +10037,12 @@ body,
   color: white !important;
   border-color: white !important;
 }
-/* line 351, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 359, ..\themes\ggproject_ui\less\parts\navbar.less */
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .center-block:hover,
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .right-block:hover {
   border-color: #17a6b9;
 }
-/* line 355, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 363, ..\themes\ggproject_ui\less\parts\navbar.less */
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .center-block span,
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .right-block span,
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .center-block a,
@@ -10044,18 +10052,18 @@ body,
   color: #777;
 }
 @media screen and (max-width: 767px) {
-  /* line 363, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 371, ..\themes\ggproject_ui\less\parts\navbar.less */
   .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .center-block a,
   .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .right-block a {
     font-size: 5vh !important;
   }
 }
-/* line 369, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 377, ..\themes\ggproject_ui\less\parts\navbar.less */
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .center-block {
   left: 1%;
   padding-bottom: 4px;
 }
-/* line 374, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 382, ..\themes\ggproject_ui\less\parts\navbar.less */
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .right-block {
   right: 5vw;
 }
@@ -10590,7 +10598,7 @@ body > iframe {
 /* line 72, ..\themes\ggproject_ui\less\parts\news.less */
 .page-news .views-field-view-node a {
   color: #9d9d9d;
-  font-size: 0.9rem;
+  font-size: 0.59rem;
 }
 /* line 76, ..\themes\ggproject_ui\less\parts\news.less */
 .page-news .views-field-view-node a:after {
@@ -10956,8 +10964,7 @@ body > iframe {
   font-family: 'cormorantregular';
   display: inline;
   padding: 5px 20px;
-  font-size: 11.666666666666668px;
-  font-size: 1.1666666666666667rem;
+  font-size: 1.1rem;
   color: #17a6b9;
   border: #231f20 2px solid;
   border-radius: 30px;
@@ -11646,57 +11653,96 @@ body > iframe {
   position: relative;
 }
 /* line 60, ..\themes\ggproject_ui\less\parts\carousel.less */
+#block-views-slider-portfolio-block-1 .item-list {
+  overflow: hidden;
+}
+/* line 64, ..\themes\ggproject_ui\less\parts\carousel.less */
 #block-views-slider-portfolio-block-1 .view-header {
   position: absolute;
-  top: 50px;
-  bottom: 50px;
   left: 0;
   right: 0;
+  top: 0;
+  bottom: 0;
 }
-/* line 67, ..\themes\ggproject_ui\less\parts\carousel.less */
-#block-views-slider-portfolio-block-1 .view-header .fi-arrow-newest:hover,
-#block-views-slider-portfolio-block-1 .view-header .fi-arrow-previous:hover {
-  opacity: 1 !important;
-}
-/* line 72, ..\themes\ggproject_ui\less\parts\carousel.less */
+/* line 71, ..\themes\ggproject_ui\less\parts\carousel.less */
 #block-views-slider-portfolio-block-1 .view-header .fi-arrow-previous {
   position: absolute;
+  width: 100px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+  z-index: 6;
+  cursor: pointer;
+}
+/* line 81, ..\themes\ggproject_ui\less\parts\carousel.less */
+#block-views-slider-portfolio-block-1 .view-header .fi-arrow-previous:hover {
+  opacity: .8;
+}
+/* line 85, ..\themes\ggproject_ui\less\parts\carousel.less */
+#block-views-slider-portfolio-block-1 .view-header .fi-arrow-previous:before {
+  content: "";
+  position: absolute;
+  left: 12px;
   background: url(../images/prev.png) no-repeat;
   background-size: contain;
   z-index: 2;
-  width: 30px;
-  height: 30px;
-  left: 12px;
-  top: 37%;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
 }
-/* line 82, ..\themes\ggproject_ui\less\parts\carousel.less */
-#block-views-slider-portfolio-block-1 .view-header .fi-arrow-previous:before {
-  content: "" !important;
+@media screen and (max-width: 767px) {
+  /* line 98, ..\themes\ggproject_ui\less\parts\carousel.less */
+  #block-views-slider-portfolio-block-1 .view-header .fi-arrow-previous {
+    display: none;
+  }
 }
-/* line 88, ..\themes\ggproject_ui\less\parts\carousel.less */
+/* line 104, ..\themes\ggproject_ui\less\parts\carousel.less */
 #block-views-slider-portfolio-block-1 .view-header .fi-arrow-newest {
-  right: 12px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100px;
   position: absolute;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+  z-index: 6;
+  cursor: pointer;
+}
+/* line 114, ..\themes\ggproject_ui\less\parts\carousel.less */
+#block-views-slider-portfolio-block-1 .view-header .fi-arrow-newest:hover {
+  opacity: .8;
+}
+/* line 118, ..\themes\ggproject_ui\less\parts\carousel.less */
+#block-views-slider-portfolio-block-1 .view-header .fi-arrow-newest:before {
+  content: "";
+  position: absolute;
+  right: 12px;
   background: url(../images/next.png) no-repeat;
   background-size: contain;
   z-index: 2;
-  width: 30px;
-  height: 30px;
-  top: 37%;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
 }
-/* line 98, ..\themes\ggproject_ui\less\parts\carousel.less */
-#block-views-slider-portfolio-block-1 .view-header .fi-arrow-newest:before {
-  content: "" !important;
+@media screen and (max-width: 767px) {
+  /* line 131, ..\themes\ggproject_ui\less\parts\carousel.less */
+  #block-views-slider-portfolio-block-1 .view-header .fi-arrow-newest {
+    display: none;
+  }
 }
-/* line 104, ..\themes\ggproject_ui\less\parts\carousel.less */
+/* line 137, ..\themes\ggproject_ui\less\parts\carousel.less */
 #block-views-slider-portfolio-block-1 .pull-left.footer-img-wrapper.no-padding.full-project-block {
   position: relative;
 }
-/* line 108, ..\themes\ggproject_ui\less\parts\carousel.less */
+/* line 141, ..\themes\ggproject_ui\less\parts\carousel.less */
 #block-views-slider-portfolio-block-1 .pull-left.footer-img-wrapper.no-padding.full-project-block:hover > a {
   display: block !important;
 }
-/* line 114, ..\themes\ggproject_ui\less\parts\carousel.less */
+/* line 147, ..\themes\ggproject_ui\less\parts\carousel.less */
 #block-views-slider-portfolio-block-1 .pull-left.footer-img-wrapper.no-padding.full-project-block .img-block:before {
   content: "";
   transition: opacity .3s ease;
@@ -11708,11 +11754,11 @@ body > iframe {
   left: 0;
   right: 0;
 }
-/* line 126, ..\themes\ggproject_ui\less\parts\carousel.less */
+/* line 159, ..\themes\ggproject_ui\less\parts\carousel.less */
 #block-views-slider-portfolio-block-1 .pull-left.footer-img-wrapper.no-padding.full-project-block .img-block:hover:before {
   opacity: .4;
 }
-/* line 132, ..\themes\ggproject_ui\less\parts\carousel.less */
+/* line 165, ..\themes\ggproject_ui\less\parts\carousel.less */
 #block-views-slider-portfolio-block-1 .pull-left.footer-img-wrapper.no-padding.full-project-block > a {
   z-index: 100;
   display: none;
@@ -11727,33 +11773,51 @@ body > iframe {
   padding: 10px 20px;
   transition: color .2s linear;
 }
-/* line 145, ..\themes\ggproject_ui\less\parts\carousel.less */
+/* line 178, ..\themes\ggproject_ui\less\parts\carousel.less */
 #block-views-slider-portfolio-block-1 .pull-left.footer-img-wrapper.no-padding.full-project-block > a a {
   color: white;
 }
-/* line 149, ..\themes\ggproject_ui\less\parts\carousel.less */
+/* line 182, ..\themes\ggproject_ui\less\parts\carousel.less */
 #block-views-slider-portfolio-block-1 .pull-left.footer-img-wrapper.no-padding.full-project-block > a:hover {
   color: #17a6b9;
 }
-/* line 151, ..\themes\ggproject_ui\less\parts\carousel.less */
+/* line 184, ..\themes\ggproject_ui\less\parts\carousel.less */
 #block-views-slider-portfolio-block-1 .pull-left.footer-img-wrapper.no-padding.full-project-block > a:hover a {
   text-decoration: none;
   color: #17a6b9;
 }
-/* line 159, ..\themes\ggproject_ui\less\parts\carousel.less */
+/* line 192, ..\themes\ggproject_ui\less\parts\carousel.less */
 #block-views-slider-portfolio-block-1 ul {
   padding-left: 0;
+  transition: all .3s;
 }
-/* line 166, ..\themes\ggproject_ui\less\parts\carousel.less */
+/* line 200, ..\themes\ggproject_ui\less\parts\carousel.less */
 #block-views-slider-portfolio-block-1 ul li {
   list-style: none;
+  float: left;
 }
-/* line 168, ..\themes\ggproject_ui\less\parts\carousel.less */
+/* line 203, ..\themes\ggproject_ui\less\parts\carousel.less */
 #block-views-slider-portfolio-block-1 ul li img {
   width: 100%;
 }
+@media screen and (max-width: 425px) {
+  /* line 211, ..\themes\ggproject_ui\less\parts\carousel.less */
+  #block-views-slider-portfolio-block-1 ul li {
+    max-height: 400px !important;
+  }
+  /* line 213, ..\themes\ggproject_ui\less\parts\carousel.less */
+  #block-views-slider-portfolio-block-1 ul li .img-block img {
+    min-width: 125vw !important;
+  }
+}
+@media (min-width: 425px) and (max-width: 550px) {
+  /* line 221, ..\themes\ggproject_ui\less\parts\carousel.less */
+  #block-views-slider-portfolio-block-1 ul li .img-block img {
+    min-width: 95vw;
+  }
+}
 @media screen and (max-width: 768px) {
-  /* line 176, ..\themes\ggproject_ui\less\parts\carousel.less */
+  /* line 227, ..\themes\ggproject_ui\less\parts\carousel.less */
   #block-views-slider-portfolio-block-1 ul {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -11766,7 +11830,7 @@ body > iframe {
             flex-wrap: nowrap;
     overflow-x: scroll;
   }
-  /* line 186, ..\themes\ggproject_ui\less\parts\carousel.less */
+  /* line 237, ..\themes\ggproject_ui\less\parts\carousel.less */
   #block-views-slider-portfolio-block-1 ul li .img-block img {
     display: block;
     min-width: 90vw;
@@ -11782,17 +11846,25 @@ body > iframe {
 .page-video #colorbox {
   overflow: visible !important;
 }
-/* line 10, ..\themes\ggproject_ui\less\parts\current_video.less */
+@media screen and (max-width: 680px) {
+  /* line 10, ..\themes\ggproject_ui\less\parts\current_video.less */
+  .page-video #colorbox {
+    left: 50% !important;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+}
+/* line 15, ..\themes\ggproject_ui\less\parts\current_video.less */
 .page-video #colorbox #cboxWrapper {
   background: none;
   overflow: visible !important;
 }
-/* line 14, ..\themes\ggproject_ui\less\parts\current_video.less */
+/* line 19, ..\themes\ggproject_ui\less\parts\current_video.less */
 .page-video #colorbox #cboxWrapper #cboxContent {
   background: none;
   overflow: visible;
 }
-/* line 18, ..\themes\ggproject_ui\less\parts\current_video.less */
+/* line 23, ..\themes\ggproject_ui\less\parts\current_video.less */
 .page-video #colorbox #cboxWrapper #cboxContent #cboxLoadedContent {
   width: 700px !important;
   height: 500px !important;
@@ -11804,7 +11876,7 @@ body > iframe {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
-/* line 29, ..\themes\ggproject_ui\less\parts\current_video.less */
+/* line 34, ..\themes\ggproject_ui\less\parts\current_video.less */
 .page-video #colorbox #cboxWrapper #cboxContent #cboxPrevious {
   position: absolute;
   top: 45%;
@@ -11817,13 +11889,19 @@ body > iframe {
   height: 30px;
   text-indent: -9999px;
 }
+@media screen and (max-width: 767px) {
+  /* line 39, ..\themes\ggproject_ui\less\parts\current_video.less */
+  .page-video #colorbox #cboxWrapper #cboxContent #cboxPrevious {
+    display: none !important;
+  }
+}
 @media screen and (max-width: 992px) {
-  /* line 34, ..\themes\ggproject_ui\less\parts\current_video.less */
+  /* line 43, ..\themes\ggproject_ui\less\parts\current_video.less */
   .page-video #colorbox #cboxWrapper #cboxContent #cboxPrevious {
     left: -4%;
   }
 }
-/* line 47, ..\themes\ggproject_ui\less\parts\current_video.less */
+/* line 56, ..\themes\ggproject_ui\less\parts\current_video.less */
 .page-video #colorbox #cboxWrapper #cboxContent #cboxNext {
   position: absolute;
   top: 45%;
@@ -11836,13 +11914,19 @@ body > iframe {
   height: 30px;
   text-indent: -9999px;
 }
+@media screen and (max-width: 767px) {
+  /* line 61, ..\themes\ggproject_ui\less\parts\current_video.less */
+  .page-video #colorbox #cboxWrapper #cboxContent #cboxNext {
+    display: none !important;
+  }
+}
 @media screen and (max-width: 992px) {
-  /* line 52, ..\themes\ggproject_ui\less\parts\current_video.less */
+  /* line 65, ..\themes\ggproject_ui\less\parts\current_video.less */
   .page-video #colorbox #cboxWrapper #cboxContent #cboxNext {
     left: 100%;
   }
 }
-/* line 65, ..\themes\ggproject_ui\less\parts\current_video.less */
+/* line 78, ..\themes\ggproject_ui\less\parts\current_video.less */
 .page-video #colorbox #cboxWrapper #cboxContent #cboxClose {
   top: 5%;
   left: 78%;
@@ -11855,8 +11939,28 @@ body > iframe {
   height: 24px;
   text-indent: -9999px;
 }
-@media screen and (max-width: 992px) {
-  /* line 69, ..\themes\ggproject_ui\less\parts\current_video.less */
+@media (min-width: 320px) and (max-width: 399px) {
+  /* line 82, ..\themes\ggproject_ui\less\parts\current_video.less */
+  .page-video #colorbox #cboxWrapper #cboxContent #cboxClose {
+    top: 18%;
+    left: 135%;
+  }
+}
+@media (min-width: 400px) and (max-width: 550px) {
+  /* line 87, ..\themes\ggproject_ui\less\parts\current_video.less */
+  .page-video #colorbox #cboxWrapper #cboxContent #cboxClose {
+    top: 18%;
+    left: 115%;
+  }
+}
+@media (min-width: 551px) and (max-width: 680px) {
+  /* line 92, ..\themes\ggproject_ui\less\parts\current_video.less */
+  .page-video #colorbox #cboxWrapper #cboxContent #cboxClose {
+    top: 12%;
+  }
+}
+@media (min-width: 551px) and (max-width: 992px) {
+  /* line 96, ..\themes\ggproject_ui\less\parts\current_video.less */
   .page-video #colorbox #cboxWrapper #cboxContent #cboxClose {
     left: 100%;
   }
@@ -12022,7 +12126,7 @@ body > iframe {
   .page-node-259 .precontent .container .inner .left-block,
   .page-node-260 .precontent .container .inner .left-block {
     width: 270px;
-    font-size: 30px;
+    font-size: 1.25rem;
   }
 }
 @media (min-width: 767px) {

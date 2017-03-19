@@ -36,12 +36,9 @@ scripts[] = 'js/bootstrap.min.js'
 scripts[] = 'js/tooltip.js'
 scripts[] = 'js/popover.js'
 scripts[] = 'js/masonry.pkgd.min.js'
-scripts[] = 'js/jquery.nivo.js'
 scripts[] = 'js/main.js'
 scripts[] = 'js/jquery.touchSwipe.min.js'
 scripts[] = 'js/touchswipe-carousel.js'
-
-
 
 ; Disable BootstrapCDN so the compiled LESS source files can be used.
 settings[bootstrap_cdn] = ''

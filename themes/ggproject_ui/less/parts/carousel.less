@@ -57,46 +57,79 @@
 #block-views-slider-portfolio-block-1 {
   position: relative;
 
+  .item-list {
+    overflow: hidden;
+  }
+
   .view-header {
     position: absolute;
-    top: 50px;
-    bottom: 50px;
     left: 0;
     right: 0;
-
-    .fi-arrow-newest:hover,
-    .fi-arrow-previous:hover {
-      opacity: 1 !important;
-    }
+    top:0;
+    bottom:0;
 
     .fi-arrow-previous {
       position: absolute;
-      background:url(../images/prev.png) no-repeat;
-      background-size:contain;
-      z-index: 2;
-      width:30px;
-      height:30px;
-      left:12px;
-      top:37%;
+      width:100px;
+      top:0;
+      left:0;
+      bottom:0;
+      background: linear-gradient(to right, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%);
+      z-index: 6;
+      cursor:pointer;
+
+      &:hover {
+        opacity: .8;
+      }
 
       &:before {
-        content:"" !important;
+        content:"";
+        position: absolute;
+        left:12px;
+        background:url(../images/prev.png) no-repeat;
+        background-size:contain;
+        z-index: 2;
+        width:40px;
+        height:40px;
+        top:50%;
+        transform:translate(0, -50%);
+      }
+
+      @media screen and (max-width:@max-xs) {
+        display: none;
       }
     }
 
 
     .fi-arrow-newest {
-      right:12px;
+      top:0;
+      bottom:0;
+      right:0;
+      width:100px;
       position: absolute;
-      background:url(../images/next.png) no-repeat;
-      background-size:contain;
-      z-index: 2;
-      width:30px;
-      height:30px;
-      top:37%;
+      background: linear-gradient(to left, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%);
+      z-index: 6;
+      cursor:pointer;
+
+      &:hover {
+        opacity: .8;
+      }
 
       &:before {
-        content:"" !important;
+        content:"";
+        position: absolute;
+        right:12px;
+        background:url(../images/next.png) no-repeat;
+        background-size:contain;
+        z-index: 2;
+        width:40px;
+        height:40px;
+        top:50%;
+        transform:translate(0, -50%);
+      }
+
+      @media screen and (max-width:@max-xs) {
+        display: none;
       }
     }
   }
@@ -162,13 +195,31 @@
     //flex-wrap: nowrap;
     //overflow-x: scroll;
     padding-left: 0;
+    transition: all .3s;
 
     li {
       list-style: none;
+      float: left;
       img {
         width: 100%;
 
       }
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    ul li {
+      max-height:400px !important;
+      .img-block img {
+        min-width:125vw !important;
+      }
+    }
+
+  }
+
+  @media (min-width:425px) and (max-width: 550px) {
+    ul li .img-block img {
+      min-width:95vw;
     }
   }
 
@@ -192,112 +243,4 @@
       }
     }
   }
-
-  @media (min-width:@min-lg) {
-    ///* The Nivo Slider styles */
-    //ul {
-    //  position:relative;
-    //  width:100%;
-    //  height:auto;
-    //  overflow: hidden;
-    //}
-    //ul img {
-    //  position:absolute;
-    //  top:0px;
-    //  left:0px;
-    //  max-width: none;
-    //}
-    //.img-block {
-    //  display: block !important;
-    //  position: relative !important;
-    //  width: 100% !important;
-    //}
-    //
-    ///* If an image is wrapped in a link */
-    //.nivoSlider a.nivo-imageLink {
-    //  position:absolute;
-    //  top:0px;
-    //  left:0px;
-    //  width:100%;
-    //  height:100%;
-    //  border:0;
-    //  padding:0;
-    //  margin:0;
-    //  z-index:6;
-    //  display:none;
-    //  background:white;
-    //  filter:alpha(opacity=0);
-    //  opacity:0;
-    //}
-    ///* The slices and boxes in the Slider */
-    //.nivo-slice {
-    //  display:block;
-    //  position:absolute;
-    //  z-index:5;
-    //  height:100%;
-    //  top:0;
-    //}
-    //.nivo-box {
-    //  display:block;
-    //  position:absolute;
-    //  z-index:5;
-    //  overflow:hidden;
-    //}
-    //.nivo-box img { display:block; }
-    //
-    ///* Caption styles */
-    //.nivo-caption {
-    //  position:absolute;
-    //  left:0px;
-    //  bottom:0px;
-    //  background:#000;
-    //  color:#fff;
-    //  width:100%;
-    //  z-index:8;
-    //  padding: 5px 10px;
-    //  opacity: 0.8;
-    //  overflow: hidden;
-    //  display: none;
-    //  -moz-opacity: 0.8;
-    //  filter:alpha(opacity=8);
-    //  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-    //  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-    //  box-sizing: border-box;         /* Opera/IE 8+ */
-    //}
-    //.nivo-caption p {
-    //  padding:5px;
-    //  margin:0;
-    //}
-    //.nivo-caption a {
-    //  display:inline !important;
-    //}
-    //.nivo-html-caption {
-    //  display:none;
-    //}
-    ///* Direction nav styles (e.g. Next & Prev) */
-    //.nivo-directionNav a {
-    //  position:absolute;
-    //  top:45%;
-    //  z-index:9;
-    //  cursor:pointer;
-    //}
-    //.nivo-prevNav {
-    //  left:0px;
-    //}
-    //.nivo-nextNav {
-    //  right:0px;
-    //}
-    ///* Control nav styles (e.g. 1,2,3...) */
-    //.nivo-controlNav {
-    //  text-align:center;
-    //  padding: 15px 0;
-    //}
-    //.nivo-controlNav a {
-    //  cursor:pointer;
-    //}
-    //.nivo-controlNav a.active {
-    //  font-weight:bold;
-    //}
-  }
-
 }
