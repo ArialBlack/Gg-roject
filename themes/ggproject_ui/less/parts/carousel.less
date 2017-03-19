@@ -40,34 +40,6 @@
        } */
   }
   .carousel-control{
-
-    &.left:hover,
-    &.right:hover {
-      opacity: 1 !important;
-    }
-    //&.left, &.right{
-    //  background-image: none;
-    //}
-
-    .icon-prev {
-      background:url(../images/prev.png) no-repeat;
-      background-size:contain;
-      margin-left: -30px;
-
-      &:before {
-        content:"" !important;
-      }
-    }
-
-    .icon-next {
-      background:url(../images/next.png) no-repeat;
-      background-size:contain;
-      margin-right:-30px;
-
-      &:before {
-        content:"" !important;
-      }
-    }
   }
 
   .item {
@@ -76,71 +48,256 @@
       float: left;
       position: relative;
       min-height: 1px;
+      }
+    }
+  }
+
+
+//New carousel
+#block-views-slider-portfolio-block-1 {
+  position: relative;
+
+  .view-header {
+    position: absolute;
+    top: 50px;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+
+    .fi-arrow-newest:hover,
+    .fi-arrow-previous:hover {
+      opacity: 1 !important;
+    }
+
+    .fi-arrow-previous {
+      position: absolute;
+      background:url(../images/prev.png) no-repeat;
+      background-size:contain;
+      z-index: 2;
+      width:30px;
+      height:30px;
+      left:12px;
+      top:37%;
+
+      &:before {
+        content:"" !important;
+      }
+    }
+
+
+    .fi-arrow-newest {
+      right:12px;
+      position: absolute;
+      background:url(../images/next.png) no-repeat;
+      background-size:contain;
+      z-index: 2;
+      width:30px;
+      height:30px;
+      top:37%;
+
+      &:before {
+        content:"" !important;
+      }
+    }
+  }
+
+  .pull-left.footer-img-wrapper.no-padding.full-project-block {
+    position: relative;
+
+    &:hover {
+      & > a {
+        display: block !important;
+      }
+    }
+
+    .img-block {
+      &:before {
+        content: "";
+        transition: opacity .3s ease;
+        background-color: rgb(35, 31, 32);
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+      &:hover {
+        &:before {
+          opacity: .4;
+        }
+      }
+    }
+
+    & > a {
+      z-index: 100;
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: @gg-white;
+      border: 1px solid;
+      border-radius: 30px;
+      padding: 10px 20px;
+      transition: color .2s linear;
+
+      a {
+        color: @gg-white;
+      }
 
       &:hover {
-        .view_node {
-          display: block !important;
-        }
-      }
-
-      .view-img{
-        &:before {
-          content: "";
-          transition: opacity .3s ease;
-          background-color: rgb(35,31,32);
-          opacity:0;
-          position: absolute;
-          top:0;
-          bottom:0;
-          left:0;
-          right:0;
-        }
-        &:hover {
-          &:before{
-            opacity:.4;
-          }
-
-        }
-      }
-
-      //.view-img:hover {
-      //  &:before {
-      //    transition: background-color .3s ease;
-      //    content:"";
-      //    background: rgba(35,31,32,.5);
-      //    position: absolute;
-      //    top:0;
-      //    bottom:0;
-      //    left:0;
-      //    right:0;
-      //  }
-      //}
-
-      .view_node {
-        z-index: 100;
-        display: none;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: @gg-white;
-        border: 1px solid;
-        border-radius: 30px;
-        padding: 10px 20px;
-        transition: color .2s linear;
-
+        color: @gg-blue;
         a {
-          color: @gg-white;
-        }
-
-        &:hover {
+          text-decoration: none;
           color: @gg-blue;
-          a{
-            text-decoration: none;
-            color: @gg-blue;
+        }
+      }
+    }
+  }
+
+  ul {
+    //display: flex;
+    //flex-direction: row;
+    //flex-wrap: nowrap;
+    //overflow-x: scroll;
+    padding-left: 0;
+
+    li {
+      list-style: none;
+      img {
+        width: 100%;
+
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      overflow-x: scroll;
+
+      li {
+        //display: inline;
+
+        .img-block {
+          img {
+            display: block;
+            min-width: 90vw;
+            height: auto;
           }
         }
       }
     }
   }
+
+  @media (min-width:@min-lg) {
+    ///* The Nivo Slider styles */
+    //ul {
+    //  position:relative;
+    //  width:100%;
+    //  height:auto;
+    //  overflow: hidden;
+    //}
+    //ul img {
+    //  position:absolute;
+    //  top:0px;
+    //  left:0px;
+    //  max-width: none;
+    //}
+    //.img-block {
+    //  display: block !important;
+    //  position: relative !important;
+    //  width: 100% !important;
+    //}
+    //
+    ///* If an image is wrapped in a link */
+    //.nivoSlider a.nivo-imageLink {
+    //  position:absolute;
+    //  top:0px;
+    //  left:0px;
+    //  width:100%;
+    //  height:100%;
+    //  border:0;
+    //  padding:0;
+    //  margin:0;
+    //  z-index:6;
+    //  display:none;
+    //  background:white;
+    //  filter:alpha(opacity=0);
+    //  opacity:0;
+    //}
+    ///* The slices and boxes in the Slider */
+    //.nivo-slice {
+    //  display:block;
+    //  position:absolute;
+    //  z-index:5;
+    //  height:100%;
+    //  top:0;
+    //}
+    //.nivo-box {
+    //  display:block;
+    //  position:absolute;
+    //  z-index:5;
+    //  overflow:hidden;
+    //}
+    //.nivo-box img { display:block; }
+    //
+    ///* Caption styles */
+    //.nivo-caption {
+    //  position:absolute;
+    //  left:0px;
+    //  bottom:0px;
+    //  background:#000;
+    //  color:#fff;
+    //  width:100%;
+    //  z-index:8;
+    //  padding: 5px 10px;
+    //  opacity: 0.8;
+    //  overflow: hidden;
+    //  display: none;
+    //  -moz-opacity: 0.8;
+    //  filter:alpha(opacity=8);
+    //  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    //  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    //  box-sizing: border-box;         /* Opera/IE 8+ */
+    //}
+    //.nivo-caption p {
+    //  padding:5px;
+    //  margin:0;
+    //}
+    //.nivo-caption a {
+    //  display:inline !important;
+    //}
+    //.nivo-html-caption {
+    //  display:none;
+    //}
+    ///* Direction nav styles (e.g. Next & Prev) */
+    //.nivo-directionNav a {
+    //  position:absolute;
+    //  top:45%;
+    //  z-index:9;
+    //  cursor:pointer;
+    //}
+    //.nivo-prevNav {
+    //  left:0px;
+    //}
+    //.nivo-nextNav {
+    //  right:0px;
+    //}
+    ///* Control nav styles (e.g. 1,2,3...) */
+    //.nivo-controlNav {
+    //  text-align:center;
+    //  padding: 15px 0;
+    //}
+    //.nivo-controlNav a {
+    //  cursor:pointer;
+    //}
+    //.nivo-controlNav a.active {
+    //  font-weight:bold;
+    //}
+  }
+
 }

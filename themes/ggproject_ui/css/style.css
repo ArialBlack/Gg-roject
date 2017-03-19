@@ -11634,44 +11634,70 @@ body > iframe {
 #block-views-slider-portfolio-block-1 .carousel-inner .prev {
   transition: 100ms all;
 }
-/* line 44, ..\themes\ggproject_ui\less\parts\carousel.less */
-#block-views-slider-portfolio-block-1 .carousel-control.left:hover,
-#block-views-slider-portfolio-block-1 .carousel-control.right:hover {
-  opacity: 1 !important;
-}
-/* line 52, ..\themes\ggproject_ui\less\parts\carousel.less */
-#block-views-slider-portfolio-block-1 .carousel-control .icon-prev {
-  background: url(../images/prev.png) no-repeat;
-  background-size: contain;
-  margin-left: -30px;
-}
-/* line 57, ..\themes\ggproject_ui\less\parts\carousel.less */
-#block-views-slider-portfolio-block-1 .carousel-control .icon-prev:before {
-  content: "" !important;
-}
-/* line 62, ..\themes\ggproject_ui\less\parts\carousel.less */
-#block-views-slider-portfolio-block-1 .carousel-control .icon-next {
-  background: url(../images/next.png) no-repeat;
-  background-size: contain;
-  margin-right: -30px;
-}
-/* line 67, ..\themes\ggproject_ui\less\parts\carousel.less */
-#block-views-slider-portfolio-block-1 .carousel-control .icon-next:before {
-  content: "" !important;
-}
-/* line 74, ..\themes\ggproject_ui\less\parts\carousel.less */
+/* line 46, ..\themes\ggproject_ui\less\parts\carousel.less */
 #block-views-slider-portfolio-block-1 .item .views-field-nothing {
   width: 33.33333%;
   float: left;
   position: relative;
   min-height: 1px;
 }
-/* line 81, ..\themes\ggproject_ui\less\parts\carousel.less */
-#block-views-slider-portfolio-block-1 .item .views-field-nothing:hover .view_node {
+/* line 57, ..\themes\ggproject_ui\less\parts\carousel.less */
+#block-views-slider-portfolio-block-1 {
+  position: relative;
+}
+/* line 60, ..\themes\ggproject_ui\less\parts\carousel.less */
+#block-views-slider-portfolio-block-1 .view-header {
+  position: absolute;
+  top: 50px;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+}
+/* line 67, ..\themes\ggproject_ui\less\parts\carousel.less */
+#block-views-slider-portfolio-block-1 .view-header .fi-arrow-newest:hover,
+#block-views-slider-portfolio-block-1 .view-header .fi-arrow-previous:hover {
+  opacity: 1 !important;
+}
+/* line 72, ..\themes\ggproject_ui\less\parts\carousel.less */
+#block-views-slider-portfolio-block-1 .view-header .fi-arrow-previous {
+  position: absolute;
+  background: url(../images/prev.png) no-repeat;
+  background-size: contain;
+  z-index: 2;
+  width: 30px;
+  height: 30px;
+  left: 12px;
+  top: 37%;
+}
+/* line 82, ..\themes\ggproject_ui\less\parts\carousel.less */
+#block-views-slider-portfolio-block-1 .view-header .fi-arrow-previous:before {
+  content: "" !important;
+}
+/* line 88, ..\themes\ggproject_ui\less\parts\carousel.less */
+#block-views-slider-portfolio-block-1 .view-header .fi-arrow-newest {
+  right: 12px;
+  position: absolute;
+  background: url(../images/next.png) no-repeat;
+  background-size: contain;
+  z-index: 2;
+  width: 30px;
+  height: 30px;
+  top: 37%;
+}
+/* line 98, ..\themes\ggproject_ui\less\parts\carousel.less */
+#block-views-slider-portfolio-block-1 .view-header .fi-arrow-newest:before {
+  content: "" !important;
+}
+/* line 104, ..\themes\ggproject_ui\less\parts\carousel.less */
+#block-views-slider-portfolio-block-1 .pull-left.footer-img-wrapper.no-padding.full-project-block {
+  position: relative;
+}
+/* line 108, ..\themes\ggproject_ui\less\parts\carousel.less */
+#block-views-slider-portfolio-block-1 .pull-left.footer-img-wrapper.no-padding.full-project-block:hover > a {
   display: block !important;
 }
-/* line 87, ..\themes\ggproject_ui\less\parts\carousel.less */
-#block-views-slider-portfolio-block-1 .item .views-field-nothing .view-img:before {
+/* line 114, ..\themes\ggproject_ui\less\parts\carousel.less */
+#block-views-slider-portfolio-block-1 .pull-left.footer-img-wrapper.no-padding.full-project-block .img-block:before {
   content: "";
   transition: opacity .3s ease;
   background-color: #231f20;
@@ -11682,12 +11708,12 @@ body > iframe {
   left: 0;
   right: 0;
 }
-/* line 99, ..\themes\ggproject_ui\less\parts\carousel.less */
-#block-views-slider-portfolio-block-1 .item .views-field-nothing .view-img:hover:before {
+/* line 126, ..\themes\ggproject_ui\less\parts\carousel.less */
+#block-views-slider-portfolio-block-1 .pull-left.footer-img-wrapper.no-padding.full-project-block .img-block:hover:before {
   opacity: .4;
 }
-/* line 119, ..\themes\ggproject_ui\less\parts\carousel.less */
-#block-views-slider-portfolio-block-1 .item .views-field-nothing .view_node {
+/* line 132, ..\themes\ggproject_ui\less\parts\carousel.less */
+#block-views-slider-portfolio-block-1 .pull-left.footer-img-wrapper.no-padding.full-project-block > a {
   z-index: 100;
   display: none;
   position: absolute;
@@ -11701,18 +11727,51 @@ body > iframe {
   padding: 10px 20px;
   transition: color .2s linear;
 }
-/* line 132, ..\themes\ggproject_ui\less\parts\carousel.less */
-#block-views-slider-portfolio-block-1 .item .views-field-nothing .view_node a {
+/* line 145, ..\themes\ggproject_ui\less\parts\carousel.less */
+#block-views-slider-portfolio-block-1 .pull-left.footer-img-wrapper.no-padding.full-project-block > a a {
   color: white;
 }
-/* line 136, ..\themes\ggproject_ui\less\parts\carousel.less */
-#block-views-slider-portfolio-block-1 .item .views-field-nothing .view_node:hover {
+/* line 149, ..\themes\ggproject_ui\less\parts\carousel.less */
+#block-views-slider-portfolio-block-1 .pull-left.footer-img-wrapper.no-padding.full-project-block > a:hover {
   color: #17a6b9;
 }
-/* line 138, ..\themes\ggproject_ui\less\parts\carousel.less */
-#block-views-slider-portfolio-block-1 .item .views-field-nothing .view_node:hover a {
+/* line 151, ..\themes\ggproject_ui\less\parts\carousel.less */
+#block-views-slider-portfolio-block-1 .pull-left.footer-img-wrapper.no-padding.full-project-block > a:hover a {
   text-decoration: none;
   color: #17a6b9;
+}
+/* line 159, ..\themes\ggproject_ui\less\parts\carousel.less */
+#block-views-slider-portfolio-block-1 ul {
+  padding-left: 0;
+}
+/* line 166, ..\themes\ggproject_ui\less\parts\carousel.less */
+#block-views-slider-portfolio-block-1 ul li {
+  list-style: none;
+}
+/* line 168, ..\themes\ggproject_ui\less\parts\carousel.less */
+#block-views-slider-portfolio-block-1 ul li img {
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  /* line 176, ..\themes\ggproject_ui\less\parts\carousel.less */
+  #block-views-slider-portfolio-block-1 ul {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+  /* line 186, ..\themes\ggproject_ui\less\parts\carousel.less */
+  #block-views-slider-portfolio-block-1 ul li .img-block img {
+    display: block;
+    min-width: 90vw;
+    height: auto;
+  }
 }
 /* line 2, ..\themes\ggproject_ui\less\parts\current_video.less */
 .page-video #cboxCurrent,
