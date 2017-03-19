@@ -22,19 +22,30 @@
       float: initial;
 
       &:before {
-        width: 65px;
+        width: 70px;
+        height: 26px;
+        bottom: 8px;
+        left: -15px;
       }
     }
+  }
+  .field-item.even {
+    float: none !important;
   }
 
   .field-type-text-with-summary p {
     margin-bottom:10px;
     line-height:25px;
+    letter-spacing: .5px;
   }
 
   .field-type-text-with-summary,
   .field-type-text-long,
   .submitted-by {
+    @media screen and (max-width: @max-xs) {
+      padding-left: 20px;
+    }
+
     @media (min-width: 768px) {
       padding-left: 150px;
     }
@@ -51,9 +62,29 @@
   .back2portfolio {
     padding-right: 0;
 
-    @media screen and (max-width: @max-xs) {
-      display: none;
+    &:hover {
+      text-decoration: none;
+
+      span {
+        text-decoration: underline;
+      }
     }
+
+    @media screen and (max-width: @max-xs) {
+      float: right;
+      display: inline-block;
+      margin-right: 44px !important;
+    }
+
+
+    @media (min-width:@max-xs) {
+      float: left;
+      display: block;
+      width:inherit;
+    }
+    //@media screen and (max-width: @max-xs) {
+    //  display: none;
+    //}
   }
 
   .region-content {
@@ -61,6 +92,7 @@
   }
 
   .submitted-by {
+    margin-bottom: 20px;
     font-style: italic;
     font-size: .92rem !important;
     .font-size(24);
@@ -71,7 +103,8 @@
     }
   }
 
-  .field-name-field-image {
+  .field-name-field-image,
+  .flippy {
     display: none;
     //float: left;
     //padding-right: 40px;
@@ -87,10 +120,6 @@
     .field-name-field-intro {
       margin-top: 40px;
       margin-bottom: 0;
-
-      &:before {
-        .line();
-      }
     }
   }
 

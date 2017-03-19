@@ -2,10 +2,35 @@
   .page-banner {
     background: url('../images/video-bg.jpg') no-repeat center center;
     background-size: cover;
+  }
+
+   .page-header {
+    .font-size(40);
+    position: relative;
+    padding-left: 150px;
+    padding-bottom: 0;
+    margin-bottom: 40px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 17px;
+      width: 170px;
+      height: 15px;
+      z-index: -1;
+      background: #eee;
+    }
 
     @media screen and (max-width: @max-xs) {
-      h1 {
-        text-align: center;
+      padding-left: 40px;
+      float: initial;
+
+      &:before {
+        width: 70px;
+        height: 26px;
+        top: 9px;
+        left: -15px;
       }
     }
   }
@@ -17,11 +42,30 @@
     }
 
     h3 {
-      padding: 30px 0;
+      background: #eee;
+      padding: 30px;
       color: @gg-text;
-      .font-size(32);
-      .f('b');
+      font-size:1.15rem;
+      .f('r');
       margin: 0;
+      min-height: 140px;
+    }
+  }
+
+   .view-video {
+    @media screen and (max-width: 992px) {
+      .visible-xs, .visible-sm, .visible-md, .visible-lg {
+        display: none!important;
+      }
+
+      .col-sm-12, .col-xs-12 {
+        width: 90%;
+        margin-left: 7vw;
+      }
+
+      .views-field-nothing h3 {
+        min-height: 140px;
+      }
     }
   }
 
@@ -33,3 +77,5 @@
     }
   }
 }
+
+

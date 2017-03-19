@@ -118,6 +118,7 @@ if ($lang == 'eng') {
     </div>
 </header>
 
+
 <?php if (!empty($page['precontent'])): ?>
   <div class="precontent"><?php print render($page['precontent']); ?></div>
 <?php endif; ?>

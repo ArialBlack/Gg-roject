@@ -15,6 +15,19 @@
 .page-news {
   .col {
     margin-bottom: 90px;
+    background: #eee;
+    -webkit-background-clip: content-box;
+    -moz-background-clip: content-box;
+    background-clip: content-box;
+  }
+
+  .view-news {
+    .views-field-nothing {
+      padding: 0 30px;
+    }
+    @media screen and (max-width: 992px) {
+      padding: 0 40px;
+    }
   }
 
   .views-field-title {
@@ -22,7 +35,7 @@
 
     a {
       color: @gg-text;
-      .font-size(32);
+      font-size: 1rem;
     }
   }
 
@@ -32,6 +45,10 @@
     .line-height(24);
     margin-bottom: 30px;
     min-height: 80px; //todo equal height
+
+    span {
+      letter-spacing: .5px;
+    }
   }
 
   .views-field-created {
@@ -39,12 +56,9 @@
     .font-size(24);
     float: left;
 
-    &:before {
-      .line();
-    }
   }
 
-  img {
+  .main-container img {
     width: 100%;
   }
 
@@ -52,15 +66,21 @@
     float: left;
     margin-top: @mt + @lh;
     padding-left: 75px; //todo:responsive
+    margin-bottom: 2px;
+    text-decoration: underline;
 
     a {
       color: @gg-gray;
-      .font-size(24);
+      font-size: 0.9rem;
 
       &:after {
         content: '  ›';
       }
     }
+  }
+  .pager-next a {
+    border-radius: 30px;
+    margin-top: -20px;
   }
 }
 
@@ -91,7 +111,10 @@
         float: initial;
 
         &:before {
-          width: 65px;
+          width: 70px;
+          height: 26px;
+          bottom: 8px;
+          left: -15px;
         }
       }
     }
@@ -102,15 +125,17 @@
         flex-wrap:wrap;
         .col {
           flex-grow:1;
+
           .views-field-body {
-            margin-bottom: 3em;
+            margin-bottom: 2.5em;
           }
           .views-field-created, .views-field-view-node {
             position: absolute;
             bottom: 0;
+            text-transform: lowercase;
           }
           .views-field-view-node {
-            left: 20%;
+            right:10%;
           }
         }
       }

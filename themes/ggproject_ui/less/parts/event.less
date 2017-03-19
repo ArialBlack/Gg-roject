@@ -1,4 +1,37 @@
 .node-type-photogallery {
+
+  .back2portfolio {
+    padding-right: 0;
+
+    &:hover {
+      text-decoration: none;
+
+      span {
+        text-decoration: underline;
+      }
+    }
+
+    @media screen and (max-width: @max-xs) {
+      float: right;
+      display: inline-block;
+      margin-right: 44px !important;
+    }
+
+
+    @media (min-width:@max-xs) {
+      float: left;
+      display: block;
+      width:inherit;
+    }
+    //@media screen and (max-width: @max-xs) {
+    //  display: none;
+    //}
+  }
+
+  .field-item.even{
+    float: none !important;
+  }
+
   .page-banner {
     background: url('../images/portfolio-bg.jpg') no-repeat center center;
     background-size: cover;
@@ -17,16 +50,51 @@
   .region-content {
     clear: both;
   }
+
+  .page-header {
+    .font-size(40);
+    position: relative;
+    padding-left: 150px;
+    padding-bottom: 0;
+    margin-bottom: 40px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 17px;
+      width: 170px;
+      height: 15px;
+      z-index: -1;
+      background: #eee;
+    }
+
+    @media screen and (max-width: @max-xs) {
+      padding-left: 40px;
+
+      &:before {
+        width: 70px;
+        height: 26px;
+        top: 9px;
+        left: -15px;
+      }
+    }
+  }
 }
 
 .field-name-field-intro {
-  margin-top: 60px;
-  margin-bottom: 90px;
-  padding-left: @img-padding;
-  padding-right: @img-padding;
+  width: 85%;
+  margin: 0 auto;
+  background-color: #eee;
+  padding: 30px;
+  margin-bottom: 30px;
+  word-wrap: break-word;
 
   p {
-    line-height: 200%;
+    .f(22);
+    letter-spacing: .6px;
+    line-height: 150%;
+    opacity: .9;
   }
 }
 

@@ -11,9 +11,6 @@
 
         function buildMultyCarousel() {
             // Instantiate the Bootstrap carousel
-            $('#block-views-slider-portfolio-block-1 .carousel').carousel({
-                interval: false
-            });
 
             // for every slide in carousel, copy the next slide's item in the slide.
             // Do the same for the next, next item.

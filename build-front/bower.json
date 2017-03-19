@@ -18,6 +18,7 @@
   ],
   "dependencies": {
     "waypoints": "~4.0.0",
-    "bootstrap": "~3.3.6"
+    "bootstrap": "~3.3.6",
+    "jquery-touchswipe": "^1.6.18"
   }
 }

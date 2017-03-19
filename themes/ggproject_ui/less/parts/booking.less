@@ -12,10 +12,11 @@
   }
 
   .views-field-title {
-    padding: 30px 0;
+    background: #eee;
+    padding: 30px;
     color: @gg-text;
-    .font-size(32);
-    .f('b');
+    .font-size(28);
+    .f('r');
   }
 
   .col {
@@ -26,31 +27,63 @@
     }
   }
 
+   .page-header {
+    .font-size(40);
+    padding-left: 150px;
+    padding-bottom: 0;
+    float: left;
+    margin-bottom: -50px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 17px;
+      width: 170px;
+      height: 15px;
+      z-index: -1;
+      background: #eee;
+    }
+
+    @media screen and (max-width: @max-xs) {
+      padding-left: 40px;
+
+      &:before {
+        width: 71px;
+        height: 26px;
+        top: 9px;
+        left: 0;
+      }
+    }
+  }
+
   .nav-tabs {
     border: none;
     text-align: right;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
+    //margin-top: 30px;
 
     @media screen and (max-width: @max-xs) {
       margin-bottom: 20px;
-      text-align: center;
     }
 
     li {
       float: none;
       display: inline;
-      margin-left: 20px;
+      margin-left: 10px;
 
       @media screen and (max-width: @max-xs) {
         margin-left: 0;
       }
 
       a {
+        .f('r');
         display: inline;
-        padding: 10px 40px;
+        padding: 5px 20px;
         .font-size(28);
-        color: @gg-text;
+        color: @gg-blue;
         border: @gg-text 2px solid;
+        border-radius: 30px;
 
         &:hover {
           background-color: @gg-blue;
@@ -72,14 +105,20 @@
   }
 }
 
+@media (max-width: 992px)  {
+  .page-node-200,
+  .page-node-201 {
+    .container .row>.col-sm-12{
+      width: 100%;
+    }
 
-@media (max-width:470px) {
-  .page-node-200 {
-    .nav-tabs {
-      li {
-        a {
-          padding: 10px 8px;
-        }
+    .view-artists{
+      .col-sm-12 {
+        width: 50%!important;
+      }
+
+      .visible-xs, .visible-sm, .visible-md, .visible-lg {
+        display: none!important;
       }
     }
   }

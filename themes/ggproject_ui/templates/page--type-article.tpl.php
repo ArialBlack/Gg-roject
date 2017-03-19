@@ -118,6 +118,7 @@ if ($lang == 'eng') {
     </div>
 </header>
 
+
 <div class="page-banner">
   <div class="inner container">
   </div>
@@ -141,13 +142,14 @@ if ($lang == 'eng') {
       <?php endif; ?>
       <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
       <a id="main-content"></a>
+
+      <a class="back2portfolio" href="<?php print $lang;?>/services/weddings">‹ <span><?php print t('Back to news'); ?></span></a>
+
       <?php print render($title_prefix); ?>
       <?php if (!empty($title)): ?>
         <h1 class="page-header"><?php print $title; ?></h1>
       <?php endif; ?>
       <?php print render($title_suffix); ?>
-
-      <a class="back2portfolio" href="<?php print $lang;?>/services/weddings"><?php print t('Back to news'); ?>   ›</a>
 
       <?php print $messages; ?>
       <?php if (!empty($tabs)): ?>
