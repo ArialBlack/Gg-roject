@@ -9869,32 +9869,35 @@ body,
   padding: 0;
   position: relative;
   z-index: 9999;
+  overflow: visible;
 }
-/* line 213, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 214, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar .navbar-collapse nav {
   margin-top: 1em;
 }
 @media screen and (max-width: 1200px) {
-  /* line 215, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 216, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .navbar-collapse nav {
     overflow: hidden;
     overflow-y: scroll;
     position: fixed;
+    -webkit-transform: translateZ(1px);
+            transform: translateZ(1px);
     padding-bottom: 60px;
     height: 100%;
     width: 100%;
   }
-  /* line 223, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 225, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .navbar-collapse nav .region-navigation {
     min-height: 190px;
   }
-  /* line 226, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 228, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .navbar-collapse nav .region-navigation .inner .center-block {
     padding: 4px 18px!important;
   }
 }
 @media screen and (max-width: 1199px) {
-  /* line 232, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 234, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .navbar-collapse nav {
     margin-top: 0;
     display: -webkit-flex;
@@ -9904,7 +9907,7 @@ body,
         -ms-flex-flow: column;
             flex-flow: column;
   }
-  /* line 237, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 239, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .navbar-collapse nav .region-navigation {
     -webkit-order: 2;
         -ms-flex-order: 2;
@@ -9916,11 +9919,11 @@ body,
     background: #231f20;
     margin-top: 0;
   }
-  /* line 245, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 247, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .navbar-collapse nav .region-navigation .language-switcher-locale-url {
     padding: 0;
   }
-  /* line 248, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 250, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .navbar-collapse nav .region-navigation .language-switcher-locale-url .language-link {
     margin-top: 5px;
     border-radius: 15px;
@@ -9930,7 +9933,7 @@ body,
     color: #fff;
     line-height: 1.5;
   }
-  /* line 260, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 262, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .navbar-collapse nav .menu {
     -webkit-order: 1;
         -ms-flex-order: 1;
@@ -9944,29 +9947,29 @@ body,
     margin-right: 0;
     margin-left: 0;
   }
-  /* line 269, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 271, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .navbar-collapse nav .menu li.leaf {
     background: #17a6b9;
     border-bottom: 1px solid #ffffff;
   }
-  /* line 273, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 275, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .navbar-collapse nav .menu li.leaf:last-child {
     border-bottom: 0 none;
   }
-  /* line 277, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 279, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .navbar-collapse nav .menu li.leaf a {
     color: #ffffff;
     padding: 12.5vh 0;
     font-size: 5vh;
   }
 }
-/* line 287, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 289, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar .navbar-toggle {
   margin-top: 1em;
   border: 0 none;
 }
 @media screen and (max-width: 768px) {
-  /* line 292, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 294, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .navbar-toggle .icon-bar {
     width: 38px;
     height: 7px;
@@ -9974,18 +9977,18 @@ body,
     border-radius: 2px;
   }
 }
-/* line 300, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 302, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar .navbar-toggle:hover,
 #navbar .navbar-toggle:focus {
   background: transparent;
 }
-/* line 303, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 305, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar .navbar-toggle:hover .icon-bar,
 #navbar .navbar-toggle:focus .icon-bar {
   background-color: #17a6b9;
 }
 @media screen and (max-width: 768px) {
-  /* line 306, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 308, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .navbar-toggle:hover .icon-bar,
   #navbar .navbar-toggle:focus .icon-bar {
     width: 38px;
@@ -9994,30 +9997,30 @@ body,
     border-radius: 2px;
   }
 }
-/* line 315, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 317, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar .navbar-toggle .icon-bar {
   background-color: #000;
 }
-/* line 325, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 327, ..\themes\ggproject_ui\less\parts\navbar.less */
 .info-on-menu {
   display: none;
 }
-/* line 331, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 333, ..\themes\ggproject_ui\less\parts\navbar.less */
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block {
   display: inline-block;
   width: 65%;
   float: right;
   position: relative;
 }
-/* line 336, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 338, ..\themes\ggproject_ui\less\parts\navbar.less */
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu {
   display: inline-block;
 }
-/* line 339, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 341, ..\themes\ggproject_ui\less\parts\navbar.less */
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .left-block {
   display: none;
 }
-/* line 343, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 345, ..\themes\ggproject_ui\less\parts\navbar.less */
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .center-block,
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .right-block {
   position: absolute;
@@ -10027,7 +10030,7 @@ body,
   border-radius: 25px;
   transition: border-color 0.3s linear;
 }
-/* line 351, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 353, ..\themes\ggproject_ui\less\parts\navbar.less */
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .center-block,
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .right-block,
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .center-block a,
@@ -10037,12 +10040,12 @@ body,
   color: white !important;
   border-color: white !important;
 }
-/* line 359, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 361, ..\themes\ggproject_ui\less\parts\navbar.less */
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .center-block:hover,
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .right-block:hover {
   border-color: #17a6b9;
 }
-/* line 363, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 365, ..\themes\ggproject_ui\less\parts\navbar.less */
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .center-block span,
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .right-block span,
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .center-block a,
@@ -10052,18 +10055,18 @@ body,
   color: #777;
 }
 @media screen and (max-width: 767px) {
-  /* line 371, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 373, ..\themes\ggproject_ui\less\parts\navbar.less */
   .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .center-block a,
   .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .right-block a {
     font-size: 5vh !important;
   }
 }
-/* line 377, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 379, ..\themes\ggproject_ui\less\parts\navbar.less */
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .center-block {
   left: 1%;
   padding-bottom: 4px;
 }
-/* line 382, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 384, ..\themes\ggproject_ui\less\parts\navbar.less */
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .right-block {
   right: 5vw;
 }
