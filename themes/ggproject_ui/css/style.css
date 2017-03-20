@@ -10340,7 +10340,7 @@ body > iframe {
 }
 /* line 2, ..\themes\ggproject_ui\less\parts\portfolio.less */
 .page-services .page-banner {
-  background: url('../images/portfolio-bg.jpg') no-repeat center center;
+  background: url('../images/global-banner.png') no-repeat center center;
   background-size: cover;
 }
 @media screen and (max-width: 767px) {
@@ -10530,7 +10530,7 @@ body > iframe {
 /* line 3, ..\themes\ggproject_ui\less\parts\news.less */
 .node-type-article .page-banner,
 .page-news .page-banner {
-  background: url('../images/news-bg.jpg') no-repeat center center;
+  background: url('../images/global-banner.png') no-repeat center center;
   background-size: cover;
 }
 @media screen and (max-width: 767px) {
@@ -10862,7 +10862,7 @@ body > iframe {
 /* line 3, ..\themes\ggproject_ui\less\parts\booking.less */
 .page-node-200 .page-banner,
 .page-node-201 .page-banner {
-  background: url('../images/booking-bg.jpg') no-repeat center center;
+  background: url('../images/global-banner.png') no-repeat center center;
   background-size: cover;
 }
 @media screen and (max-width: 767px) {
@@ -11013,7 +11013,7 @@ body > iframe {
 }
 /* line 2, ..\themes\ggproject_ui\less\parts\video.less */
 .page-video .page-banner {
-  background: url('../images/video-bg.jpg') no-repeat center center;
+  background: url('../images/video-banner.jpg') no-repeat center center;
   background-size: cover;
 }
 /* line 7, ..\themes\ggproject_ui\less\parts\video.less */
@@ -11096,7 +11096,7 @@ body > iframe {
 }
 /* line 2, ..\themes\ggproject_ui\less\parts\testimonials.less */
 .page-testimonials .page-banner {
-  background: url('../images/news-bg.jpg') no-repeat center center;
+  background: url('../images/global-banner.png') no-repeat center center;
   background-size: cover;
 }
 @media screen and (max-width: 767px) {
