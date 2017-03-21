@@ -7,6 +7,11 @@
   //position: fixed;
   position: relative;
 
+  .navbar-header {
+    position: relative;
+    z-index:10;
+  }
+
   @media screen and (max-width:@min-lg) {
     position:fixed;
     top: 0;
@@ -207,9 +212,12 @@
 
   .navbar-collapse {
     padding: 0;
-    position: relative;
-    z-index: 9999;
     overflow: visible;
+
+    @media screen and (max-width:1199px) {
+      position: relative;
+      z-index: 9999;
+    }
 
     nav {
       margin-top: 1em;
