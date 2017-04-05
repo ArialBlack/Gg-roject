@@ -9253,7 +9253,7 @@ h1.page-header {
 @media (min-width: 992px) {
   /* line 155, ..\themes\ggproject_ui\less\_base.less */
   .page-banner {
-    min-height: 300px;
+    min-height: 230px;
     margin-bottom: 60px;
   }
   /* line 159, ..\themes\ggproject_ui\less\_base.less */
@@ -9266,7 +9266,7 @@ h1.page-header {
 @media (min-width: 1200px) {
   /* line 164, ..\themes\ggproject_ui\less\_base.less */
   .page-banner {
-    min-height: 380px;
+    min-height: 220px;
   }
   /* line 167, ..\themes\ggproject_ui\less\_base.less */
   .page-banner h1,
@@ -9720,7 +9720,7 @@ body,
 }
 /* line 59, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar .menu {
-  float: right;
+  float: left;
 }
 /* line 63, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar .menu li a {
@@ -9746,7 +9746,13 @@ body,
 #navbar .region-navigation {
   float: right;
 }
-/* line 90, ..\themes\ggproject_ui\less\parts\navbar.less */
+@media (min-width: 1200px) {
+  /* line 89, ..\themes\ggproject_ui\less\parts\navbar.less */
+  #navbar .region-navigation {
+    margin-right: 85px;
+  }
+}
+/* line 94, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar #block-locale-language {
   text-align: center;
   margin-top: 2px;
@@ -9760,28 +9766,28 @@ body,
   transition: border-color 0.3s linear;
 }
 @media screen and (max-width: 767px) {
-  /* line 103, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 107, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar #block-locale-language a,
   #navbar #block-locale-language h2 {
     font-size: 5vh !important;
   }
 }
 @media screen and (max-width: 567px) {
-  /* line 109, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 113, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar #block-locale-language {
     padding: 2px 18px !important;
     width: 260px !important;
   }
 }
 @media (min-width: 568px) and (max-width: 992px) {
-  /* line 114, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 118, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar #block-locale-language {
     width: 180px !important;
     padding: 2px 18px !important;
   }
 }
 @media screen and (max-width: 1200px) {
-  /* line 120, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 124, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar #block-locale-language {
     float: left;
     display: inline-block;
@@ -9792,25 +9798,25 @@ body,
     border-color: white;
   }
 }
-/* line 130, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 134, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar #block-locale-language:hover {
   border-color: #17a6b9;
 }
-/* line 133, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 137, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar #block-locale-language:hover .block-title {
   color: #17a6b9;
 }
-/* line 137, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 141, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar #block-locale-language:hover li {
   display: block !important;
 }
 @media screen and (max-width: 1200px) {
-  /* line 139, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 143, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar #block-locale-language:hover li {
     display: block !important;
   }
 }
-/* line 147, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 151, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar #block-locale-language .block-title {
   font-size: 0.8rem;
   display: inline-block;
@@ -9820,33 +9826,33 @@ body,
   font-family: 'cormorantregular';
 }
 @media screen and (max-width: 500px) {
-  /* line 155, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 159, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar #block-locale-language .block-title {
     margin-top: 1px;
   }
 }
-/* line 162, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 166, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar #block-locale-language .language-switcher-locale-url {
   display: inline-block;
   padding: 0;
   margin-bottom: 0;
 }
-/* line 173, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 177, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar #block-locale-language .language-switcher-locale-url li {
   list-style: none;
   display: none;
 }
-/* line 177, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 181, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar #block-locale-language .language-switcher-locale-url li.active {
   display: block;
 }
 @media screen and (max-width: 1200px) {
-  /* line 179, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 183, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar #block-locale-language .language-switcher-locale-url li.active {
     display: inline-block;
   }
 }
-/* line 184, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 188, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar #block-locale-language .language-switcher-locale-url li a {
   font-size: 7.5px;
   font-size: 0.75rem;
@@ -9859,34 +9865,34 @@ body,
   color: #231f20;
 }
 @media screen and (max-width: 1200px) {
-  /* line 194, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 198, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar #block-locale-language .language-switcher-locale-url li a {
     color: white;
     margin: 0;
   }
 }
-/* line 199, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 203, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar #block-locale-language .language-switcher-locale-url li a:hover {
   color: #17a6b9;
 }
-/* line 213, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 217, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar .navbar-collapse {
   padding: 0;
   overflow: visible;
 }
 @media screen and (max-width: 1199px) {
-  /* line 217, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 221, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .navbar-collapse {
     position: relative;
     z-index: 9999;
   }
 }
-/* line 222, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 226, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar .navbar-collapse nav {
   margin-top: 1em;
 }
 @media screen and (max-width: 1200px) {
-  /* line 224, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 228, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .navbar-collapse nav {
     overflow: hidden;
     overflow-y: scroll;
@@ -9897,17 +9903,17 @@ body,
     height: 100%;
     width: 100%;
   }
-  /* line 233, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 237, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .navbar-collapse nav .region-navigation {
-    min-height: 190px;
+    min-height: 215px;
   }
-  /* line 236, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 240, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .navbar-collapse nav .region-navigation .inner .center-block {
     padding: 4px 18px!important;
   }
 }
 @media screen and (max-width: 1199px) {
-  /* line 242, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 246, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .navbar-collapse nav {
     margin-top: 0;
     display: -webkit-flex;
@@ -9917,7 +9923,7 @@ body,
         -ms-flex-flow: column;
             flex-flow: column;
   }
-  /* line 247, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 251, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .navbar-collapse nav .region-navigation {
     -webkit-order: 2;
         -ms-flex-order: 2;
@@ -9929,11 +9935,11 @@ body,
     background: #231f20;
     margin-top: 0;
   }
-  /* line 255, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 259, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .navbar-collapse nav .region-navigation .language-switcher-locale-url {
     padding: 0;
   }
-  /* line 258, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 262, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .navbar-collapse nav .region-navigation .language-switcher-locale-url .language-link {
     margin-top: 5px;
     border-radius: 15px;
@@ -9943,7 +9949,7 @@ body,
     color: #fff;
     line-height: 1.5;
   }
-  /* line 270, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 274, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .navbar-collapse nav .menu {
     -webkit-order: 1;
         -ms-flex-order: 1;
@@ -9957,29 +9963,29 @@ body,
     margin-right: 0;
     margin-left: 0;
   }
-  /* line 279, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 283, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .navbar-collapse nav .menu li.leaf {
     background: #17a6b9;
     border-bottom: 1px solid #ffffff;
   }
-  /* line 283, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 287, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .navbar-collapse nav .menu li.leaf:last-child {
     border-bottom: 0 none;
   }
-  /* line 287, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 291, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .navbar-collapse nav .menu li.leaf a {
     color: #ffffff;
     padding: 12.5vh 0;
     font-size: 5vh;
   }
 }
-/* line 297, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 301, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar .navbar-toggle {
   margin-top: 1em;
   border: 0 none;
 }
 @media screen and (max-width: 768px) {
-  /* line 302, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 306, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .navbar-toggle .icon-bar {
     width: 38px;
     height: 7px;
@@ -9987,18 +9993,18 @@ body,
     border-radius: 2px;
   }
 }
-/* line 310, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 314, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar .navbar-toggle:hover,
 #navbar .navbar-toggle:focus {
   background: transparent;
 }
-/* line 313, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 317, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar .navbar-toggle:hover .icon-bar,
 #navbar .navbar-toggle:focus .icon-bar {
   background-color: #17a6b9;
 }
 @media screen and (max-width: 768px) {
-  /* line 316, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 320, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .navbar-toggle:hover .icon-bar,
   #navbar .navbar-toggle:focus .icon-bar {
     width: 38px;
@@ -10007,30 +10013,30 @@ body,
     border-radius: 2px;
   }
 }
-/* line 325, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 329, ..\themes\ggproject_ui\less\parts\navbar.less */
 #navbar .navbar-toggle .icon-bar {
   background-color: #000;
 }
-/* line 335, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 339, ..\themes\ggproject_ui\less\parts\navbar.less */
 .info-on-menu {
   display: none;
 }
-/* line 341, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 345, ..\themes\ggproject_ui\less\parts\navbar.less */
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block {
   display: inline-block;
   width: 65%;
   float: right;
   position: relative;
 }
-/* line 346, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 350, ..\themes\ggproject_ui\less\parts\navbar.less */
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu {
   display: inline-block;
 }
-/* line 349, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 353, ..\themes\ggproject_ui\less\parts\navbar.less */
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .left-block {
   display: none;
 }
-/* line 353, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 357, ..\themes\ggproject_ui\less\parts\navbar.less */
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .center-block,
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .right-block {
   position: absolute;
@@ -10040,7 +10046,7 @@ body,
   border-radius: 25px;
   transition: border-color 0.3s linear;
 }
-/* line 361, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 365, ..\themes\ggproject_ui\less\parts\navbar.less */
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .center-block,
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .right-block,
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .center-block a,
@@ -10050,12 +10056,12 @@ body,
   color: white !important;
   border-color: white !important;
 }
-/* line 369, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 373, ..\themes\ggproject_ui\less\parts\navbar.less */
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .center-block:hover,
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .right-block:hover {
   border-color: #17a6b9;
 }
-/* line 373, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 377, ..\themes\ggproject_ui\less\parts\navbar.less */
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .center-block span,
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .right-block span,
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .center-block a,
@@ -10065,18 +10071,18 @@ body,
   color: #777;
 }
 @media screen and (max-width: 767px) {
-  /* line 381, ..\themes\ggproject_ui\less\parts\navbar.less */
+  /* line 385, ..\themes\ggproject_ui\less\parts\navbar.less */
   .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .center-block a,
   .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .right-block a {
     font-size: 5vh !important;
   }
 }
-/* line 387, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 391, ..\themes\ggproject_ui\less\parts\navbar.less */
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .center-block {
   left: 1%;
   padding-bottom: 4px;
 }
-/* line 392, ..\themes\ggproject_ui\less\parts\navbar.less */
+/* line 396, ..\themes\ggproject_ui\less\parts\navbar.less */
 .navbar-collapse.collapse.in #block-ggproject-ggproject-cinfo-block .info-on-menu .right-block {
   right: 5vw;
 }
@@ -10306,7 +10312,11 @@ body > iframe {
     left: -15px;
   }
 }
-/* line 85, ..\themes\ggproject_ui\less\parts\event.less */
+/* line 84, ..\themes\ggproject_ui\less\parts\event.less */
+.node-type-photogallery .field-items .field-item p {
+  font-size: .9rem;
+}
+/* line 89, ..\themes\ggproject_ui\less\parts\event.less */
 .field-name-field-intro {
   width: 85%;
   margin: 0 auto;
@@ -10315,7 +10325,7 @@ body > iframe {
   margin-bottom: 30px;
   word-wrap: break-word;
 }
-/* line 93, ..\themes\ggproject_ui\less\parts\event.less */
+/* line 97, ..\themes\ggproject_ui\less\parts\event.less */
 .field-name-field-intro p {
   font-weight: normal;
   font-style: normal;
@@ -10323,27 +10333,27 @@ body > iframe {
   line-height: 150%;
   opacity: .9;
 }
-/* line 101, ..\themes\ggproject_ui\less\parts\event.less */
+/* line 105, ..\themes\ggproject_ui\less\parts\event.less */
 .field-name-field-photos {
   margin-top: 20px;
 }
-/* line 104, ..\themes\ggproject_ui\less\parts\event.less */
+/* line 108, ..\themes\ggproject_ui\less\parts\event.less */
 .field-name-field-photos .field-item {
   width: 100%;
 }
 @media (min-width: 992px) {
-  /* line 107, ..\themes\ggproject_ui\less\parts\event.less */
+  /* line 111, ..\themes\ggproject_ui\less\parts\event.less */
   .field-name-field-photos .field-item {
     width: 50%;
   }
 }
 @media (min-width: 1200px) {
-  /* line 111, ..\themes\ggproject_ui\less\parts\event.less */
+  /* line 115, ..\themes\ggproject_ui\less\parts\event.less */
   .field-name-field-photos .field-item {
     width: 33.333%;
   }
 }
-/* line 115, ..\themes\ggproject_ui\less\parts\event.less */
+/* line 119, ..\themes\ggproject_ui\less\parts\event.less */
 .field-name-field-photos .field-item img {
   width: 100%;
   padding: 10px;
@@ -10919,7 +10929,7 @@ body > iframe {
 .page-node-201 .page-header:before {
   content: '';
   position: absolute;
-  left: 0;
+  left: 13px;
   top: 17px;
   width: 170px;
   height: 15px;
@@ -11250,36 +11260,40 @@ body > iframe {
     padding-bottom: 20px;
   }
 }
-/* line 132, ..\themes\ggproject_ui\less\parts\testimonials.less */
+/* line 124, ..\themes\ggproject_ui\less\parts\testimonials.less */
+.page-testimonials #block-views-slider-portfolio-block-1 ul li {
+  margin-bottom: 0 !important;
+}
+/* line 135, ..\themes\ggproject_ui\less\parts\testimonials.less */
 .page-testimonials #block-system-main .views-row-5 p {
   margin-bottom: 20px;
 }
-/* line 135, ..\themes\ggproject_ui\less\parts\testimonials.less */
+/* line 138, ..\themes\ggproject_ui\less\parts\testimonials.less */
 .page-testimonials #block-system-main .views-row-5 ol {
   padding-left: 19px;
 }
-/* line 138, ..\themes\ggproject_ui\less\parts\testimonials.less */
+/* line 141, ..\themes\ggproject_ui\less\parts\testimonials.less */
 .page-testimonials #block-system-main .views-row-5 ol li {
   color: #666666;
   font-size: 0.91rem;
 }
 @media screen and (max-width: 992px) {
-  /* line 147, ..\themes\ggproject_ui\less\parts\testimonials.less */
+  /* line 150, ..\themes\ggproject_ui\less\parts\testimonials.less */
   .page-testimonials .views-field-nothing .media-body {
     display: inline;
   }
 }
-/* line 151, ..\themes\ggproject_ui\less\parts\testimonials.less */
+/* line 154, ..\themes\ggproject_ui\less\parts\testimonials.less */
 .page-testimonials .views-field-nothing .media-body .media-heading {
   font-weight: normal;
   font-style: normal;
   font-family: 'cormorantregular';
-  font-size: 12.5px;
-  font-size: 1.25rem;
+  font-size: 10.416666666666668px;
+  font-size: 1.0416666666666667rem;
   line-height: 16.25px;
   line-height: 1.625rem;
   float: right;
-  width: 50%;
+  width: 45%;
   background-color: #eee;
   padding: 40px;
   font-style: italic;
@@ -11288,19 +11302,19 @@ body > iframe {
   margin-left: 10px;
   margin-bottom: 10px;
 }
-/* line 165, ..\themes\ggproject_ui\less\parts\testimonials.less */
+/* line 168, ..\themes\ggproject_ui\less\parts\testimonials.less */
 .page-testimonials .views-field-nothing .media-body .media-heading:before,
 .page-testimonials .views-field-nothing .media-body .media-heading:after {
   content: '"';
 }
 @media screen and (max-width: 767px) {
-  /* line 169, ..\themes\ggproject_ui\less\parts\testimonials.less */
+  /* line 172, ..\themes\ggproject_ui\less\parts\testimonials.less */
   .page-testimonials .views-field-nothing .media-body .media-heading {
     margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 992px) {
-  /* line 173, ..\themes\ggproject_ui\less\parts\testimonials.less */
+  /* line 176, ..\themes\ggproject_ui\less\parts\testimonials.less */
   .page-testimonials .views-field-nothing .media-body .media-heading {
     display: block;
     margin-top: 120px;
@@ -11310,34 +11324,42 @@ body > iframe {
   }
 }
 @media (min-width: 992px) {
-  /* line 181, ..\themes\ggproject_ui\less\parts\testimonials.less */
+  /* line 184, ..\themes\ggproject_ui\less\parts\testimonials.less */
   .page-testimonials .views-field-nothing .media-body .media-heading {
     margin-top: -78px;
   }
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 188, ..\themes\ggproject_ui\less\parts\testimonials.less */
+  .page-testimonials .views-field-nothing .media-body .media-heading {
+    width: 40%;
+    font-size: .94rem;
+    padding: 30px;
+  }
+}
 @media (max-width: 992px) {
-  /* line 192, ..\themes\ggproject_ui\less\parts\testimonials.less */
+  /* line 201, ..\themes\ggproject_ui\less\parts\testimonials.less */
   .page-testimonials .views-row {
     position: relative;
   }
-  /* line 195, ..\themes\ggproject_ui\less\parts\testimonials.less */
+  /* line 204, ..\themes\ggproject_ui\less\parts\testimonials.less */
   .page-testimonials .views-row .views-field-title {
     position: absolute;
     right: 15px;
     width: 70%;
     text-align: right;
   }
-  /* line 201, ..\themes\ggproject_ui\less\parts\testimonials.less */
+  /* line 210, ..\themes\ggproject_ui\less\parts\testimonials.less */
   .page-testimonials .views-row .views-field-title span {
     line-height: 100%;
   }
-  /* line 206, ..\themes\ggproject_ui\less\parts\testimonials.less */
+  /* line 215, ..\themes\ggproject_ui\less\parts\testimonials.less */
   .page-testimonials .views-row .views-field-created {
     position: absolute;
     right: 15px;
     top: 145px;
   }
-  /* line 212, ..\themes\ggproject_ui\less\parts\testimonials.less */
+  /* line 221, ..\themes\ggproject_ui\less\parts\testimonials.less */
   .page-testimonials .views-row .views-field-nothing {
     margin-bottom: 45px;
   }
@@ -11426,17 +11448,25 @@ body > iframe {
           justify-content: center;
   padding: 0 80px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   /* line 67, ..\themes\ggproject_ui\less\parts\contacts.less */
   .page-node-265 #block-system-main .field-item.even .contacts-center-block,
   .page-node-266 #block-system-main .field-item.even .contacts-center-block {
     padding: 0 40px;
   }
 }
-/* line 71, ..\themes\ggproject_ui\less\parts\contacts.less */
+@media (min-width: 1199px) {
+  /* line 70, ..\themes\ggproject_ui\less\parts\contacts.less */
+  .page-node-265 #block-system-main .field-item.even .contacts-center-block,
+  .page-node-266 #block-system-main .field-item.even .contacts-center-block {
+    padding: 0 170px;
+  }
+}
+/* line 74, ..\themes\ggproject_ui\less\parts\contacts.less */
 .page-node-265 #block-system-main .field-item.even .contacts-center-block .col-sm-6,
 .page-node-266 #block-system-main .field-item.even .contacts-center-block .col-sm-6 {
-  padding-top: 15px;
+  padding-top: 35px;
+  padding-bottom: 20px;
   padding-left: 30px;
   background: #eee;
   color: #231f20;
@@ -11444,7 +11474,7 @@ body > iframe {
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
-/* line 75, ..\themes\ggproject_ui\less\parts\contacts.less */
+/* line 79, ..\themes\ggproject_ui\less\parts\contacts.less */
 .page-node-265 #block-system-main .field-item.even .contacts-center-block .col-sm-6 p,
 .page-node-266 #block-system-main .field-item.even .contacts-center-block .col-sm-6 p {
   font-size: .85rem;
@@ -11452,14 +11482,14 @@ body > iframe {
   line-height: 25px;
 }
 @media screen and (max-width: 767px) {
-  /* line 80, ..\themes\ggproject_ui\less\parts\contacts.less */
+  /* line 84, ..\themes\ggproject_ui\less\parts\contacts.less */
   .page-node-265 #block-system-main .field-item.even .contacts-center-block .col-sm-6 p,
   .page-node-266 #block-system-main .field-item.even .contacts-center-block .col-sm-6 p {
     font-size: .8rem;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 85, ..\themes\ggproject_ui\less\parts\contacts.less */
+  /* line 89, ..\themes\ggproject_ui\less\parts\contacts.less */
   .page-node-265 #block-system-main .field-item.even .contacts-center-block .col-sm-6,
   .page-node-266 #block-system-main .field-item.even .contacts-center-block .col-sm-6 {
     padding-left: 24px;
@@ -11467,14 +11497,22 @@ body > iframe {
     padding-bottom: 30px;
   }
 }
-/* line 95, ..\themes\ggproject_ui\less\parts\contacts.less */
+@media (min-width: 992px) {
+  /* line 95, ..\themes\ggproject_ui\less\parts\contacts.less */
+  .page-node-265 #block-system-main .field-item.even .contacts-center-block .col-sm-6,
+  .page-node-266 #block-system-main .field-item.even .contacts-center-block .col-sm-6 {
+    padding-top: 45px;
+    padding-bottom: 30px;
+  }
+}
+/* line 104, ..\themes\ggproject_ui\less\parts\contacts.less */
 .page-node-265 #block-system-main .field-item.even .contacts-center-block .col-sm-6 .email,
 .page-node-266 #block-system-main .field-item.even .contacts-center-block .col-sm-6 .email {
   color: #17a6b9;
 }
 /* line 2, ..\themes\ggproject_ui\less\parts\front.less */
 .front #carousel {
-  height: 700px;
+  height: 620px;
 }
 @media screen and (max-width: 767px) {
   /* line 5, ..\themes\ggproject_ui\less\parts\front.less */
@@ -12362,5 +12400,17 @@ body > iframe {
   .page-node-259 .main-container #block-system-main .field-items .odd,
   .page-node-260 .main-container #block-system-main .field-items .odd {
     padding-left: 130px;
+  }
+}
+/* line 355, ..\themes\ggproject_ui\less\pages\_main.less */
+.page-node-259 .main-container #block-system-main .field-items,
+.page-node-260 .main-container #block-system-main .field-items {
+  color: #3A3737;
+}
+@media (min-width: 1200px) {
+  /* line 357, ..\themes\ggproject_ui\less\pages\_main.less */
+  .page-node-259 .main-container #block-system-main .field-items .odd,
+  .page-node-260 .main-container #block-system-main .field-items .odd {
+    padding-right: 230px;
   }
 }
