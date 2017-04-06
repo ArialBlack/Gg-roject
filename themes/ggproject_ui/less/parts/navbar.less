@@ -57,7 +57,7 @@
   }
 
   .menu {
-    float: right;
+    float: left;
 
     li {
       a {
@@ -85,6 +85,10 @@
 
   .region-navigation {
     float: right;
+
+    @media (min-width:@min-lg) {
+      margin-right: 85px;
+    }
   }
 
   #block-locale-language {
@@ -231,7 +235,7 @@
         width: 100%;
 
         .region-navigation {
-          min-height: 190px;
+          min-height: 215px;
 
           .inner .center-block {
             padding: 4px 18px!important;

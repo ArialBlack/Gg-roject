@@ -121,6 +121,9 @@
       padding-bottom: 20px;
     }
   }
+  #block-views-slider-portfolio-block-1 ul li {
+    margin-bottom: 0 !important;
+  }
 
 }
 
@@ -150,10 +153,10 @@
 
   		.media-heading {
   			.f('r');
-  			.font-size(30);
+  			.font-size(25);
   			.line-height(39);
   			float: right;
-  			width: 50%;
+  			width: 45%;
   			background-color: #eee;
   			padding: 40px;
   			font-style: italic;
@@ -180,6 +183,12 @@
 
         @media (min-width:992px) {
           margin-top: -78px;
+        }
+
+        @media (min-width: 992px) and (max-width:1199px) {
+          width: 40%;
+          font-size: .94rem;
+          padding: 30px;
         }
 
       }
