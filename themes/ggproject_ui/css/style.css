@@ -9975,7 +9975,7 @@ body,
   /* line 291, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .navbar-collapse nav .menu li.leaf a {
     color: #ffffff;
-    padding: 12.5vh 0;
+    padding: 12.2vh 0;
     font-size: 5vh;
   }
 }
@@ -10904,17 +10904,25 @@ body > iframe {
   font-style: normal;
   font-family: 'cormorantregular';
 }
-/* line 22, ..\themes\ggproject_ui\less\parts\booking.less */
+@media screen and (max-width: 767px) {
+  /* line 21, ..\themes\ggproject_ui\less\parts\booking.less */
+  .page-node-200 .views-field-title,
+  .page-node-201 .views-field-title {
+    padding: 30px 26px;
+    height: 110px;
+  }
+}
+/* line 27, ..\themes\ggproject_ui\less\parts\booking.less */
 .page-node-200 .col,
 .page-node-201 .col {
   margin-bottom: 60px;
 }
-/* line 25, ..\themes\ggproject_ui\less\parts\booking.less */
+/* line 30, ..\themes\ggproject_ui\less\parts\booking.less */
 .page-node-200 .col img,
 .page-node-201 .col img {
   width: 100%;
 }
-/* line 30, ..\themes\ggproject_ui\less\parts\booking.less */
+/* line 35, ..\themes\ggproject_ui\less\parts\booking.less */
 .page-node-200 .page-header,
 .page-node-201 .page-header {
   font-size: 16.666666666666668px;
@@ -10924,7 +10932,7 @@ body > iframe {
   float: left;
   margin-bottom: -50px;
 }
-/* line 37, ..\themes\ggproject_ui\less\parts\booking.less */
+/* line 42, ..\themes\ggproject_ui\less\parts\booking.less */
 .page-node-200 .page-header:before,
 .page-node-201 .page-header:before {
   content: '';
@@ -10937,12 +10945,12 @@ body > iframe {
   background: #eee;
 }
 @media screen and (max-width: 767px) {
-  /* line 48, ..\themes\ggproject_ui\less\parts\booking.less */
+  /* line 53, ..\themes\ggproject_ui\less\parts\booking.less */
   .page-node-200 .page-header,
   .page-node-201 .page-header {
     padding-left: 40px;
   }
-  /* line 51, ..\themes\ggproject_ui\less\parts\booking.less */
+  /* line 56, ..\themes\ggproject_ui\less\parts\booking.less */
   .page-node-200 .page-header:before,
   .page-node-201 .page-header:before {
     width: 71px;
@@ -10951,7 +10959,7 @@ body > iframe {
     left: 0;
   }
 }
-/* line 60, ..\themes\ggproject_ui\less\parts\booking.less */
+/* line 65, ..\themes\ggproject_ui\less\parts\booking.less */
 .page-node-200 .nav-tabs,
 .page-node-201 .nav-tabs {
   border: none;
@@ -10959,13 +10967,13 @@ body > iframe {
   margin-bottom: 20px;
 }
 @media screen and (max-width: 767px) {
-  /* line 66, ..\themes\ggproject_ui\less\parts\booking.less */
+  /* line 71, ..\themes\ggproject_ui\less\parts\booking.less */
   .page-node-200 .nav-tabs,
   .page-node-201 .nav-tabs {
     margin-bottom: 20px;
   }
 }
-/* line 70, ..\themes\ggproject_ui\less\parts\booking.less */
+/* line 75, ..\themes\ggproject_ui\less\parts\booking.less */
 .page-node-200 .nav-tabs li,
 .page-node-201 .nav-tabs li {
   float: none;
@@ -10973,13 +10981,13 @@ body > iframe {
   margin-left: 10px;
 }
 @media screen and (max-width: 767px) {
-  /* line 75, ..\themes\ggproject_ui\less\parts\booking.less */
+  /* line 80, ..\themes\ggproject_ui\less\parts\booking.less */
   .page-node-200 .nav-tabs li,
   .page-node-201 .nav-tabs li {
     margin-left: 0;
   }
 }
-/* line 79, ..\themes\ggproject_ui\less\parts\booking.less */
+/* line 84, ..\themes\ggproject_ui\less\parts\booking.less */
 .page-node-200 .nav-tabs li a,
 .page-node-201 .nav-tabs li a {
   font-weight: normal;
@@ -10992,7 +11000,7 @@ body > iframe {
   border: #231f20 2px solid;
   border-radius: 30px;
 }
-/* line 88, ..\themes\ggproject_ui\less\parts\booking.less */
+/* line 93, ..\themes\ggproject_ui\less\parts\booking.less */
 .page-node-200 .nav-tabs li a:hover,
 .page-node-201 .nav-tabs li a:hover {
   background-color: #17a6b9;
@@ -11000,7 +11008,7 @@ body > iframe {
   color: white;
   text-decoration: none;
 }
-/* line 97, ..\themes\ggproject_ui\less\parts\booking.less */
+/* line 102, ..\themes\ggproject_ui\less\parts\booking.less */
 .page-node-200 .nav-tabs li.active a,
 .page-node-201 .nav-tabs li.active a {
   background-color: #17a6b9;
@@ -11009,17 +11017,17 @@ body > iframe {
   text-decoration: none;
 }
 @media (max-width: 992px) {
-  /* line 111, ..\themes\ggproject_ui\less\parts\booking.less */
+  /* line 116, ..\themes\ggproject_ui\less\parts\booking.less */
   .page-node-200 .container .row > .col-sm-12,
   .page-node-201 .container .row > .col-sm-12 {
     width: 100%;
   }
-  /* line 116, ..\themes\ggproject_ui\less\parts\booking.less */
+  /* line 121, ..\themes\ggproject_ui\less\parts\booking.less */
   .page-node-200 .view-artists .col-sm-12,
   .page-node-201 .view-artists .col-sm-12 {
     width: 50%!important;
   }
-  /* line 120, ..\themes\ggproject_ui\less\parts\booking.less */
+  /* line 125, ..\themes\ggproject_ui\less\parts\booking.less */
   .page-node-200 .view-artists .visible-xs,
   .page-node-201 .view-artists .visible-xs,
   .page-node-200 .view-artists .visible-sm,
@@ -11236,7 +11244,13 @@ body > iframe {
   font-size: 9.166666666666666px;
   font-size: 0.9166666666666666rem;
 }
-/* line 105, ..\themes\ggproject_ui\less\parts\testimonials.less */
+@media screen and (max-width: 991px) {
+  /* line 104, ..\themes\ggproject_ui\less\parts\testimonials.less */
+  .page-testimonials .media-body p {
+    float: left;
+  }
+}
+/* line 110, ..\themes\ggproject_ui\less\parts\testimonials.less */
 .page-testimonials .media-body h4 {
   color: #17a6b9;
   font-weight: normal;
@@ -11247,43 +11261,53 @@ body > iframe {
   line-height: 16.666666666666668px;
   line-height: 1.6666666666666667rem;
 }
-/* line 114, ..\themes\ggproject_ui\less\parts\testimonials.less */
+/* line 119, ..\themes\ggproject_ui\less\parts\testimonials.less */
 .page-testimonials .views-row {
   margin-bottom: 40px;
   padding-bottom: 105px;
   border-bottom: #d5d6d8 1px solid;
 }
 @media screen and (max-width: 767px) {
-  /* line 119, ..\themes\ggproject_ui\less\parts\testimonials.less */
+  /* line 124, ..\themes\ggproject_ui\less\parts\testimonials.less */
   .page-testimonials .views-row {
     margin-bottom: 30px;
     padding-bottom: 20px;
   }
 }
-/* line 124, ..\themes\ggproject_ui\less\parts\testimonials.less */
+/* line 129, ..\themes\ggproject_ui\less\parts\testimonials.less */
 .page-testimonials #block-views-slider-portfolio-block-1 ul li {
   margin-bottom: 0 !important;
 }
-/* line 135, ..\themes\ggproject_ui\less\parts\testimonials.less */
+/* line 140, ..\themes\ggproject_ui\less\parts\testimonials.less */
 .page-testimonials #block-system-main .views-row-5 p {
   margin-bottom: 20px;
 }
-/* line 138, ..\themes\ggproject_ui\less\parts\testimonials.less */
+/* line 143, ..\themes\ggproject_ui\less\parts\testimonials.less */
 .page-testimonials #block-system-main .views-row-5 ol {
   padding-left: 19px;
 }
-/* line 141, ..\themes\ggproject_ui\less\parts\testimonials.less */
+/* line 146, ..\themes\ggproject_ui\less\parts\testimonials.less */
 .page-testimonials #block-system-main .views-row-5 ol li {
   color: #666666;
   font-size: 0.91rem;
 }
+@media screen and (max-width: 991px) {
+  /* line 151, ..\themes\ggproject_ui\less\parts\testimonials.less */
+  .page-testimonials #block-system-main .views-row-5 ol {
+    float: left;
+  }
+  /* line 154, ..\themes\ggproject_ui\less\parts\testimonials.less */
+  .page-testimonials #block-system-main .views-row-5 ol li {
+    display: list-item;
+  }
+}
 @media screen and (max-width: 992px) {
-  /* line 150, ..\themes\ggproject_ui\less\parts\testimonials.less */
+  /* line 163, ..\themes\ggproject_ui\less\parts\testimonials.less */
   .page-testimonials .views-field-nothing .media-body {
     display: inline;
   }
 }
-/* line 154, ..\themes\ggproject_ui\less\parts\testimonials.less */
+/* line 167, ..\themes\ggproject_ui\less\parts\testimonials.less */
 .page-testimonials .views-field-nothing .media-body .media-heading {
   font-weight: normal;
   font-style: normal;
@@ -11302,35 +11326,33 @@ body > iframe {
   margin-left: 10px;
   margin-bottom: 10px;
 }
-/* line 168, ..\themes\ggproject_ui\less\parts\testimonials.less */
+/* line 181, ..\themes\ggproject_ui\less\parts\testimonials.less */
 .page-testimonials .views-field-nothing .media-body .media-heading:before,
 .page-testimonials .views-field-nothing .media-body .media-heading:after {
   content: '"';
 }
 @media screen and (max-width: 767px) {
-  /* line 172, ..\themes\ggproject_ui\less\parts\testimonials.less */
+  /* line 185, ..\themes\ggproject_ui\less\parts\testimonials.less */
   .page-testimonials .views-field-nothing .media-body .media-heading {
     margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 992px) {
-  /* line 176, ..\themes\ggproject_ui\less\parts\testimonials.less */
+  /* line 189, ..\themes\ggproject_ui\less\parts\testimonials.less */
   .page-testimonials .views-field-nothing .media-body .media-heading {
     display: block;
-    margin-top: 120px;
-    float: inherit;
     width: 100%;
     margin-left: 0;
   }
 }
 @media (min-width: 992px) {
-  /* line 184, ..\themes\ggproject_ui\less\parts\testimonials.less */
+  /* line 197, ..\themes\ggproject_ui\less\parts\testimonials.less */
   .page-testimonials .views-field-nothing .media-body .media-heading {
     margin-top: -78px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 188, ..\themes\ggproject_ui\less\parts\testimonials.less */
+  /* line 201, ..\themes\ggproject_ui\less\parts\testimonials.less */
   .page-testimonials .views-field-nothing .media-body .media-heading {
     width: 40%;
     font-size: .94rem;
@@ -11338,28 +11360,28 @@ body > iframe {
   }
 }
 @media (max-width: 992px) {
-  /* line 201, ..\themes\ggproject_ui\less\parts\testimonials.less */
+  /* line 214, ..\themes\ggproject_ui\less\parts\testimonials.less */
   .page-testimonials .views-row {
     position: relative;
   }
-  /* line 204, ..\themes\ggproject_ui\less\parts\testimonials.less */
+  /* line 217, ..\themes\ggproject_ui\less\parts\testimonials.less */
   .page-testimonials .views-row .views-field-title {
     position: absolute;
     right: 15px;
     width: 70%;
     text-align: right;
   }
-  /* line 210, ..\themes\ggproject_ui\less\parts\testimonials.less */
+  /* line 223, ..\themes\ggproject_ui\less\parts\testimonials.less */
   .page-testimonials .views-row .views-field-title span {
     line-height: 100%;
   }
-  /* line 215, ..\themes\ggproject_ui\less\parts\testimonials.less */
+  /* line 228, ..\themes\ggproject_ui\less\parts\testimonials.less */
   .page-testimonials .views-row .views-field-created {
     position: absolute;
     right: 15px;
     top: 145px;
   }
-  /* line 221, ..\themes\ggproject_ui\less\parts\testimonials.less */
+  /* line 234, ..\themes\ggproject_ui\less\parts\testimonials.less */
   .page-testimonials .views-row .views-field-nothing {
     margin-bottom: 45px;
   }
@@ -12208,7 +12230,7 @@ body > iframe {
   .page-node-259 .precontent .container .right-block,
   .page-node-260 .precontent .container .right-block {
     height: 100px;
-    padding-top: 28px;
+    padding-top: 22px;
   }
 }
 /* line 111, ..\themes\ggproject_ui\less\pages\_main.less */
@@ -12243,7 +12265,7 @@ body > iframe {
   .page-node-260 .precontent .container .right-block span {
     border: 1px solid;
     border-radius: 30px;
-    padding: 4px 10px;
+    padding: 8px 22px;
     margin-left: 5px;
     transition: background-color 0.2s linear;
   }
@@ -12285,54 +12307,61 @@ body > iframe {
   border: 1px solid;
   border-radius: 30px;
 }
-/* line 176, ..\themes\ggproject_ui\less\pages\_main.less */
+@media screen and (max-width: 767px) {
+  /* line 175, ..\themes\ggproject_ui\less\pages\_main.less */
+  .page-node-259 .precontent .container .right-block .btn-sendmail,
+  .page-node-260 .precontent .container .right-block .btn-sendmail {
+    padding: 8px 22px;
+  }
+}
+/* line 180, ..\themes\ggproject_ui\less\pages\_main.less */
 .page-node-259 .precontent .container .right-block a,
 .page-node-260 .precontent .container .right-block a {
   display: inline-block;
   color: #ffffff;
 }
 @media screen and (max-width: 767px) {
-  /* line 189, ..\themes\ggproject_ui\less\pages\_main.less */
+  /* line 193, ..\themes\ggproject_ui\less\pages\_main.less */
   .main-container #block-system-main .field-items {
     padding: 0 30px;
   }
 }
-/* line 193, ..\themes\ggproject_ui\less\pages\_main.less */
+/* line 197, ..\themes\ggproject_ui\less\pages\_main.less */
 .main-container #block-system-main .field-items .even {
   float: left;
   padding-right: 15px;
 }
-/* line 199, ..\themes\ggproject_ui\less\pages\_main.less */
+/* line 203, ..\themes\ggproject_ui\less\pages\_main.less */
 .main-container #block-system-main .field-items .odd p {
   margin-bottom: 10px;
   letter-spacing: 0.5px;
 }
-/* line 203, ..\themes\ggproject_ui\less\pages\_main.less */
+/* line 207, ..\themes\ggproject_ui\less\pages\_main.less */
 .main-container #block-system-main .field-items .odd ul {
   padding-left: 6px;
 }
-/* line 205, ..\themes\ggproject_ui\less\pages\_main.less */
+/* line 209, ..\themes\ggproject_ui\less\pages\_main.less */
 .main-container #block-system-main .field-items .odd ul li {
   list-style-type: none;
   letter-spacing: 0.5px;
 }
-/* line 209, ..\themes\ggproject_ui\less\pages\_main.less */
+/* line 213, ..\themes\ggproject_ui\less\pages\_main.less */
 .main-container #block-system-main .field-items .odd ul li:before {
   content: "-";
   position: relative;
   left: -5px;
 }
-/* line 221, ..\themes\ggproject_ui\less\pages\_main.less */
+/* line 225, ..\themes\ggproject_ui\less\pages\_main.less */
 .content-bottom p {
   text-align: center;
 }
 @media screen and (min-width: 320px) and (max-width: 639px) {
-  /* line 244, ..\themes\ggproject_ui\less\pages\_main.less */
+  /* line 248, ..\themes\ggproject_ui\less\pages\_main.less */
   .page-node-259 .inner,
   .page-node-260 .inner {
     left: 10%;
   }
-  /* line 246, ..\themes\ggproject_ui\less\pages\_main.less */
+  /* line 250, ..\themes\ggproject_ui\less\pages\_main.less */
   .page-node-259 .inner .left-block,
   .page-node-260 .inner .left-block,
   .page-node-259 .inner .right-block,
@@ -12342,73 +12371,73 @@ body > iframe {
   }
 }
 @media screen and (min-width: 640px) {
-  /* line 257, ..\themes\ggproject_ui\less\pages\_main.less */
+  /* line 261, ..\themes\ggproject_ui\less\pages\_main.less */
   .page-node-259 .inner,
   .page-node-260 .inner {
     left: 10%;
   }
 }
 @media screen and (min-width: 992px) {
-  /* line 269, ..\themes\ggproject_ui\less\pages\_main.less */
+  /* line 273, ..\themes\ggproject_ui\less\pages\_main.less */
   .page-node-259 .inner,
   .page-node-260 .inner {
     left: 10%;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 281, ..\themes\ggproject_ui\less\pages\_main.less */
+  /* line 285, ..\themes\ggproject_ui\less\pages\_main.less */
   .page-node-259 .inner,
   .page-node-260 .inner {
     left: 17vw;
   }
 }
 @media screen and (min-width: 1400px) {
-  /* line 293, ..\themes\ggproject_ui\less\pages\_main.less */
+  /* line 297, ..\themes\ggproject_ui\less\pages\_main.less */
   .page-node-259 .inner,
   .page-node-260 .inner {
     left: 20vw;
   }
 }
 @media screen and (min-width: 1700px) {
-  /* line 302, ..\themes\ggproject_ui\less\pages\_main.less */
+  /* line 306, ..\themes\ggproject_ui\less\pages\_main.less */
   .page-node-259 .inner,
   .page-node-260 .inner {
     left: 17vw;
   }
 }
 @media (min-width: 320px) {
-  /* line 312, ..\themes\ggproject_ui\less\pages\_main.less */
+  /* line 316, ..\themes\ggproject_ui\less\pages\_main.less */
   .page-node-259 .content-bottom #block-block-4,
   .page-node-260 .content-bottom #block-block-4 {
     padding: 100px 40px;
   }
-  /* line 314, ..\themes\ggproject_ui\less\pages\_main.less */
+  /* line 318, ..\themes\ggproject_ui\less\pages\_main.less */
   .page-node-259 .content-bottom #block-block-4 p,
   .page-node-260 .content-bottom #block-block-4 p {
     font-size: 80%;
   }
 }
 @media (min-width: 320px) and (max-width: 569px) {
-  /* line 326, ..\themes\ggproject_ui\less\pages\_main.less */
+  /* line 330, ..\themes\ggproject_ui\less\pages\_main.less */
   .page-node-259 .main-container h1,
   .page-node-260 .main-container h1 {
     font-size: 1.5rem;
   }
 }
 @media (min-width: 767px) {
-  /* line 339, ..\themes\ggproject_ui\less\pages\_main.less */
+  /* line 343, ..\themes\ggproject_ui\less\pages\_main.less */
   .page-node-259 .main-container #block-system-main .field-items .odd,
   .page-node-260 .main-container #block-system-main .field-items .odd {
     padding-left: 130px;
   }
 }
-/* line 355, ..\themes\ggproject_ui\less\pages\_main.less */
+/* line 359, ..\themes\ggproject_ui\less\pages\_main.less */
 .page-node-259 .main-container #block-system-main .field-items,
 .page-node-260 .main-container #block-system-main .field-items {
   color: #3A3737;
 }
 @media (min-width: 1200px) {
-  /* line 357, ..\themes\ggproject_ui\less\pages\_main.less */
+  /* line 361, ..\themes\ggproject_ui\less\pages\_main.less */
   .page-node-259 .main-container #block-system-main .field-items .odd,
   .page-node-260 .main-container #block-system-main .field-items .odd {
     padding-right: 230px;
