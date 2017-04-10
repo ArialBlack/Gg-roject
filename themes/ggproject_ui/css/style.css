@@ -11312,10 +11312,10 @@ body > iframe {
   font-weight: normal;
   font-style: normal;
   font-family: 'times-regular';
-  font-size: 10.416666666666668px;
-  font-size: 1.0416666666666667rem;
-  line-height: 16.25px;
-  line-height: 1.625rem;
+  font-size: 10px;
+  font-size: 1rem;
+  line-height: 14.583333333333332px;
+  line-height: 1.4583333333333333rem;
   float: right;
   width: 45%;
   background-color: #eee;
@@ -11510,8 +11510,15 @@ body > iframe {
     font-size: .8rem;
   }
 }
+@media (min-width: 767px) and (max-width: 992px) {
+  /* line 87, ..\themes\ggproject_ui\less\parts\contacts.less */
+  .page-node-265 #block-system-main .field-item.even .contacts-center-block .col-sm-6 p,
+  .page-node-266 #block-system-main .field-item.even .contacts-center-block .col-sm-6 p {
+    font-size: .72rem;
+  }
+}
 @media screen and (max-width: 767px) {
-  /* line 89, ..\themes\ggproject_ui\less\parts\contacts.less */
+  /* line 93, ..\themes\ggproject_ui\less\parts\contacts.less */
   .page-node-265 #block-system-main .field-item.even .contacts-center-block .col-sm-6,
   .page-node-266 #block-system-main .field-item.even .contacts-center-block .col-sm-6 {
     padding-left: 24px;
@@ -11520,14 +11527,14 @@ body > iframe {
   }
 }
 @media (min-width: 992px) {
-  /* line 95, ..\themes\ggproject_ui\less\parts\contacts.less */
+  /* line 99, ..\themes\ggproject_ui\less\parts\contacts.less */
   .page-node-265 #block-system-main .field-item.even .contacts-center-block .col-sm-6,
   .page-node-266 #block-system-main .field-item.even .contacts-center-block .col-sm-6 {
     padding-top: 45px;
     padding-bottom: 30px;
   }
 }
-/* line 104, ..\themes\ggproject_ui\less\parts\contacts.less */
+/* line 108, ..\themes\ggproject_ui\less\parts\contacts.less */
 .page-node-265 #block-system-main .field-item.even .contacts-center-block .col-sm-6 .email,
 .page-node-266 #block-system-main .field-item.even .contacts-center-block .col-sm-6 .email {
   color: #17a6b9;
