@@ -10142,44 +10142,50 @@ body,
   font-size: 0.4166666666666667rem;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+@media (min-width: 1200px) {
+  /* line 50, ..\themes\ggproject_ui\less\parts\footer.less */
+  .footer #block-block-6 p {
+    font-size: .73rem ;
+  }
+}
 @media (min-width: 320px) and (max-width: 991px) {
-  /* line 54, ..\themes\ggproject_ui\less\parts\footer.less */
+  /* line 60, ..\themes\ggproject_ui\less\parts\footer.less */
   .region-footer {
     text-align: center;
   }
-  /* line 57, ..\themes\ggproject_ui\less\parts\footer.less */
+  /* line 63, ..\themes\ggproject_ui\less\parts\footer.less */
   .clogos_slab {
     margin: auto !important;
   }
 }
 @media screen and (max-width: 992px) {
-  /* line 63, ..\themes\ggproject_ui\less\parts\footer.less */
+  /* line 69, ..\themes\ggproject_ui\less\parts\footer.less */
   #block-block-5 img {
     max-width: 80%;
   }
 }
 @media (min-width: 992px) {
-  /* line 70, ..\themes\ggproject_ui\less\parts\footer.less */
+  /* line 76, ..\themes\ggproject_ui\less\parts\footer.less */
   .footer #block-block-5 {
     margin-right: 3em;
   }
-  /* line 73, ..\themes\ggproject_ui\less\parts\footer.less */
+  /* line 79, ..\themes\ggproject_ui\less\parts\footer.less */
   .footer .block {
     margin-right: 2em;
   }
 }
 @media (min-width: 1200px) {
-  /* line 81, ..\themes\ggproject_ui\less\parts\footer.less */
+  /* line 87, ..\themes\ggproject_ui\less\parts\footer.less */
   .footer #block-block-5 {
     margin-right: 5em;
   }
-  /* line 84, ..\themes\ggproject_ui\less\parts\footer.less */
+  /* line 90, ..\themes\ggproject_ui\less\parts\footer.less */
   .footer .block {
     margin-right: 3em;
   }
 }
 @media (min-width: 992px) {
-  /* line 93, ..\themes\ggproject_ui\less\parts\footer.less */
+  /* line 99, ..\themes\ggproject_ui\less\parts\footer.less */
   .region-footer #block-block-5 {
     margin-top: 1em;
     position: absolute;
@@ -10187,36 +10193,36 @@ body,
     max-width: 1300px;
   }
 }
-/* line 101, ..\themes\ggproject_ui\less\parts\footer.less */
+/* line 107, ..\themes\ggproject_ui\less\parts\footer.less */
 .region-footer #block-block-5 .footer-social-descr {
   font-size: 1.5rem;
 }
 @media (min-width: 992px) {
-  /* line 102, ..\themes\ggproject_ui\less\parts\footer.less */
+  /* line 108, ..\themes\ggproject_ui\less\parts\footer.less */
   .region-footer #block-block-5 .footer-social-descr {
     position: absolute;
     right: 0;
     top: 0;
   }
 }
-/* line 110, ..\themes\ggproject_ui\less\parts\footer.less */
+/* line 116, ..\themes\ggproject_ui\less\parts\footer.less */
 .region-footer #block-block-5 .footer-social-descr a {
   color: white;
 }
-/* line 113, ..\themes\ggproject_ui\less\parts\footer.less */
+/* line 119, ..\themes\ggproject_ui\less\parts\footer.less */
 .region-footer #block-block-5 .footer-social-descr a:hover {
   text-decoration: none;
   color: inherit;
 }
 @media screen and (max-width: 992px) {
-  /* line 123, ..\themes\ggproject_ui\less\parts\footer.less */
+  /* line 129, ..\themes\ggproject_ui\less\parts\footer.less */
   .region-footer #block-block-6,
   .region-footer #block-block-7 {
     text-align: left;
   }
 }
 @media (min-width: 992px) {
-  /* line 130, ..\themes\ggproject_ui\less\parts\footer.less */
+  /* line 136, ..\themes\ggproject_ui\less\parts\footer.less */
   .region-footer #block-block-6,
   .region-footer #block-block-7 {
     margin: auto;
@@ -10224,7 +10230,7 @@ body,
     display: block;
   }
 }
-/* line 139, ..\themes\ggproject_ui\less\parts\footer.less */
+/* line 145, ..\themes\ggproject_ui\less\parts\footer.less */
 body > iframe {
   position: absolute;
 }
