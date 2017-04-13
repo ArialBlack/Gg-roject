@@ -9975,7 +9975,7 @@ body,
   /* line 291, ..\themes\ggproject_ui\less\parts\navbar.less */
   #navbar .navbar-collapse nav .menu li.leaf a {
     color: #ffffff;
-    padding: 12.2vh 0;
+    padding: 10.8vh 0;
     font-size: 5vh;
   }
 }
@@ -11322,6 +11322,7 @@ body > iframe {
   font-size: 1rem;
   line-height: 14.583333333333332px;
   line-height: 1.4583333333333333rem;
+  clear: both;
   float: right;
   width: 45%;
   background-color: #eee;
@@ -11332,19 +11333,19 @@ body > iframe {
   margin-left: 10px;
   margin-bottom: 10px;
 }
-/* line 181, ..\themes\ggproject_ui\less\parts\testimonials.less */
+/* line 182, ..\themes\ggproject_ui\less\parts\testimonials.less */
 .page-testimonials .views-field-nothing .media-body .media-heading:before,
 .page-testimonials .views-field-nothing .media-body .media-heading:after {
   content: '"';
 }
 @media screen and (max-width: 767px) {
-  /* line 185, ..\themes\ggproject_ui\less\parts\testimonials.less */
+  /* line 186, ..\themes\ggproject_ui\less\parts\testimonials.less */
   .page-testimonials .views-field-nothing .media-body .media-heading {
     margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 992px) {
-  /* line 189, ..\themes\ggproject_ui\less\parts\testimonials.less */
+  /* line 190, ..\themes\ggproject_ui\less\parts\testimonials.less */
   .page-testimonials .views-field-nothing .media-body .media-heading {
     display: block;
     width: 100%;
@@ -11352,13 +11353,13 @@ body > iframe {
   }
 }
 @media (min-width: 992px) {
-  /* line 197, ..\themes\ggproject_ui\less\parts\testimonials.less */
+  /* line 198, ..\themes\ggproject_ui\less\parts\testimonials.less */
   .page-testimonials .views-field-nothing .media-body .media-heading {
     margin-top: -78px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 201, ..\themes\ggproject_ui\less\parts\testimonials.less */
+  /* line 202, ..\themes\ggproject_ui\less\parts\testimonials.less */
   .page-testimonials .views-field-nothing .media-body .media-heading {
     width: 40%;
     font-size: .94rem;
@@ -11366,28 +11367,28 @@ body > iframe {
   }
 }
 @media (max-width: 992px) {
-  /* line 214, ..\themes\ggproject_ui\less\parts\testimonials.less */
+  /* line 215, ..\themes\ggproject_ui\less\parts\testimonials.less */
   .page-testimonials .views-row {
     position: relative;
   }
-  /* line 217, ..\themes\ggproject_ui\less\parts\testimonials.less */
+  /* line 218, ..\themes\ggproject_ui\less\parts\testimonials.less */
   .page-testimonials .views-row .views-field-title {
     position: absolute;
     right: 15px;
     width: 70%;
     text-align: right;
   }
-  /* line 223, ..\themes\ggproject_ui\less\parts\testimonials.less */
+  /* line 224, ..\themes\ggproject_ui\less\parts\testimonials.less */
   .page-testimonials .views-row .views-field-title span {
     line-height: 100%;
   }
-  /* line 228, ..\themes\ggproject_ui\less\parts\testimonials.less */
+  /* line 229, ..\themes\ggproject_ui\less\parts\testimonials.less */
   .page-testimonials .views-row .views-field-created {
     position: absolute;
     right: 15px;
     top: 145px;
   }
-  /* line 234, ..\themes\ggproject_ui\less\parts\testimonials.less */
+  /* line 235, ..\themes\ggproject_ui\less\parts\testimonials.less */
   .page-testimonials .views-row .views-field-nothing {
     margin-bottom: 45px;
   }
