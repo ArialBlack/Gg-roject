@@ -32,7 +32,7 @@
   ?>
   <div class="views-field views-field-nothing">
     <span class="field-content">
-      <a href="http://www.youtube.com/embed/<?php print $youtube_id; ?>?rel=0&amp;wmode=transparent&width=800&height=600&iframe=true" title="<?php print render($fields['title']->raw); ?>" class="colorbox-load">
+      <a href="https://www.youtube.com/embed/<?php print $youtube_id; ?>?rel=0&amp;wmode=transparent&width=800&height=600&iframe=true" title="<?php print render($fields['title']->raw); ?>" class="colorbox-load">
         <?php print render($fields['field_image']->content); ?>
         <h3><?php print render($fields['title']->raw); ?></h3>
       </a>
@@ -47,7 +47,7 @@
   ?>
   <div class="views-field views-field-nothing">
     <span class="field-content">
-      <a class="colorbox-load" href="http://player.vimeo.com/video/<?php print $vimeo_id; ?>?width=800&height=600&iframe=true">
+      <a class="colorbox-load" href="https://player.vimeo.com/video/<?php print $vimeo_id; ?>?width=800&height=600&iframe=true">
         <?php print render($fields['field_image']->content); ?>
         <h3><?php print render($fields['title']->raw); ?></h3>
       </a>
