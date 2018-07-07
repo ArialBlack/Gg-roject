@@ -184,6 +184,8 @@ function _ggproject_slider_block() {
     $content = $content . '<div class="item"></div>';
     $content = $content . '<div class="item"></div>';
     $content = $content . '<div class="item"></div>';
+    $content = $content . '<div class="item"></div>';
+    $content = $content . '<div class="item"></div>';
     $content = $content . '</div>';
 
     $content = $content . '<ol class="carousel-indicators">';
@@ -191,6 +193,8 @@ function _ggproject_slider_block() {
     $content = $content . '<li data-target="#carousel" data-slide-to="1"></li>';
     $content = $content . '<li data-target="#carousel" data-slide-to="2"></li>';
     $content = $content . '<li data-target="#carousel" data-slide-to="3"></li>';
+    $content = $content . '<li data-target="#carousel" data-slide-to="4"></li>';
+    $content = $content . '<li data-target="#carousel" data-slide-to="5"></li>';
     $content = $content . '</ol></div>';
 
     $content = $content . '<div class="block-on-banner">';
