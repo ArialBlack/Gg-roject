@@ -2,11 +2,9 @@
   $(function() {
 
     function center_full_project_buttons(){
-      console.log('script pashet nakonecta!!');
       if(window.innerWidth > 769){
         $('.view-slider-portfolio .item-list ul').css('width',$('.view-slider-portfolio .item-list ul li').length*(window.innerWidth/3)+'px');
         $('.view-slider-portfolio .item-list ul li').css('width',(window.innerWidth/3)+'px');
-        console.log('script pashet!!');
       }else{
         $('.view-slider-portfolio .item-list ul').css('width',$('.view-slider-portfolio .item-list ul li').length*(window.innerWidth*0.8)+'px');
         $('.view-slider-portfolio .item-list ul li').css('width',(window.innerWidth*0.8)+'px');
@@ -32,7 +30,6 @@
 
       $(".colorbox-load").click(function(e) {
         e.preventDefault;
-        console.log("video pashet tozhe!");
       });
 
       $('.fi-arrow-previous').click(function(){
@@ -41,6 +38,13 @@
       $('.fi-arrow-newest').click(function(){
         $( ".view-slider-portfolio .item-list ul" ).offset({ left:  Math.max(-($('.view-slider-portfolio .item-list ul li').length-3)*(window.innerWidth/3),$( ".view-slider-portfolio .item-list ul" ).offset().left-(window.innerWidth/3))});
       });
+
+      if(document.querySelector('html').clientWidth > 768) {
+          setInterval(function() {
+              $( ".view-slider-portfolio .item-list ul" ).offset({ left:  Math.max(-($('.view-slider-portfolio .item-list ul li').length-3)*(window.innerWidth/3),$( ".view-slider-portfolio .item-list ul" ).offset().left-(window.innerWidth/3))});
+          }, 3000);
+          console.log(document.clientWidth);
+      }
     });
   }); // end of document ready
 })(jQuery); // end of jQuery name space

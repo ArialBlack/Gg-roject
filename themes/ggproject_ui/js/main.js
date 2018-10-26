@@ -1,13 +1,13 @@
 (function($) {
     $(function() {
 
-        function buildMasonry() {
-            $('.field-name-field-photos .field-items').masonry({
+        // function buildMasonry() {
+            var $grid = $('.field-name-field-photos .field-items').masonry({
                 itemSelector: '.field-item',
                 percentPosition: true,
                 columnWidth: '.field-item'
             });
-        }
+        // }
 
         function buildMultyCarousel() {
             // Instantiate the Bootstrap carousel
@@ -42,9 +42,17 @@
             buildMultyCarousel();
         });
 
-        $(window).load(function() {
-            buildMasonry();
-        });
+        // $(window).load(function() {
+        //     buildMasonry();
+        // });
+				// layout Masonry after each image loads
+				$grid.imagesLoaded().progress( function() {
+				  $grid.masonry();
+				});
+
+				if ($(window).width() <= 480) {
+					$('.node-type-photogallery .field-name-field-photos a.colorbox.init-colorbox-processed.cboxElement').removeClass('colorbox init-colorbox-processed cboxElement');
+				}
 
     }); // end of document ready
 })(jQuery); // end of jQuery name space
