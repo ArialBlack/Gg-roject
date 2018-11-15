@@ -1,13 +1,13 @@
 (function($) {
     $(function() {
 
-        // function buildMasonry() {
+            $('.field-name-field-photos .field-items').css('opacity', '0');
+
             var $grid = $('.field-name-field-photos .field-items').masonry({
                 itemSelector: '.field-item',
                 percentPosition: true,
                 columnWidth: '.field-item'
             });
-        // }
 
         function buildMultyCarousel() {
             // Instantiate the Bootstrap carousel
@@ -42,13 +42,15 @@
             buildMultyCarousel();
         });
 
-        // $(window).load(function() {
-        //     buildMasonry();
-        // });
 				// layout Masonry after each image loads
-				$grid.imagesLoaded().progress( function() {
-				  $grid.masonry();
-				});
+				$grid.imagesLoaded()
+                    .progress( function() {
+                        $grid.masonry();
+				    })
+                    .done( function() {
+                        $grid.css('transition', 'opacity .3s ease');
+                        $grid.css('opacity', '1');
+                    });
 
 				if ($(window).width() <= 480) {
 					$('.node-type-photogallery .field-name-field-photos a.colorbox.init-colorbox-processed.cboxElement').removeClass('colorbox init-colorbox-processed cboxElement');
